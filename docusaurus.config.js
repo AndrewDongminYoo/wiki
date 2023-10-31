@@ -1,5 +1,5 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+// 참고: 유형 주석을 사용하면 유형 검사 및 IDE 자동 완성을 사용할 수 있습니다.
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
@@ -10,23 +10,22 @@ const config = {
   tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
 
-  // Set the production url of your site here
+  // 여기에 사이트의 프로덕션 URL을 설정하세요.
   url: "https://your-docusaurus-test-site.com",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  // 사이트가 서비스되는 /<baseUrl>/ 경로명을 설정합니다.
+  // GitHub 페이지 배포의 경우, 보통 '/<projectName>/'입니다.
+  baseUrl: "/wiki",
+
+  // GitHub 페이지 배포 구성.
+  // GitHub 페이지를 사용하지 않는 경우에는 이 설정이 필요하지 않습니다.
+  organizationName: "AndrewDongminYoo",
+  projectName: "wiki",
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  // i18n(internalization)을 사용하지 않더라도 이 필드를 사용하여 유용한 메타데이터를 설정할 수 있습니다.
   i18n: {
     defaultLocale: "ko",
     locales: ["ko", "en"],
@@ -39,17 +38,9 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -61,7 +52,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      // TODO: 프로젝트의 소셜 카드로 바꾸기
       image: "img/docusaurus-social-card.jpg",
       navbar: {
         title: "My Site",
@@ -71,6 +62,9 @@ const config = {
         },
         items: [
           {
+            type: "localeDropdown",
+          },
+          {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
@@ -78,7 +72,7 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/AndrewDongminYoo/wiki",
             label: "GitHub",
             position: "right",
           },
@@ -122,7 +116,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/AndrewDongminYoo/wiki",
               },
             ],
           },

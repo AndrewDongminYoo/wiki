@@ -9,7 +9,11 @@ spaces: false
 url: false
 whitespace: false
 
-# MD025/single-title/single-h1 - Multiple top-level headings in the same document
+# MD024/no-duplicate-heading - Multiple headings with the same content
+MD024: false
+# MD025/single-title - Multiple top-level headings in the same document
 MD025: false
 # MD026/no-trailing-punctuation: Trailing punctuation in heading
 MD026: false
+# MD046/code-block-style: Code block style [Expected: fenced; Actual: indented]
+MD046: false
