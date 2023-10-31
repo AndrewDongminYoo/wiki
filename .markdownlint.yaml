@@ -9,5 +9,7 @@ spaces: false
 url: false
 whitespace: false
 
-# Multiple Top Level Headers (#)
+# MD025/single-title/single-h1 - Multiple top-level headings in the same document
 MD025: false
+# MD026/no-trailing-punctuation: Trailing punctuation in heading
+MD026: false
