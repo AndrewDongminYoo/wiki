@@ -1,6 +1,5 @@
 /**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
+ * .module.css 접미사가있는 CSS 파일은 CSS 모듈로 취급되고 로컬로 스코핑됩니다.
  */
 
 .heroBanner {

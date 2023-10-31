@@ -1,10 +1,10 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * 여기에 포함된 모든 CSS는 전역으로 적용됩니다.
+ * 클래식 템플릿에는 기본적으로 Infima가 번들로 제공됩니다.
+ * Infima는 콘텐츠 중심 웹사이트에 적합하도록 설계된 CSS 프레임워크입니다.
  */
 
-/* You can override the default Infima variables here. */
+/* 여기에서 기본 Infima 변수를 재정의할 수 있습니다. */
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -17,8 +17,8 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+/* 가독성 문제를 해결하려면 어두운 모드에서 더 밝은 색상표를 선택해야 합니다. */
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;

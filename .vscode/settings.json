@@ -1,5 +1,6 @@
 {
   "files.associations": {
+    // MDX 파일 지원을 위한 라인
     "*.mdx": "markdown"
   }
 }
