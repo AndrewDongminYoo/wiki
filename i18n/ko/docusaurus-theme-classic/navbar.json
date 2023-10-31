@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "내 사이트",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "내 사이트 로고",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Tutorial": {
+    "message": "튜토리얼",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Blog": {
+    "message": "블로그",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.GitHub": {
+    "message": "깃허브",
+    "description": "Navbar item with label GitHub"
+  }
+}
