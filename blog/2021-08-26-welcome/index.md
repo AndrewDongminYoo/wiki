@@ -1,25 +1,25 @@
 ---
 slug: welcome
-title: Welcome
-authors: [slorber, yangshun]
-tags: [facebook, hello, docusaurus]
+title: 개요
+authors: andrew
+tags: [docusaurus]
 ---
 
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
+[도큐사우루스 블로그 기능](https://docusaurus.io/docs/blog)은 [블로그 플러그인](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog)에 의해 구동됩니다.
 
-Simply add Markdown files (or folders) to the `blog` directory.
+마크다운 파일(또는 폴더)을 `blog` 디렉터리에 추가하기만 하면 됩니다.
 
-Regular blog authors can be added to `authors.yml`.
+일반 블로그 작성자는 `authors.yml`에 추가할 수 있습니다.
 
-The blog post date can be extracted from filenames, such as:
+블로그 게시물 날짜는 파일 이름에서 추출할 수 있습니다:
 
-- `2019-05-30-welcome.md`
+- 2019-05-30-welcome.md`와 같이 파일 이름에서 추출할 수 있습니다.
 - `2019-05-30-welcome/index.md`
 
-A blog post folder can be convenient to co-locate blog post images:
+블로그 게시물 폴더는 블로그 게시물 이미지를 함께 배치하는 데 편리할 수 있습니다:
 
-![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)
+![도큐사우루스 봉제인형](./docusaurus-plushie-banner.jpeg)
 
-The blog supports tags as well!
+블로그는 태그도 지원합니다!
 
-**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+**블로그를 원하지 않는 경우**: 이 디렉토리를 삭제하고 Docusaurus 설정에서 `blog: false`를 사용하세요.

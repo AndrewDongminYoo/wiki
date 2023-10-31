@@ -10,7 +10,7 @@ sidebar_position: 1
 
 **새 사이트를 만들어** 시작하세요.
 
-또는 **[docusaurus.new](https://docusaurus.new)**로 **바로 도큐사우루스를 사용해 보세요**.
+또는 [**docusaurus.new**](https://docusaurus.new)로 바로 **도큐사우루스**를 사용해 보세요.
 
 ### 필요한 것
 

@@ -4,11 +4,11 @@ sidebar_position: 6
 
 # 축하합니다!
 
-이제 **도큐사우루스의 **기본 사항**을 배우고 **초기 템플릿\*\*을 약간 변경했습니다.
+이제 **도큐사우루스**의 **기본 사항**을 배우고 **초기 템플릿**을 약간 변경했습니다.
 
-도큐사우루스에는 **더 많은 **기능이 있습니다\*\*!
+도큐사우루스에는 **더 많은 기능**이 있습니다!
 
-시간이 **5분** 더 있으신가요? **[버전 관리](../tutorial-extras/manage-docs-versions.md)**와 **[i18n](../tutorial-extras/translate-your-site.md)**를 살펴보시기 바랍니다.
+시간이 **5분** 더 있으신가요? [**버전 관리**](../tutorial-extras/manage-docs-versions.md)와 [**i18n**](../tutorial-extras/translate-your-site.md)를 살펴보시기 바랍니다.
 
 이 튜토리얼에서 **불분명**하거나 **버그**한 부분이 있나요? [신고해 주세요!](https://github.com/facebook/docusaurus/discussions/4610)
 
