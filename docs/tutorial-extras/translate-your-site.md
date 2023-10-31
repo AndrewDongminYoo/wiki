@@ -2,26 +2,26 @@
 sidebar_position: 2
 ---
 
-# Translate your site
+# 사이트 번역하기
 
-Let's translate `docs/intro.md` to French.
+문서를 프랑스어로 번역해 봅시다.
 
-## Configure i18n
+## i18n 구성
 
-Modify `docusaurus.config.js` to add support for the `fr` locale:
+`docusaurus.config.js`를 수정하여 `fr` 로캘에 대한 지원을 추가합니다:
 
 ```js title="docusaurus.config.js"
 module.exports = {
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
+    defaultLocale: "en",
+    locales: ["en", "fr"],
   },
 };
 ```
 
-## Translate a doc
+## 문서 번역
 
-Copy the `docs/intro.md` file to the `i18n/fr` folder:
+`docs/intro.md` 파일을 `i18n/fr` 폴더에 복사합니다:
 
 ```bash
 mkdir -p i18n/fr/docusaurus-plugin-content-docs/current/
@@ -29,27 +29,27 @@ mkdir -p i18n/fr/docusaurus-plugin-content-docs/current/
 cp docs/intro.md i18n/fr/docusaurus-plugin-content-docs/current/intro.md
 ```
 
-Translate `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` in French.
+`i18n/fr/docusaurus-plugin-content-docs/current/intro.md`를 프랑스어로 번역합니다.
 
-## Start your localized site
+## 현지화된 사이트 시작
 
-Start your site on the French locale:
+프랑스어 로케일로 사이트를 시작합니다:
 
 ```bash
-npm run start -- --locale fr
+npm 실행 시작 -- --locale fr
 ```
 
-Your localized site is accessible at [http://localhost:3000/fr/](http://localhost:3000/fr/) and the `Getting Started` page is translated.
+현지화된 사이트는 [http://localhost:3000/fr/](http://localhost:3000/fr/)에서 액세스할 수 있으며 '시작하기' 페이지가 번역됩니다.
 
 :::caution
 
-In development, you can only use one locale at a same time.
+개발 시에는 동시에 하나의 로캘만 사용할 수 있습니다.
 
 :::
 
-## Add a Locale Dropdown
+## 로캘 드롭다운 추가
 
-To navigate seamlessly across languages, add a locale dropdown.
+여러 언어를 원활하게 탐색하려면 로캘 드롭다운을 추가하세요.
 
 Modify the `docusaurus.config.js` file:
 
@@ -60,7 +60,7 @@ module.exports = {
       items: [
         // highlight-start
         {
-          type: 'localeDropdown',
+          type: "localeDropdown",
         },
         // highlight-end
       ],
@@ -69,19 +69,19 @@ module.exports = {
 };
 ```
 
-The locale dropdown now appears in your navbar:
+이제 로캘 드롭다운이 탐색 모음에 나타납니다:
 
-![Locale Dropdown](./img/localeDropdown.png)
+![로캘 드롭다운](./img/localeDropdown.png)
 
-## Build your localized site
+## 현지화된 사이트 빌드
 
-Build your site for a specific locale:
+특정 로캘에 맞게 사이트를 빌드합니다:
 
 ```bash
 npm run build -- --locale fr
 ```
 
-Or build your site to include all the locales at once:
+또는 모든 로캘을 한 번에 포함하도록 사이트를 빌드하세요:
 
 ```bash
 npm run build

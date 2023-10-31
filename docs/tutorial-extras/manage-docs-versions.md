@@ -2,30 +2,30 @@
 sidebar_position: 1
 ---
 
-# Manage Docs Versions
+# 문서 버전 관리
 
-Docusaurus can manage multiple versions of your docs.
+도큐사우루스는 여러 버전의 문서를 관리할 수 있습니다.
 
-## Create a docs version
+## 문서 버전 만들기
 
-Release a version 1.0 of your project:
+프로젝트의 버전 1.0을 릴리스합니다:
 
 ```bash
 npm run docusaurus docs:version 1.0
 ```
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
+`docs` 폴더가 `versioned_docs/version-1.0`에 복사되고 `versions.json`이 생성됩니다.
 
-Your docs now have 2 versions:
+이제 문서에 두 가지 버전이 있습니다:
 
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
+- 버전 1.0 문서의 경우 `http://localhost:3000/docs/`에 `1.0`이 있습니다.
+- 곧 출시될 미출시 문서의 경우 `http://localhost:3000/docs/next/`에 `current`가 표시됩니다.
 
-## Add a Version Dropdown
+## 버전 드롭다운 추가
 
-To navigate seamlessly across versions, add a version dropdown.
+여러 버전을 원활하게 탐색하려면 버전 드롭다운을 추가하세요.
 
-Modify the `docusaurus.config.js` file:
+`docusaurus.config.js` 파일을 수정합니다:
 
 ```js title="docusaurus.config.js"
 module.exports = {
@@ -34,7 +34,7 @@ module.exports = {
       items: [
         // highlight-start
         {
-          type: 'docsVersionDropdown',
+          type: "docsVersionDropdown",
         },
         // highlight-end
       ],
@@ -43,13 +43,13 @@ module.exports = {
 };
 ```
 
-The docs version dropdown appears in your navbar:
+문서 버전 드롭다운이 탐색 모음에 나타납니다:
 
-![Docs Version Dropdown](./img/docsVersionDropdown.png)
+![문서 버전 드롭다운](./img/docsVersionDropdown.png)
 
-## Update an existing version
+## 기존 버전 업데이트
 
-It is possible to edit versioned docs in their respective folder:
+버전이 지정된 문서는 해당 폴더에서 편집할 수 있습니다:
 
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+- `versioned_docs/version-1.0/hello.md` 업데이트 `http://localhost:3000/docs/hello`
+- `docs/hello.md` 업데이트 `http://localhost:3000/docs/next/hello`

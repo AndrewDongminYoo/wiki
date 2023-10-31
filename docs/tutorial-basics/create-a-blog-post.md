@@ -2,13 +2,13 @@
 sidebar_position: 3
 ---
 
-# Create a Blog Post
+# 블로그 글 만들기
 
-Docusaurus creates a **page for each blog post**, but also a **blog index page**, a **tag system**, an **RSS** feed...
+도큐사우루스는 각 블로그 게시물에 대해 **페이지**를 생성할 뿐만 아니라 **블로그 색인 페이지**, **태그 시스템**, **RSS** 피드도 생성합니다...
 
-## Create your first Post
+## 첫 글 만들기
 
-Create a file at `blog/2021-02-28-greetings.md`:
+`blog/2021-02-28-greetings.md`에 파일을 만듭니다:
 
 ```md title="blog/2021-02-28-greetings.md"
 ---
@@ -26,9 +26,9 @@ authors:
 tags: [greetings]
 ---
 
-Congratulations, you have made your first post!
+첫 번째 게시물을 작성하셨습니다!
 
-Feel free to play around and edit this post as much you like.
+이 글을 마음껏 수정해 보세요.
 ```
 
-A new blog post is now available at [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings).
+새 블로그 게시물은 이제 [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings)에서 확인할 수 있습니다.

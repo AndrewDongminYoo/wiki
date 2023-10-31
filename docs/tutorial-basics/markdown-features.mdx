@@ -2,64 +2,66 @@
 sidebar_position: 4
 ---
 
-# Markdown Features
+# 마크다운 기능
 
-Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**.
+도큐사우루스는 **[마크다운](https://daringfireball.net/projects/markdown/syntax)**과 몇 가지 **추가 기능**을 지원합니다.
 
-## Front Matter
+## 프론트 매터
 
-Markdown documents have metadata at the top called [Front Matter](https://jekyllrb.com/docs/front-matter/):
+마크다운 문서는 상단에 [프론트 매터](https://jekyllrb.com/docs/front-matter/)라는 메타데이터가 있습니다:
 
-```text title="my-doc.md"
-// highlight-start
----
+```md title="my-doc.md"
+## // highlight-start
+
 id: my-doc-id
 title: My document title
 description: My document description
 slug: /my-custom-url
+
 ---
+
 // highlight-end
 
-## Markdown heading
+## 마크다운 제목
 
-Markdown text with [links](./hello.md)
+[링크](./hello.md)를 사용한 마크다운 텍스트
 ```
 
-## Links
+## 링크
 
-Regular Markdown links are supported, using url paths or relative file paths.
+URL 경로 또는 상대 파일 경로를 사용하는 일반 마크다운 링크가 지원됩니다.
 
 ```md
-Let's see how to [Create a page](/create-a-page).
+[페이지 만들기](/create-a-page) 방법을 살펴봅시다.
 ```
 
 ```md
-Let's see how to [Create a page](./create-a-page.md).
+[페이지 만들기](./create-a-page.md) 방법을 살펴봅니다.
 ```
 
-**Result:** Let's see how to [Create a page](./create-a-page.md).
+**결과:** [페이지 만들기](./create-a-page.md) 방법을 살펴봅니다.
 
-## Images
+## 이미지
 
-Regular Markdown images are supported.
+일반 마크다운 이미지가 지원됩니다.
 
-You can use absolute paths to reference images in the static directory (`static/img/docusaurus.png`):
+절대 경로를 사용하여 정적 디렉토리(`static/img/docusaurus.png`)에 있는 이미지를 참조할 수 있습니다:
 
 ```md
-![Docusaurus logo](/img/docusaurus.png)
+![도큐사우루스 로고](/img/docusaurus.png)
 ```
 
-![Docusaurus logo](/img/docusaurus.png)
+![도큐사우루스 로고](/img/docusaurus.png)
 
-You can reference images relative to the current file as well. This is particularly useful to colocate images close to the Markdown files using them:
+현재 파일을 기준으로 이미지를 참조할 수도 있습니다. 이 기능은 마크다운 파일을 사용하여 이미지를 마크다운 파일에 가깝게 배치할 때 특히 유용합니다:
 
 ```md
-![Docusaurus logo](./img/docusaurus.png)
+![도큐사우루스 로고](./img/docusaurus.png)
 ```
 
-## Code Blocks
+## 코드 블록
 
-Markdown code blocks are supported with Syntax highlighting.
+마크다운 코드 블록은 구문 강조 표시와 함께 지원됩니다.
 
     ```jsx title="src/components/HelloDocusaurus.js"
     function HelloDocusaurus() {
@@ -77,19 +79,21 @@ function HelloDocusaurus() {
 
 ## Admonitions
 
-Docusaurus has a special syntax to create admonitions and callouts:
+Docusaurus에는 훈계와 콜아웃을 생성하는 특별한 구문이 있습니다:
 
-    :::tip My tip
+```md
+:::tip My tip
 
-    Use this awesome feature option
+Use this awesome feature option
 
-    :::
+:::
 
-    :::danger Take care
+:::danger Take care
 
-    This action is dangerous
+This action is dangerous
 
-    :::
+:::
+```
 
 :::tip My tip
 
@@ -129,18 +133,19 @@ This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
 This is <Highlight color="#1877F2">Facebook blue</Highlight> !
 ```
 
-export const Highlight = ({children, color}) => (
+export const Highlight = ({ children, color }) => (
   <span
     style={{
       backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
+      borderRadius: "20px",
+      color: "#fff",
+      padding: "10px",
+      cursor: "pointer",
     }}
     onClick={() => {
       alert(`You clicked the color ${color} with label ${children}`);
-    }}>
+    }}
+  >
     {children}
   </span>
 );
