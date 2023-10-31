@@ -1,8 +1,19 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Docusaurus v2",
+  "docs": "https://v2.docusaurus.io/docs/typescript-support",
   // This file is not used in compilation. It is here just for a nice editor experience.
-  "extends": "@tsconfig/docusaurus/tsconfig.json",
+  // "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "_version": "2.0.0",
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "Node16"
+    "module": "Node16",
+    "jsx": "react",
+    "lib": ["dom"],
+    "types": ["node", "@docusaurus/module-type-aliases", "@docusaurus/theme-classic"],
+    "allowJs": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "skipLibCheck": true
   }
 }
