@@ -1,6 +1,7 @@
 import React from "react";
-import clsx from "clsx";
+import names from "clsx";
 import styles from "./styles.module.css";
+
 export default function CodeBlockLine({
   line,
   classNames,
@@ -13,7 +14,7 @@ export default function CodeBlockLine({
   }
   const lineProps = getLineProps({
     line,
-    className: clsx(classNames, showLineNumbers && styles.codeLine),
+    className: names(classNames, showLineNumbers && styles.codeLine),
   });
   const lineTokens = line.map((token, key) => (
     <span key={key} {...getTokenProps({ token, key })} />

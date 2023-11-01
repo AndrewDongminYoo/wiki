@@ -1,8 +1,9 @@
 import React from "react";
-import clsx from "clsx";
+import names from "clsx";
 import { translate } from "@docusaurus/Translate";
 import IconWordWrap from "@theme/Icon/WordWrap";
 import styles from "./styles.module.css";
+
 export default function WordWrapButton({ className, onClick, isEnabled }) {
   const title = translate({
     id: "theme.CodeBlock.wordWrapToggle",
@@ -14,7 +15,7 @@ export default function WordWrapButton({ className, onClick, isEnabled }) {
     <button
       type="button"
       onClick={onClick}
-      className={clsx(
+      className={names(
         "clean-btn",
         className,
         isEnabled && styles.wordWrapButtonEnabled,

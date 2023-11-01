@@ -1,5 +1,5 @@
 import React from "react";
-import clsx from "clsx";
+import names from "clsx";
 import Container from "@theme/CodeBlock/Container";
 import styles from "./styles.module.css";
 // <pre> tags in markdown map to CodeBlocks. They may contain JSX children. When
@@ -10,7 +10,7 @@ export default function CodeBlockJSX({ children, className }) {
     <Container
       as="pre"
       tabIndex={0}
-      className={clsx(styles.codeBlockStandalone, "thin-scrollbar", className)}
+      className={names(styles.codeBlockStandalone, "thin-scrollbar", className)}
     >
       <code className={styles.codeBlockLines}>{children}</code>
     </Container>

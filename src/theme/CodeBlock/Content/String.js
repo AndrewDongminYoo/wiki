@@ -1,5 +1,5 @@
 import React from "react";
-import clsx from "clsx";
+import names from "clsx";
 import { useThemeConfig, usePrismTheme } from "@docusaurus/theme-common";
 import {
   parseCodeBlockTitle,
@@ -50,7 +50,7 @@ export default function CodeBlockString({
   return (
     <Container
       as="div"
-      className={clsx(
+      className={names(
         blockClassName,
         language &&
           !blockClassName.includes(`language-${language}`) &&
@@ -65,11 +65,11 @@ export default function CodeBlockString({
               /* eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex */
               tabIndex={0}
               ref={wordWrap.codeBlockRef}
-              className={clsx(className, styles.codeBlock, "thin-scrollbar")}
+              className={names(className, styles.codeBlock, "thin-scrollbar")}
               style={style}
             >
               <code
-                className={clsx(
+                className={names(
                   styles.codeBlockLines,
                   showLineNumbers && styles.codeBlockLinesWithNumbering,
                 )}
