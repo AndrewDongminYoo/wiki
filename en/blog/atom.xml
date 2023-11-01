@@ -1,0 +1,1493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://your-docusaurus-test-site.com/wiki/en/blog</id>
+    <title>My Site Blog</title>
+    <updated>2023-06-20T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://your-docusaurus-test-site.com/wiki/en/blog"/>
+    <subtitle>My Site Blog</subtitle>
+    <icon>https://your-docusaurus-test-site.com/wiki/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[프론트+백엔드 개발자 로드맵]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/front-backend-developer-roadmap</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/front-backend-developer-roadmap"/>
+        <updated>2023-06-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[개발자로 한국에서 취직을 하려면 로드맵을 어떻게 정하는게 좋을지 궁금하신 것 같습니다. 웹 개발자는 크게 프론트엔드와 백엔드로 나뉘는데요, 프론트엔드는 웹사이트나 웹앱의 사용자 인터페이스를 담당하는 파트이고, 백엔드는 서버와 데이터베이스를 다루는 파트입니다.]]></summary>
+        <content type="html"><![CDATA[<p>개발자로 한국에서 취직을 하려면 로드맵을 어떻게 정하는게 좋을지 궁금하신 것 같습니다. 웹 개발자는 크게 프론트엔드와 백엔드로 나뉘는데요, 프론트엔드는 웹사이트나 웹앱의 사용자 인터페이스를 담당하는 파트이고, 백엔드는 서버와 데이터베이스를 다루는 파트입니다.
+프론트엔드 개발자가 되고 싶으시다면 JavaScript부터 공부하셔야 합니다. JavaScript는 웹사이트나 웹앱에 동적인 기능과 상호작용을 추가할 수 있는 언어입니다.
+프론트엔드 개발자 로드맵에 따르면, HTML/CSS와 JavaScript의 기본기를 다지신 후에는 다음과 같은 주제들을 공부하시면 좋습니다.</p>
+<ul>
+<li>웹 브라우저의 동작 방식과 성능 최적화</li>
+<li>반응형 디자인과 CSS 프레임워크</li>
+<li>자바스크립트 라이브러리와 프레임워크 (예: React, Vue, Angular)</li>
+<li>API와 HTTP 통신</li>
+<li>버전 관리 시스템 (예: Git)</li>
+<li>테스트 및 디버깅 도구</li>
+<li>타입스크립트와 GraphQL과 같은 심화 주제</li>
+</ul>
+<p>만약 백엔드 개발자가 되고 싶으시다면, HTML/CSS와 JavaScript 외에도 서버 사이드 언어 (예: Python, Java, Node.js)와 데이터베이스 (예: MySQL, MongoDB)를 배우셔야 합니다.
+백엔드 개발자 로드맵에 따르면, 서버 사이드 언어와 데이터베이스의 기본기를 다지신 후에는 다음과 같은 주제들을 공부하시면 좋습니다.</p>
+<ul>
+<li>RESTful API 설계와 구현</li>
+<li>인증과 보안</li>
+<li>캐싱과 로깅</li>
+<li>클라우드 서비스 (예: AWS, Azure)</li>
+<li>배포 및 운영 방법</li>
+<li>마이크로서비스와 컨테이너화</li>
+</ul>
+<p>위의 주제들은 모두 중요하고 유용하지만, 모든 것을 한 번에 배울 수 없습니다. 그러므로 자신의 목표와 관심 분야에 맞춰서 우선순위를 정하고 차근차근 공부해 나가시기 바랍니다.
+비전공자로서 단기간에 개발자로 취직을 하려면 많은 시간과 노력이 필요할 것입니다. 하지만 포기하지 마시고 꾸준히 학습하시면 분명 성장할 수 있습니다. 저도 여러분의 성공을 응원합니다!</p>
+<p>덧붙여서 직접 만든 작품들을 포트폴리오로 정리해 두시면 취직에 도움이 됩니다. 포트폴리오를 만들 때 참고할 수 있는 것은 여러 가지가 있습니다. 예를 들어,</p>
+<ul>
+<li>무료 템플릿을 이용해서 깔끔하고 전문적인 포트폴리오를 만들 수 있는 웹사이트</li>
+<li>개발자의 포트폴리오와 이력서 작성법에 대한 블로그 글</li>
+<li>스타트업 취업이 되는 개발자 포트폴리오 만드는 법에 대한 커뮤니티 게시글</li>
+</ul>
+<p>등이 있습니다.
+포트폴리오를 만들 때는 자신의 작업물을 잘 보여줄 수 있는 디자인과 내용을 선택하고, 자신이 한 부분과 역할을 명확하게 설명해주시면 좋습니다. 또한 포트폴리오의 주제와 분야가 자신이 지원하는 회사나 직무와 관련이 있도록 하시면 더욱 효과적입니다.</p>
+<ol>
+<li><a href="https://gmlwjd9405.github.io/2018/05/04/how-to-write-a-resume-for-a-developer.html">[포트폴리오・이력서] 개발자의 포트폴리오・이력서 작성법 ...</a></li>
+<li><a href="https://okky.kr/articles/1412554">OKKY - 스타트업 취업이 무조건 되는 개발자 포트폴리오 만들기</a></li>
+<li><a href="https://www.canva.com/ko_kr/create/portfolios/">포트폴리오 만들기. 무료 템플릿으로 만드는 깔끔한 포트폴리오 ...</a></li>
+<li><a href="https://www.codeit.kr/tutorials/38/frontend-2023">2023 프론트엔드 개발자 로드맵 ㅣ공부순서 총정리 (한글 ver ...</a></li>
+<li><a href="https://academy.dream-coding.com/pages/roadmap">로드맵 (공부순서) - 드림코딩 아카데미 | Dream Coding Academy</a></li>
+<li><a href="https://zero-base.co.kr/event/media_BE_school_roadmap">2023 백엔드 개발자 로드맵 feat. 현직 백엔드 개발자 | zero-base</a></li>
+</ol>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Static Property in Java Class]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/static-property-in-java-class</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/static-property-in-java-class"/>
+        <updated>2023-06-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[자바 파일은 크게 필드 \+ 생성자\+ 메서드로 구성되어 있고 그중 필드 부분에서 선언한 전역변수 와 정적 멤버변수 이 두가지는 static 영역에 데이터를 저장하고 사용한다. 이 영역에서 데이터는 프로그램의 시작부터 종료될 때까지 메모리에 남아 있다.]]></summary>
+        <content type="html"><![CDATA[<p>자바 파일은 크게 필드 + 생성자+ 메서드로 구성되어 있고 그중 필드 부분에서 선언한 전역변수 와 정적 멤버변수 이 두가지는 static 영역에 데이터를 저장하고 사용한다. 이 영역에서 데이터는 프로그램의 시작부터 종료될 때까지 메모리에 남아 있다.</p>
+<blockquote>
+<p>전역변수를 무분별하게 사용하면 메모리가 부족할 우려가 있으니 필요한 변수만 사용하기!</p>
+</blockquote>
+<ul>
+<li>패키지나 클래스 정보가 호출되는 시점에 즉시 메소드 영역에 올라간다</li>
+<li>static 이 붙은 클래스 멤버 필드, 멤버메서드 역시 포함이다</li>
+<li>JVM 종료 시점까지 사라지지 않고 유지된다</li>
+<li>클래스, 메소드 영역이라고 불린다.</li>
+</ul>
+<ol>
+<li>클래스 변수<!-- -->
+<ul>
+<li>static 키워드를 가지고 필드에 선언하는 변수 = 정적 필드 (메모리의 static 영역 사용)</li>
+<li>프로그램 시작시 생성, 프로그램 종료시 소멸</li>
+</ul>
+</li>
+<li>멤버 변수(인스턴스 변수)<!-- -->
+<ul>
+<li>static 키워드 없이 필드에 선언하는 변수 (메모리의 heap영역 사용)</li>
+<li>인스턴스 생성 시 생성, 참조하지 않을시 소멸(가비지 컬렉터가 소멸시킴)</li>
+</ul>
+</li>
+<li>지역 변수<!-- -->
+<ul>
+<li>메소드, 생성자, 초기화 블록 내부에서 선언하는 변수</li>
+<li>메소드 호출 시 생성, 메소드 종료시 소멸</li>
+<li>JVM은 자바 프로그램을 실행하기 위한 가상 머신, 자바 바이트코드를 실행하고 메모리 관리와 가비지 컬렉션(GC) 등의 작업을 수행.</li>
+<li>프로세스는 운영체제에서 실행 중인 프로그램을 의미. 각 프로세스는 독립된 메모리 공간을 할당받아 사용, 다른 프로세스와 데이터를 공유하려면 특별한 방법(IPC)이 필요.</li>
+<li>스레드는 프로세스 내에서 실행되는 작업의 단위. 하나의 프로세스에 여러 개의 스레드가 존재할 수 있으며 이들은 같은 메모리 공간을 공유하면서 동시에 작업을 수행 가능.</li>
+<li>JVM과 프로세스와 스레드는 서로 다른 개념이지만 관계 있음. 자바 프로그램이 실행되면 JVM이 시작되고 이 JVM은 하나의 프로세스. 이 JVM 프로세스 내부에서 여러 개의 스레드가 생성되어 작업을 수행.</li>
+</ul>
+</li>
+</ol>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[가장 많이 사용되는 주류 DB 4가지와 특징]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/four-mainstream-d-bs-and-features</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/four-mainstream-d-bs-and-features"/>
+        <updated>2023-05-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Summary]]></summary>
+        <content type="html"><![CDATA[<h2 id="summary">Summary</h2>
+<p>RDBMS에서 가장 많이 사용되는 데이터베이스 각각의 특징과 장단점</p>
+<ol>
+<li>
+<p>Oracle: Oracle Corporation에서 개발되었으며 현재 가장 널리 사용되는 RDBMS입니다.
+사용자 정의 유형, 상속 및 다형성과 같은 객체 지향 기능을 구현하는 RDBMS를 객체 관계형 데이터베이스 관리 시스템 (ORDBMS)이라고 합니다.
+Oracle Database는 관계형 모델을 객체 관계형 모델로 확장하여 복잡한 비즈니스 모델을 관계형 데이터베이스에 저장할 수 있습니다.</p>
+</li>
+<li>
+<p>MySQL: MySQL은 오픈 소스이며 무료이고 세계에서 가장 인기있는 DB입니다.</p>
+<p>MySQL은 관계형 데이터베이스입니다.
+MySQL소프트웨어는 오픈소스입니다.
+MySQL데이터베이스 서버는 매우 빠르고 안정적이며 확장 가능하며 사용하기 쉽습니다.
+MySQL서버는 클라이언트 / 서버 또는 임베디드 시스템에서 작동합니다.</p>
+</li>
+<li>
+<p>SQL Server: Microsoft에서 개발한 SQL Server는 세계에서 가장 널리 사용되는 데이터베이스 중 하나입니다. C, C++로 작성되어 있고 SQL Server는 Microsoft Azure Cloud의 일부입니다.</p>
+</li>
+<li>
+<p>PostgreSQL: PostgreSQL은 복잡한 데이터 워크로드를 안전하게 저장하며 SQL 언어를 사용하고 확장하는 오픈 소스 객체 관계형 데이터베이스 시스템입니다. PostgreSQL은 아키텍처, 안정성과 데이터 무결성, 강력한 기능 세트, 확장성 및 소프트웨어 뒤의 오픈소스 커뮤니티의 헌신으로 성능과 혁신적인 솔루션을 지속적으로 제공하는 것으로 유명합니다.</p>
+</li>
+</ol>
+<h3 id="references">References</h3>
+<p>(1) <a href="https://sw-ko.tistory.com/189">[데이터베이스] RDBMS 종류와 특성 - 차근차근</a>
+(2) <a href="https://lifelong-education-dr-kim.tistory.com/entry/%EA%B4%80%EA%B3%84%ED%98%95%EA%B3%BC-%EB%B9%84%EA%B4%80%EA%B3%84%ED%98%95-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B2%A0%EC%9D%B4%EC%8A%A4%EC%9D%98-%EC%A2%85%EB%A5%98%EC%99%80-%ED%8A%B9%EC%A7%95">관계형과 비관계형 데이터 베이스의 종류와 특징</a></p>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Generate Unicode emoji regular expression]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/generate-unicode-emoji-regular-expression</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/generate-unicode-emoji-regular-expression"/>
+        <updated>2023-05-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Question]]></summary>
+        <content type="html"><![CDATA[<h2 id="question">Question</h2>
+<pre><code class="language-plaintext">⚙ &lt;fe0f&gt; gear Unicode: `U+2699` `U+FE0F`, `UTF-8: E2 9A 99 EF B8 8F`
+</code></pre>
+<p>Write a regular expression that matches all Unicode emojis of this type.</p>
+<h2 id="answer">Answer</h2>
+<p>Sure, I can help you with that! Here's a regular expression that matches all Unicode emojis of this type:</p>
+<pre><code class="language-RegExp">\u2699[\uFE0E\uFE0F]
+</code></pre>
+<p>This regular expression matches the gear Unicode character (<code>U+2699</code>) followed by either the text presentation selector (<code>U+FE0E</code>) or the emoji presentation
+selector (<code>U+FE0F</code>). The "g" at the end of the regular expression means that it will match all occurrences of this pattern in a given string.</p>
+<p>I hope this helps! Let me know if you have any other questions.</p>
+<h2 id="question-1">Question</h2>
+<p>Write a regular expression that matches all Unicode emojis of this type.</p>
+<h2 id="answer-1">Answer</h2>
+<p>Sure, I can help you with that! Here's a regular expression that matches all Unicode emojis of this type:</p>
+<pre><code class="language-RegExp">[\u{1f600}-\u{1f64f}]
+</code></pre>
+<p>This regular expression uses the Unicode code point range for emoticons, which is U+1F600 to U+1F64F. The <code>/u</code> flag at the end of the expression enables
+Unicode mode in JavaScript, which allows the matching of Unicode characters beyond the BMP (Basic Multilingual Plane).</p>
+<p>This regular expression will match all emojis of this type, including smileys, people, animals, and other objects.</p>
+<h2 id="question-2">Question</h2>
+<p>Write a regular expression that matches all Unicode emoji characters of this type. not only people emojis but all of them</p>
+<h2 id="answer-2">Answer</h2>
+<p>Sure, I can help you with that! Here's a regular expression that matches all Unicode emoji characters:</p>
+<pre><code class="language-RegExp">[\u{1F000}-\u{1F6FF}\u{1F900}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{1F1E0}-\u{1F1FF}]
+</code></pre>
+<p>This regular expression uses Unicode character ranges to match all the different types of emoji characters. The ranges include:</p>
+<ul>
+<li><code>\u{1F000}-\u{1F6FF}</code>: 기타 기호 및 그림, 이모티콘, 교통 및 지도 기호 등.</li>
+<li><code>\u{1F900}-\u{1F9FF}</code>: 보조 기호 및 픽토그램.</li>
+<li><code>\u{2600}-\u{26FF}</code>: 기타 기호, 딩벳 등.</li>
+<li><code>\u{2700}-\u{27BF}</code>: 딩벳, 보조 화살표-C 등.</li>
+<li><code>\u{1F300}-\u{1F5FF}</code>: 날씨, 시간 등을 포함한 기타 기호 및 픽토그램.</li>
+<li><code>\u{1F680}-\u{1F6FF}</code>: 자동차, 자전거, 비행기 등을 포함한 교통수단 및 지도 기호.</li>
+<li><code>\u{1F1E0}-\u{1F1FF}</code>: 국가 국기를 나타내는 데 사용되는 지역 표시 기호.</li>
+</ul>
+<p>I hope this helps! Let me know if you have any other questions.</p>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[웹사이트의 리다이렉팅 방식]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/redirection-of-the-website</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/redirection-of-the-website"/>
+        <updated>2023-05-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[일반적으로 스마트폰을 이용해 웹사이트에 접속하면 모바일용 사이트로 리다이렉팅하는 경우가 많습니다. 이러한 리다이렉팅은 서버 측 리다이렉트 방식을 사용하여 구현할 수 있습니다. 서버 측 리다이렉트 방식은 HTTP 상태 코드 301 또는 302를 사용하여 클라이언트에게 새로운 URL로 이동하도록 지시합니다. 이 방식은 빠르게 작동하며, 검색엔진 최적화(SEO)에도 유리합니다.]]></summary>
+        <content type="html"><![CDATA[<p>일반적으로 스마트폰을 이용해 웹사이트에 접속하면 모바일용 사이트로 리다이렉팅하는 경우가 많습니다. 이러한 리다이렉팅은 서버 측 리다이렉트 방식을 사용하여 구현할 수 있습니다. 서버 측 리다이렉트 방식은 HTTP 상태 코드 301 또는 302를 사용하여 클라이언트에게 새로운 URL로 이동하도록 지시합니다. 이 방식은 빠르게 작동하며, 검색엔진 최적화(SEO)에도 유리합니다.
+하지만, 깃허브 페이지에서는 서버 측 리다이렉트를 직접 설정할 수 없습니다. 하지만, 깃허브 페이지의 정적 사이트에서 메타 리프레시 태그를 사용하여 리다이렉트를 구현할 수 있습니다. 메타 리프레시 태그는 <code>&lt;meta http-equiv="refresh" content="0;url=https://new-website.com"&gt;</code>와 같은 형태로 사용할 수 있습니다. 이 태그는 <code>content</code> 속성의 첫 번째 값으로 지정된 시간(초) 후에 <code>url</code>로 지정된 페이지로 이동합니다. 이 방식은 자바스크립트 리다이렉트 방식보다 빠르게 작동하며, 검색엔진 최적화(SEO)에도 더 유리합니다.
+메타 리프레시 태그는 웹 페이지를 다른 URL로 자동으로 리다이렉트하는 데 사용됩니다. 이 방식의 장점은 다음과 같습니다.</p>
+<ol>
+<li>쉽게 구현할 수 있습니다. 메타 리프레시 태그는 HTML 코드에 추가하기만 하면 됩니다.</li>
+<li>자바스크립트가 비활성화되어 있어도 작동합니다. 메타 리프레시 태그는 HTML 코드에 포함되므로, 자바스크립트가 비활성화되어 있어도 작동합니다.
+하지만, 메타 리프레시 태그에도 몇 가지 단점이 있습니다.</li>
+<li>검색엔진 최적화(SEO)에 불리할 수 있습니다. 메타 리프레시 태그는 검색엔진이 인식하기 어려울 수 있으며, 검색엔진 최적화(SEO)에 불리할 수 있습니다.</li>
+<li>사용자 경험을 저해할 수 있습니다. 메타 리프레시 태그로 인해 페이지가 자동으로 이동하면, 사용자가 원하지 않는 페이지로 이동될 수 있습니다. 이로 인해 사용자 경험이 저해될 수 있습니다.
+메타 리프레시 태그를 사용할 때는 이러한 장단점을 고려하여 적절하게 사용하는 것이 좋습니다.</li>
+</ol>
+<p>깃허브 페이지의 정적 사이트에서 자바스크립트 리다이렉트 메소드로 유저를 이동시키는 경우, 1초 정도의 지연이 발생할 수 있습니다.</p>
+<p>한 페이지에서 메타 태그 리다이렉트와 자바스크립트 리다이렉트를 병행하여 사용하는 경우, 다음과 같은 문제가 발생할 수 있습니다.</p>
+<ol>
+<li>사용자가 원하지 않는 페이지로 이동될 수 있습니다. 메타 태그 리다이렉트와 자바스크립트 리다이렉트가 서로 다른 URL로 이동하도록 설정된 경우, 사용자가 원하지 않는 페이지로 이동될 수 있습니다.</li>
+<li>검색엔진 최적화(SEO)에 불리할 수 있습니다. 검색엔진은 한 페이지에서 여러 가지 리다이렉팅 방식이 사용되는 경우, 해당 페이지의 콘텐츠를 정확하게 인식하기 어려울 수 있습니다. 이로 인해 검색엔진 최적화(SEO)에 불리할 수 있습니다.
+따라서, 한 페이지에서는 하나의 리다이렉팅 방식만 사용하는 것이 좋습니다. 리다이렉팅 방식을 선택할 때는 상황에 따라 적절한 방식을 선택하는 것이 중요합니다.</li>
+</ol>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NativeBatteryProvider - React Context Provider Pattern]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/native-battery-provider-react-context-provider-pattern</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/native-battery-provider-react-context-provider-pattern"/>
+        <updated>2023-05-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[다음은 NativeBatteryProvider라는 이름의 컴포넌트를 만드는 예시 코드입니다. 이 컴포넌트는 기기의 배터리 잔량을 정기적으로 쿼리하여 State 형태로 하위 컴포넌트들에게 전달합니다.]]></summary>
+        <content type="html"><![CDATA[<p>다음은 <code>NativeBatteryProvider</code>라는 이름의 컴포넌트를 만드는 예시 코드입니다. 이 컴포넌트는 기기의 배터리 잔량을 정기적으로 쿼리하여 <code>State&lt;number&gt;</code> 형태로 하위 컴포넌트들에게 전달합니다.</p>
+<pre><code class="language-jsx">import React, { createContext, useState, useEffect } from "react";
+import { NativeModules } from "react-native";
+const BatteryContext = createContext();
+const NativeBatteryProvider = ({ children }) =&gt; {
+  const [batteryLevel, setBatteryLevel] = useState(null);
+  useEffect(() =&gt; {
+    const interval = setInterval(() =&gt; {
+      NativeModules.BatteryStatus.getBatteryStatus((level) =&gt; {
+        setBatteryLevel(level);
+      });
+    }, 1000);
+    return () =&gt; clearInterval(interval);
+  }, []);
+  return (
+    &lt;BatteryContext.Provider value={batteryLevel}&gt;
+      &nbsp; &nbsp; &nbsp; {children}
+    &lt;/BatteryContext.Provider&gt;
+  );
+};
+export { BatteryContext, NativeBatteryProvider };
+</code></pre>
+<p>이 예제에서는 <code>NativeModules.BatteryStatus.getBatteryStatus</code> 메소드를 사용하여 배터리 잔량을 가져옵니다. 이 메소드는 네이티브 모듈에서 구현해야 합니다. 또한 <code>setInterval</code> 함수를 사용하여 1초마다 배터리 잔량을 쿼리합니다.
+이제 다른 컴포넌트에서 <code>useContext</code> Hook을 사용하여 <code>BatteryContext</code>의 값을 가져올 수 있습니다.</p>
+<pre><code class="language-jsx">import React, { useContext } from "react";
+import { Text } from "react-native";
+import { BatteryContext } from "./NativeBatteryProvider";
+const BatteryLevel = () =&gt; {
+  const batteryLevel = useContext(BatteryContext);
+  return &lt;Text&gt;Battery Level: {batteryLevel}&lt;/Text&gt;;
+};
+</code></pre>
+<p>이 예제에서는 <code>useContext</code> Hook을 사용하여 <code>BatteryContext</code>의 값을 가져와서 화면에 표시합니다.</p>
+<p>특정 무선 이어폰을 위한 네이티브 블루투스 모듈을 사용하여 여러가지 동작을 실행하고 이벤트 응답을 받으려면 다음과 같은 단계를 따르십시오:</p>
+<ol>
+<li>네이티브 모듈에서 블루투스 이벤트를 구독하고 이벤트가 발생할 때마다 React Native로 전달합니다. 이를 위해 <code>NativeEventEmitter</code> 클래스를 사용할 수 있습니다.</li>
+<li>React Native에서 <code>NativeEventEmitter</code> 인스턴스를 생성하고 <code>addListener</code> 메소드를 사용하여 이벤트를 구독합니다.</li>
+<li>이벤트가 발생할 때마다 상태를 업데이트하고 하위 컴포넌트들에게 전달합니다. 이를 위해 <code>Context.Provider</code>와 <code>useContext</code> Hook을 사용할 수 있습니다.
+다음은 이러한 기능을 구현하는 예시 코드입니다.</li>
+</ol>
+<pre><code class="language-jsx">import React, { createContext, useState, useEffect } from "react";
+import { NativeModules, NativeEventEmitter } from "react-native";
+const BluetoothContext = createContext();
+const BluetoothProvider = ({ children }) =&gt; {
+  const [batteryLevel, setBatteryLevel] = useState(null);
+  useEffect(() =&gt; {
+    const eventEmitter = new NativeEventEmitter(NativeModules.BluetoothModule);
+    const subscription = eventEmitter.addListener(
+      "BatteryLevelChanged",
+
+      (level) =&gt; {
+        setBatteryLevel(level);
+      },
+    );
+    return () =&gt; subscription.remove();
+  }, []);
+  return (
+    &lt;BluetoothContext.Provider value={{ batteryLevel }}&gt;
+      &nbsp; &nbsp; &nbsp; {children}
+    &lt;/BluetoothContext.Provider&gt;
+  );
+};
+export { BluetoothContext, BluetoothProvider };
+</code></pre>
+<p>이 예제에서는 <code>NativeEventEmitter</code> 클래스를 사용하여 네이티브 모듈에서 발생하는 <code>BatteryLevelChanged</code> 이벤트를 구독합니다. 이벤트가 발생할 때마다 상태를 업데이트하고 하위 컴포넌트들에게 전달합니다.
+이제 다른 컴포넌트에서 <code>useContext</code> Hook을 사용하여 <code>BluetoothContext</code>의 값을 가져올 수 있습니다.</p>
+<pre><code class="language-jsx">import React, { useContext } from "react";
+import { Text } from "react-native";
+import { BluetoothContext } from "./BluetoothProvider";
+const BatteryLevel = () =&gt; {
+  const { batteryLevel } = useContext(BluetoothContext);
+  return &lt;Text&gt;Battery Level: {batteryLevel}&lt;/Text&gt;;
+};
+</code></pre>
+<p>이 예제에서는 <code>useContext</code> Hook을 사용하여 <code>BluetoothContext</code>의 값을 가져와서 화면에 표시합니다.
+음악 재생 출력 변경 등의 메소드를 실행하려면 네이티브 모듈에서 해당 기능을 구현하고 React Native에서 해당 메소드를 호출해야 합니다.</p>
+<p>커스텀 훅이나 컨텍스트 프로바이더를 만드는 것에 대한 아키텍쳐 가이드는 다양한 방법이 있습니다. 일반적으로는 앱의 상태를 전역적으로 관리하고 하위 컴포넌트들에게 전달하는 데 사용됩니다.
+다음은 <code>NativeModules.BluetoothModule.changePlayback</code> 메소드를 호출하고 <code>changePlaybackResult</code> 이벤트를 리턴받아 상태를 업데이트하는 예시 코드입니다.</p>
+<pre><code class="language-jsx">import React, { createContext, useState, useEffect } from "react";
+import { NativeModules, NativeEventEmitter } from "react-native";
+const BluetoothContext = createContext();
+const BluetoothProvider = ({ children }) =&gt; {
+  const [playbackDevice, setPlaybackDevice] = useState(null);
+  useEffect(() =&gt; {
+    const eventEmitter = new NativeEventEmitter(NativeModules.BluetoothModule);
+    const subscription = eventEmitter.addListener(
+      "changePlaybackResult",
+
+      (device) =&gt; {
+        setPlaybackDevice(device);
+      },
+    );
+    return () =&gt; subscription.remove();
+  }, []);
+  const changePlayback = () =&gt; {
+    NativeModules.BluetoothModule.changePlayback();
+  };
+  return (
+    &lt;BluetoothContext.Provider value={{ playbackDevice, changePlayback }}&gt;
+      &nbsp; &nbsp; &nbsp; {children}
+    &lt;/BluetoothContext.Provider&gt;
+  );
+};
+export { BluetoothContext, BluetoothProvider };
+</code></pre>
+<p>이 예제에서는 <code>NativeEventEmitter</code> 클래스를 사용하여 네이티브 모듈에서 발생하는 <code>changePlaybackResult</code> 이벤트를 구독합니다. 이벤트가 발생할 때마다 상태를 업데이트하고 하위 컴포넌트들에게 전달합니다. 또한 <code>changePlayback</code> 함수를 정의하여 <code>NativeModules.BluetoothModule.changePlayback</code> 메소드를 호출합니다.
+이제 다른 컴포넌트에서 <code>useContext</code> Hook을 사용하여 <code>BluetoothContext</code>의 값을 가져올 수 있습니다.</p>
+<pre><code class="language-jsx">import React, { useContext } from "react";
+import { Text, Button } from "react-native";
+import { BluetoothContext } from "./BluetoothProvider";
+const PlaybackDevice = () =&gt; {
+  const { playbackDevice, changePlayback } = useContext(BluetoothContext);
+  return (
+    &lt;&gt;
+      &nbsp; &nbsp; &nbsp; &lt;Text&gt;Playback Device: {playbackDevice}&lt;/Text&gt;
+      &nbsp; &nbsp; &nbsp; &lt;Button onPress={changePlayback} title="Change Playback" /&gt;
+    &lt;/&gt;
+  );
+};
+</code></pre>
+<p>이 예제에서는 <code>useContext</code> Hook을 사용하여 <code>BluetoothContext</code>의 값을 가져와서 화면에 표시합니다. 또한 <code>Button</code> 컴포넌트의 <code>onPress</code> prop에 <code>changePlayback</code> 함수를 전달하여 버튼을 클릭하면 <code>NativeModules.BluetoothModule.changePlayback</code> 메소드가 호출되도록 합니다.</p>
+<p><code>Context.Provider</code>의 <code>value</code> prop에 전달하는 객체에는 프로바이더에서 관리하는 모든 상태와 메소드를 포함하는 것이 일반적입니다. 이렇게 하면 하위 컴포넌트들이 <code>useContext</code> Hook을 사용하여 상태와 메소드를 가져올 수 있습니다.
+예를 들어, 다음과 같은 코드에서는 <code>BluetoothContext.Provider</code>의 <code>value</code> prop에 전달하는 객체에 <code>playbackDevice</code> 상태와 <code>changePlayback</code> 메소드가 포함되어 있습니다.</p>
+<pre><code class="language-jsx">const BluetoothProvider = ({ children }) =&gt; {
+  const [playbackDevice, setPlaybackDevice] = useState(null);
+  const changePlayback = () =&gt; {
+    console.log("changed...!");
+  };
+  return (
+    &lt;BluetoothContext.Provider value={{ playbackDevice, changePlayback }}&gt;
+      &nbsp; &nbsp; &nbsp; {children}
+    &lt;/BluetoothContext.Provider&gt;
+  );
+};
+</code></pre>
+<p>이제 다른 컴포넌트에서 <code>useContext</code> Hook을 사용하여 <code>BluetoothContext</code>의 값을 가져올 수 있습니다.</p>
+<pre><code class="language-jsx">const PlaybackDevice = () =&gt; {
+  const { playbackDevice, changePlayback } = useContext(BluetoothContext);
+};
+</code></pre>
+<p>이 예제에서는 <code>useContext</code> Hook을 사용하여 <code>BluetoothContext</code>의 값을 가져와서 <code>playbackDevice</code> 상태와 <code>changePlayback</code> 메소드를 사용할 수 있습니다.</p>
+<p><code>useContext</code> Hook과 <code>Context.Provider</code>를 사용하지 않는 다른 접근 방법도 있습니다. 예를 들어, Redux와 같은 상태관리 라이브러리를 사용하여 앱의 상태를 전역적으로 관리할 수 있습니다.
+Redux는 전역 상태 저장소를 제공하고 액션을 사용하여 상태를 업데이트합니다. 이를 통해 앱의 모든 컴포넌트에서 상태를 가져오고 업데이트할 수 있습니다.
+다음은 Redux를 사용하여 앱의 상태를 관리하는 예시 코드입니다.</p>
+<pre><code class="language-jsx">import { createStore } from "redux";
+// 리듀서 함수 정의
+
+const reducer = (state = { playbackDevice: null }, action) =&gt; {
+  switch (action.type) {
+    case "SET_PLAYBACK_DEVICE":
+      return { ...state, playbackDevice: action.device };
+    default:
+      return state;
+  }
+};
+// 스토어 생성
+
+const store = createStore(reducer);
+// 스토어 구독
+
+store.subscribe(() =&gt; {
+  console.log(store.getState());
+});
+// 액션 디스패치
+
+store.dispatch({ type: "SET_PLAYBACK_DEVICE", device: "Speaker" });
+</code></pre>
+<p>이 예제에서는 <code>createStore</code> 함수를 사용하여 Redux 스토어를 생성합니다. 또한 <code>reducer</code> 함수를 정의하여 상태를 업데이트하는 방법을 지정합니다. 이후 <code>store.subscribe</code> 메소드를 사용하여 스토어의 변경 사항을 구독하고 <code>store.dispatch</code> 메소드를 사용하여 액션을 디스패치합니다.
+이 방법 외에도 MobX와 같은 다른 상태관리 라이브러리를 사용할 수도 있습니다. 이러한 라이브러리는 각각 고유한 방식으로 상태관리를 제공합니다.</p>
+<p><code>useContext</code> Hook과 <code>Context.Provider</code>를 사용하는 방법은 외부 라이브러리를 사용하지 않고 전역 상태를 관리하는 일반적인 방법 중 하나입니다. 그러나 이것이 유일한 방법은 아닙니다.
+예를 들어, React의 <code>props</code>를 사용하여 상위 컴포넌트에서 하위 컴포넌트로 상태와 메소드를 전달할 수 있습니다. 이 방법은 컴포넌트 계층이 깊지 않은 경우에 적합합니다.
+다음은 <code>props</code>를 사용하여 상위 컴포넌트에서 하위 컴포넌트로 상태와 메소드를 전달하는 예시 코드입니다.</p>
+<pre><code class="language-jsx">import React, { useState } from "react";
+import { Text, Button } from "react-native";
+const Parent = () =&gt; {
+  const [playbackDevice, setPlaybackDevice] = useState(null);
+  const changePlayback = () =&gt; {
+    console.log("changed...!");
+  };
+  return (
+    &lt;Child playbackDevice={playbackDevice} changePlayback={changePlayback} /&gt;
+  );
+};
+const Child = ({ playbackDevice, changePlayback }) =&gt; {
+  return (
+    &lt;&gt;
+      &nbsp; &nbsp; &nbsp; &lt;Text&gt;Playback Device: {playbackDevice}&lt;/Text&gt;
+      &nbsp; &nbsp; &nbsp; &lt;Button onPress={changePlayback} title="Change Playback" /&gt;
+    &lt;/&gt;
+  );
+};
+</code></pre>
+<p>이 예제에서는 <code>Parent</code> 컴포넌트에서 <code>useState</code> Hook을 사용하여 상태를 정의하고 <code>Child</code> 컴포넌트의 <code>props</code>로 전달합니다. 또한 <code>changePlayback</code> 함수를 정의하고 <code>Child</code> 컴포넌트의 <code>props</code>로 전달합니다.
+이 방법은 간단한 경우에 적합하지만 컴포넌트 계층이 깊어지면 복잡해질 수 있습니다. 이 경우에는 <code>useContext</code> Hook과 <code>Context.Provider</code>를 사용하는 것이 더 적합할 수 있습니다.</p>
+<p><code>RefObject</code>와 <code>useRef</code> Hook은 컴포넌트의 인스턴스 또는 DOM 요소에 대한 참조를 저장하는 데 사용됩니다. 이러한 기능은 상태관리와는 직접적으로 관련이 없습니다.
+그러나 <code>useRef</code> Hook을 사용하여 컴포넌트 간에 데이터를 전달하는 데 사용할 수 있습니다. 예를 들어, <code>forwardRef</code> 함수를 사용하여 하위 컴포넌트의 메소드를 상위 컴포넌트에서 호출할 수 있습니다.
+다음은 <code>useRef</code> Hook과 <code>forwardRef</code> 함수를 사용하여 하위 컴포넌트의 메소드를 상위 컴포넌트에서 호출하는 예시 코드입니다.</p>
+<pre><code class="language-jsx">import React, { useRef, forwardRef } from "react";
+import { Button } from "react-native";
+const Parent = () =&gt; {
+  const childRef = useRef();
+  const handleClick = () =&gt; {
+    childRef.current.changePlayback();
+  };
+  return (
+    &lt;&gt;
+      &nbsp; &nbsp; &nbsp; &lt;Child ref={childRef} /&gt;
+      &nbsp; &nbsp; &nbsp; &lt;Button onPress={handleClick} title="Change Playback" /&gt;
+    &lt;/&gt;
+  );
+};
+const Child = forwardRef((props, ref) =&gt; {
+  const changePlayback = () =&gt; {
+    console.log("changed...!");
+  }; // ref 객체에 메소드 할당
+  ref.current = { changePlayback };
+  return null;
+});
+</code></pre>
+<p>이 예제에서는 <code>Parent</code> 컴포넌트에서 <code>useRef</code> Hook을 사용하여 <code>childRef</code> 객체를 생성합니다. 이 객체는 <code>Child</code> 컴포넌트의 인스턴스에 대한 참조를 저장합니다. 또한 <code>Button</code> 컴포넌트의 <code>onPress</code> prop에 <code>handleClick</code> 함수를 전달하여 버튼을 클릭하면 <code>Child</code> 컴포넌트의 <code>changePlayback</code> 메소드가 호출되도록 합니다.
+<code>Child</code> 컴포넌트에서는 <code>forwardRef</code> 함수를 사용하여 <code>ref</code> prop을 전달받습니다. 이 prop은 상위 컴포넌트에서 생성한 <code>childRef</code> 객체와 동일합니다. 이제 이 객체의 <code>current</code> 속성에 <code>changePlayback</code> 메소드를 할당하여 상위 컴포넌트에서 호출할 수 있도록 합니다.
+이 방법은 특정 경우에 유용할 수 있지만 일반적으로는 상태관리에 사용되지 않습니다. 상태관리에는 일반적으로 <code>useContext</code> Hook과 <code>Context.Provider</code>, 또는 외부 상태관리 라이브러리가 사용됩니다.</p>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Monad Pattern]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/monad-pattern</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/monad-pattern"/>
+        <updated>2023-05-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[What is MONAD and How Can we Implement it]]></summary>
+        <content type="html"><![CDATA[<h2 id="what-is-monad-and-how-can-we-implement-it">What is MONAD and How Can we Implement it</h2>
+<p>프로그래밍에서 모나드는 함수형 프로그래밍에서 사용되는 디자인 패턴 중 하나입니다. 모나드는 값을 캡슐화하고, 그 값을 변환하는 함수를 체이닝하는 방식으로 작동합니다. 이를 통해 코드의 가독성을 높이고, 부수 효과를 제어할 수 있습니다. Haskell 언어에서 모나드는 매우 중요한 개념으로 사용됩니다.
+스칼라에서 모나드는 트레이트(trait)로 구현됩니다. 모나드는 <code>flatMap</code>과 <code>unit</code>이라는 두 가지 메소드를 가지고 있습니다. 다음은 스칼라에서 <code>Option</code> 모나드의 예제입니다.</p>
+<pre><code class="language-scala">val opt1: Option[Int] = Some(3)
+val opt2: Option[Int] = Some(5)
+val opt3: Option[Int] = None
+val result = for {
+&nbsp; x &lt;- opt1
+&nbsp; y &lt;- opt2
+} yield x + y
+println(result) // Some(8)
+val result2 = for {
+&nbsp; x &lt;- opt1
+&nbsp; y &lt;- opt3
+} yield x + y
+println(result2) // None
+</code></pre>
+<p>위의 예제에서 <code>for</code> 구문은 <code>flatMap</code>과 <code>map</code>을 사용하여 변환됩니다. <code>Option</code> 모나드는 값이 있을 수도 있고 없을 수도 있는 상황에서 안전한 연산을 가능하게 합니다.
+<code>flatMap</code>과 <code>unit</code>은 모나드의 두 가지 기본 연산입니다. <code>flatMap</code>은 모나드 값을 받아서 다른 모나드 값을 반환하는 함수를 적용하는 연산입니다. 이를 통해 모나드 값을 변환하고 체이닝할 수 있습니다. <code>unit</code>은 일반 값을 모나드 값으로 변환하는 연산입니다.
+다음은 스칼라에서 <code>List</code> 모나드의 <code>flatMap</code>과 <code>unit</code> 예제입니다.</p>
+<pre><code class="language-scala">val list1 = List(1, 2, 3)
+val list2 = List(4, 5, 6)
+val result = list1.flatMap(x =&gt; list2.map(y =&gt; x + y))
+println(result) // List(5, 6, 7, 6, 7, 8, 7, 8, 9)
+val unitResult = List.unit(3)
+println(unitResult) // List(3)
+</code></pre>
+<p>위의 예제에서 <code>flatMap</code>은 <code>list1</code>의 각 요소에 대해 함수를 적용하여 새로운 리스트를 생성하고 이를 하나의 리스트로 합칩니다. <code>unit</code>은 일반 값을 리스트로 변환합니다.
+자바스크립트는 함수형 프로그래밍을 지원하는 언어이기 때문에 모나드 패턴을 사용할 수 있습니다. 다음은 자바스크립트에서 <code>Maybe</code> 모나드의 예제입니다.</p>
+<pre><code class="language-javascript">class Maybe {
+  constructor(value) {
+    this.value = value;
+  }
+  static of(value) {
+    return new Maybe(value);
+  }
+  isNothing() {
+    return this.value === null || this.value === undefined;
+  }
+  map(fn) {
+    return this.isNothing() ? Maybe.of(null) : Maybe.of(fn(this.value));
+  }
+  flatMap(fn) {
+    return this.map(fn).join();
+  }
+  join() {
+    return this.isNothing() ? Maybe.of(null) : this.value;
+  }
+}
+const maybe1 = Maybe.of(3);
+const maybe2 = Maybe.of(null);
+const result = maybe1.flatMap((x) =&gt; Maybe.of(x + 2));
+console.log(result); // Maybe { value: 5 }
+const result2 = maybe2.flatMap((x) =&gt; Maybe.of(x + 2));
+console.log(result2); // Maybe { value: null }
+</code></pre>
+<p>위의 예제에서 <code>Maybe</code> 모나드는 값이 있을 수도 있고 없을 수도 있는 상황에서 안전한 연산을 가능하게 합니다. <code>flatMap</code>은 <code>Maybe</code> 값을 받아서 다른 <code>Maybe</code> 값을 반환하는 함수를 적용하는 연산입니다.
+다음은 자바스크립트에서 <code>Promise</code> 모나드의 예제입니다.</p>
+<pre><code class="language-javascript">const promise1 = Promise.resolve(3);
+const promise2 = Promise.reject(new Error("An error occurred"));
+const result = promise1.then((x) =&gt; x + 2);
+result.then(console.log); // 5
+const result2 = promise2.then((x) =&gt; x + 2);
+result2.catch(console.log); // Error: An error occurred
+</code></pre>
+<p>위의 예제에서 <code>Promise</code>는 비동기 연산의 결과를 캡슐화하는 모나드입니다. <code>then</code> 메소드는 <code>Promise</code> 값을 받아서 다른 <code>Promise</code> 값을 반환하는 함수를 적용하는 연산입니다. 이를 통해 비동기 연산을 체이닝하고 에러 처리를 할 수 있습니다.</p>
+<h2 id="모나드-패턴의-장점">모나드 패턴의 장점</h2>
+<ol>
+<li>코드의 가독성 향상: 모나드를 사용하면 코드의 가독성이 높아집니다. 모나드는 값을 캡슐화하고, 그 값을 변환하는 함수를 체이닝하는 방식으로 작동하기 때문에 코드가 간결해집니다.</li>
+<li>부수 효과 제어: 모나드를 사용하면 부수 효과를 제어할 수 있습니다. 예를 들어 <code>Maybe</code> 모나드는 값이 있을 수도 있고 없을 수도 있는 상황에서 안전한 연산을 가능하게 합니다. <code>Promise</code> 모나드는 비동기 연산의 결과를 캡슐화하여 에러 처리를 할 수 있게 합니다.</li>
+<li>추상화: 모나드는 추상화 수준을 높여줍니다. 예를 들어 <code>List</code> 모나드는 리스트에 대한 연산을 추상화하여 코드의 재사용성을 높여줍니다.</li>
+<li>함수형 프로그래밍 지원: 모나드는 함수형 프로그래밍 패러다임을 지원합니다. 함수형 프로그래밍은 순수 함수와 불변성을 강조하여 코드의 예측 가능성과 안정성을 높여줍니다.</li>
+</ol>
+<h2 id="타입스크립트에서-모나드를-구현할-때-주로-사용되는-키워드와-패턴">타입스크립트에서 모나드를 구현할 때 주로 사용되는 키워드와 패턴</h2>
+<ol>
+<li>
+<p>인터페이스와 제네릭: 타입스크립트에서 모나드는 인터페이스와 제네릭을 사용하여 구현됩니다. 인터페이스를 사용하면 모나드가 가져야 할 메소드를 정의할 수 있습니다. 제네릭을 사용하면 모나드가 다양한 타입의 값을 캡슐화할 수 있습니다.</p>
+<pre><code class="language-typescript">interface Monad&lt;T&gt; {
+  flatMap&lt;U&gt;(fn: (value: T) =&gt; Monad&lt;U&gt;): Monad&lt;U&gt;;
+  unit(value: T): Monad&lt;T&gt;;
+}
+</code></pre>
+</li>
+<li>
+<p>클래스와 메소드: 타입스크립트에서 모나드는 클래스로 구현됩니다. 클래스를 사용하면 모나드의 인스턴스를 생성하고 메소드를 정의할 수 있습니다.</p>
+<pre><code class="language-typescript">class Maybe&lt;T&gt; implements Monad&lt;T&gt; {
+  constructor(private value: T | null) {}
+  static of&lt;T&gt;(value: T | null) {
+    return new Maybe(value);
+  }
+  flatMap&lt;U&gt;(fn: (value: T) =&gt; Maybe&lt;U&gt;): Maybe&lt;U&gt; {
+    return this.value === null ? Maybe.of(null) : fn(this.value);
+  }
+  unit(value: T): Maybe&lt;T&gt; {
+    return Maybe.of(value);
+  }
+}
+</code></pre>
+</li>
+<li>
+<p>함수 체이닝: 타입스크립트에서 모나드는 함수 체이닝 패턴을 사용하여 작동합니다. <code>flatMap</code> 메소드를 사용하면 모나드 값을 변환하고 체이닝할 수 있습니다.</p>
+<pre><code class="language-typescript">const maybe1 = Maybe.of(3);
+const maybe2 = Maybe.of(null);
+const result = maybe1.flatMap((x) =&gt; Maybe.of(x + 2));
+console.log(result); // Maybe { value: 5 }
+const result2 = maybe2.flatMap((x) =&gt; Maybe.of(x + 2));
+console.log(result2); // Maybe { value: null }
+</code></pre>
+</li>
+</ol>
+<p>다음은 타입스크립트에서 <code>Either</code> 모나드의 예제입니다.</p>
+<pre><code class="language-typescript">type Either&lt;L, R&gt; = Left&lt;L, R&gt; | Right&lt;L, R&gt;;
+class Left&lt;L, R&gt; {
+  constructor(readonly value: L) {}
+  static of&lt;L, R&gt;(value: L) {
+    return new Left&lt;L, R&gt;(value);
+  }
+  flatMap&lt;U&gt;(fn: (value: R) =&gt; Either&lt;L, U&gt;): Either&lt;L, U&gt; {
+    return this as Either&lt;L, U&gt;;
+  }
+  unit(value: R): Either&lt;L, R&gt; {
+    return Right.of(value);
+  }
+}
+class Right&lt;L, R&gt; {
+  constructor(readonly value: R) {}
+  static of&lt;L, R&gt;(value: R) {
+    return new Right&lt;L, R&gt;(value);
+  }
+  flatMap&lt;U&gt;(fn: (value: R) =&gt; Either&lt;L, U&gt;): Either&lt;L, U&gt; {
+    return fn(this.value);
+  }
+  unit(value: R): Either&lt;L, R&gt; {
+    return Right.of(value);
+  }
+}
+const either1: Either&lt;string, number&gt; = Right.of(3);
+const either2: Either&lt;string, number&gt; = Left.of("An error occurred");
+const result = either1.flatMap((x) =&gt; Right.of(x + 2));
+console.log(result); // Right { value: 5 }
+const result2 = either2.flatMap((x) =&gt; Right.of(x + 2));
+console.log(result2); // Left { value: 'An error occurred' }
+</code></pre>
+<p>위의 예제에서 <code>Either</code> 모나드는 값을 캡슐화하고 에러 처리를 가능하게 합니다. <code>flatMap</code> 메소드는 <code>Either</code> 값을 받아서 다른 <code>Either</code> 값을 반환하는 함수를 적용하는 연산입니다. 이를 통해 연산을 체이닝하고 에러 처리를 할 수 있습니다.
+<code>infer</code> 키워드는 타입스크립트에서 조건부 타입을 정의할 때 사용되는 키워드입니다. <code>infer</code> 키워드를 사용하면 타입을 추론할 수 있습니다. <code>infer</code> 키워드는 모나드와 직접적인 관련이 없지만, 모나드를 구현할 때 유용하게 사용될 수 있습니다.
+다음은 <code>infer</code> 키워드를 사용하여 <code>Unwrap</code> 타입을 정의하는 예제입니다.</p>
+<pre><code class="language-typescript">type Unwrap&lt;T&gt; = T extends Monad&lt;infer U&gt; ? U : never;
+interface Monad&lt;T&gt; {
+  flatMap&lt;U&gt;(fn: (value: T) =&gt; Monad&lt;U&gt;): Monad&lt;U&gt;;
+  unit(value: T): Monad&lt;T&gt;;
+}
+class Maybe&lt;T&gt; implements Monad&lt;T&gt; {
+  constructor(private value: T | null) {}
+  static of&lt;T&gt;(value: T | null) {
+    return new Maybe(value);
+  }
+  flatMap&lt;U&gt;(fn: (value: T) =&gt; Maybe&lt;U&gt;): Maybe&lt;U&gt; {
+    return this.value === null ? Maybe.of(null) : fn(this.value);
+  }
+  unit(value: T): Maybe&lt;T&gt; {
+    return Maybe.of(value);
+  }
+}
+const maybe1 = Maybe.of(3);
+type Result = Unwrap&lt;typeof maybe1&gt;; // number
+</code></pre>
+<p>위의 예제에서 <code>Unwrap</code> 타입은 <code>Monad</code> 타입의 값을 추론하여 그 내부의 값을 반환하는 타입입니다. 이를 통해 모나드의 내부 값을 추론할 수 있습니다.
+다음은 타입스크립트에서 <code>IO</code> 모나드의 예제입니다.</p>
+<pre><code class="language-typescript">class IO&lt;T&gt; {
+  constructor(private effect: () =&gt; T) {}
+  static of&lt;T&gt;(value: T) {
+    return new IO(() =&gt; value);
+  }
+  static from&lt;T&gt;(effect: () =&gt; T) {
+    return new IO(effect);
+  }
+  flatMap&lt;U&gt;(fn: (value: T) =&gt; IO&lt;U&gt;): IO&lt;U&gt; {
+    return new IO(() =&gt; fn(this.effect()).run());
+  }
+  unit(value: T): IO&lt;T&gt; {
+    return IO.of(value);
+  }
+  run() {
+    return this.effect();
+  }
+}
+const io1 = IO.from(() =&gt; {
+  console.log("Hello");
+  return "Hello";
+});
+const io2 = io1.flatMap((x) =&gt; IO.from(() =&gt; x + " World"));
+io2.run(); // Hello World
+</code></pre>
+<p>위의 예제에서 <code>IO</code> 모나드는 부수 효과를 캡슐화하는 모나드입니다. <code>flatMap</code> 메소드는 <code>IO</code> 값을 받아서 다른 <code>IO</code> 값을 반환하는 함수를 적용하는 연산입니다. 이를 통해 부수 효과를 체이닝하고 제어할 수 있습니다.
+다음은 타입스크립트에서 <code>IO</code> 모나드를 사용하여 부수 효과를 제어하는 예제입니다.</p>
+<pre><code class="language-typescript">class IO&lt;T&gt; {
+  constructor(private effect: () =&gt; T) {}
+  static of&lt;T&gt;(value: T) {
+    return new IO(() =&gt; value);
+  }
+  static from&lt;T&gt;(effect: () =&gt; T) {
+    return new IO(effect);
+  }
+  flatMap&lt;U&gt;(fn: (value: T) =&gt; IO&lt;U&gt;): IO&lt;U&gt; {
+    return new IO(() =&gt; fn(this.effect()).run());
+  }
+  unit(value: T): IO&lt;T&gt; {
+    return IO.of(value);
+  }
+  run() {
+    return this.effect();
+  }
+}
+const io1 = IO.from(() =&gt; {
+  console.log("First effect");
+  return "First";
+});
+const io2 = io1.flatMap((x) =&gt;
+  IO.from(() =&gt; {
+    console.log("Second effect");
+    return x + " Second";
+  }),
+);
+const io3 = io2.flatMap((x) =&gt;
+  IO.from(() =&gt; {
+    console.log("Third effect");
+    return x + " Third";
+  }),
+);
+io3.run(); // First effect Second effect Third effect
+</code></pre>
+<p>위의 예제에서 <code>IO</code> 모나드는 부수 효과를 캡슐화하고 체이닝합니다. <code>flatMap</code> 메소드를 사용하면 부수 효과를 순차적으로 실행할 수 있습니다. 이를 통해 부수 효과의 실행 순서를 제어할 수 있습니다.
+<code>flatMap</code> 메소드는 모나드 값을 받아서 다른 모나드 값을 반환하는 함수를 적용하는 연산입니다. 이를 통해 모나드 값을 변환하고 체이닝할 수 있습니다.
+<code>map</code> 메소드는 이터러블 객체의 각 요소에 대해 함수를 적용하여 새로운 이터러블 객체를 생성하는 연산입니다. <code>forEach</code> 메소드는 이터러블 객체의 각 요소에 대해 함수를 적용하지만 새로운 이터러블 객체를 생성하지 않습니다.</p>
+<h2 id="flatmap-메소드와-map-foreach-메소드의-차이점"><code>flatMap</code> 메소드와 <code>map</code>, <code>forEach</code> 메소드의 차이점</h2>
+<ol>
+<li>적용 대상: <code>flatMap</code> 메소드는 모나드 값에 적용되는 반면, <code>map</code>, <code>forEach</code> 메소드는 이터러블 객체에 적용됩니다.</li>
+<li>반환 값: <code>flatMap</code> 메소드는 모나드 값을 반환하는 반면, <code>map</code> 메소드는 이터러블 객체를 반환하고 <code>forEach</code> 메소드는 반환값이 없습니다.</li>
+<li>체이닝: <code>flatMap</code> 메소드는 모나드 값을 체이닝하는 데 사용됩니다. <code>map</code>, <code>forEach</code> 메소드는 이터러블 객체의 각 요소에 대해 함수를 적용하는 데 사용됩니다.</li>
+</ol>
+<p>모나드는 타입스크립트에서 기본적으로 정의된 타입이 아닙니다. 모나드는 함수형 프로그래밍에서 사용되는 디자인 패턴으로, 개발자가 직접 구현해야 합니다. 모나드는 <code>flatMap</code>과 <code>unit</code>이라는 두 가지 메소드를 가지고 있어야 하며, 이러한 메소드를 사용하여 값을 변환하고 체이닝하는 방식으로 작동합니다. 따라서 모나드는 사용하기로 약속된 규범이라고 볼 수 있습니다. 모나드라는 용어가 코드에 사용되면 다른 개발자들은 해당 타입이 <code>flatMap</code>과 <code>unit</code> 메소드를 가지고 있을 것이라고 예상할 수 있습니다. 이는 모나드가 함수형 프로그래밍에서 널리 사용되는 디자인 패턴이기 때문입니다.</p>
+<p>모나드의 인터페이스나 추상 클래스를 제공하는 타입 라이브러리는 존재하지 않습니다. 하지만 타입스크립트에서는 인터페이스를 사용하여 모나드가 가져야 할 메소드를 정의할 수 있습니다. 또한, 모나드를 구현한 모듈을 작성하여 임포트해서 사용할 수도 있습니다.</p>
+<pre><code class="language-typescript">interface Monad&lt;T&gt; {
+  flatMap&lt;U&gt;(fn: (value: T) =&gt; Monad&lt;U&gt;): Monad&lt;U&gt;;
+  unit(value: T): Monad&lt;T&gt;;
+}
+class Maybe&lt;T&gt; implements Monad&lt;T&gt; {
+  constructor(private value: T | null) {}
+  static of&lt;T&gt;(value: T | null) {
+    return new Maybe(value);
+  }
+  flatMap&lt;U&gt;(fn: (value: T) =&gt; Maybe&lt;U&gt;): Maybe&lt;U&gt; {
+    return this.value === null ? Maybe.of(null) : fn(this.value);
+  }
+  unit(value: T): Maybe&lt;T&gt; {
+    return Maybe.of(value);
+  }
+}
+</code></pre>
+<p>위의 예제에서 <code>Monad</code> 인터페이스는 모나드가 가져야 할 메소드를 정의합니다. <code>Maybe</code> 클래스는 <code>Monad</code> 인터페이스를 구현하여 <code>flatMap</code>과 <code>unit</code> 메소드를 정의합니다.</p>
+<p>타입스크립트의 미리 정의된 유틸리티 타입 중에는 모나드의 구현체가 없습니다. 모나드는 함수형 프로그래밍에서 사용되는 디자인 패턴으로, 개발자가 직접 구현해야 합니다. 타입스크립트에서는 인터페이스와 제네릭을 사용하여 모나드를 구현할 수 있습니다.</p>
+<p>자바스크립트의 객체는 불변성을 가지고 있지 않습니다. 이는 객체의 속성이 변경될 수 있다는 것을 의미합니다. 이러한 특성은 모나드의 구현에 문제를 일으킬 수 있습니다. 모나드는 함수형 프로그래밍에서 사용되는 디자인 패턴으로, 순수 함수와 불변성을 강조합니다. 따라서 모나드를 사용할 때는 객체의 불변성을 유지하는 것이 중요합니다. 자바스크립트에서는 <code>Object.freeze</code> 메소드를 사용하여 객체의 불변성을 유지할 수 있습니다.</p>
+<pre><code class="language-javascript">const obj = { x: 3 };
+Object.freeze(obj);
+obj.x = 4; // TypeError: Cannot assign to read only property 'x' of object '#&lt;Object&gt;'
+</code></pre>
+<p>위의 예제에서 <code>Object.freeze</code> 메소드를 사용하여 객체의 속성을 변경할 수 없도록 합니다. 이를 통해 객체의 불변성을 유지할 수 있습니다.
+다음은 자바스크립트에서 <code>Object.freeze</code> 메소드를 사용하는 예제입니다.</p>
+<pre><code class="language-javascript">const obj = { x: 3, y: { z: 5 } };
+Object.freeze(obj);
+obj.x = 4; // TypeError: Cannot assign to read only property 'x' of object '#&lt;Object&gt;'
+obj.y.z = 6; // No error
+console.log(obj); // { x: 3, y: { z: 6 } }
+</code></pre>
+<p>위의 예제에서 <code>Object.freeze</code> 메소드를 사용하여 객체의 속성을 변경할 수 없도록 합니다. 하지만 <code>Object.freeze</code> 메소드는 얕은 동결(shallow freeze)만 수행하기 때문에 중첩된 객체의 속성은 변경할 수 있습니다.</p>
+<pre><code class="language-javascript">const obj = { x: 3, y: { z: 5 } };
+Object.freeze(obj);
+Object.freeze(obj.y);
+obj.x = 4; // TypeError: Cannot assign to read only property 'x' of object '#&lt;Object&gt;'
+obj.y.z = 6; // TypeError: Cannot assign to read only property 'z' of object '#&lt;Object&gt;'
+console.log(obj); // { x: 3, y: { z: 5 } }
+</code></pre>
+<p>위의 예제에서 <code>Object.freeze</code> 메소드를 사용하여 중첩된 객체의 속성도 변경할 수 없도록 합니다. 이를 통해 객체의 불변성을 유지할 수 있습니다.
+<code>Object.freeze</code> 메소드를 사용하여 <code>enum</code>과 유사한 기능을 하는 객체를 생성할 수 있습니다. <code>Object.freeze</code> 메소드를 사용하면 객체의 속성을 변경할 수 없도록 할 수 있기 때문입니다.</p>
+<pre><code class="language-javascript">const Color = Object.freeze({
+  RED: "red",
+  GREEN: "green",
+  BLUE: "blue",
+});
+console.log(Color.RED); // red
+Color.RED = "yellow"; // TypeError: Cannot assign to read only property 'RED' of object '#&lt;Object&gt;'
+</code></pre>
+<p>위의 예제에서 <code>Object.freeze</code> 메소드를 사용하여 <code>Color</code> 객체의 속성을 변경할 수 없도록 합니다. 이를 통해 <code>enum</code>과 유사한 기능을 하는 객체를 생성할 수 있습니다.
+<code>immer.js</code>와 <code>lodash.js</code>는 모나드의 구현과 직접적인 관련이 없습니다. 하지만 이러한 라이브러리를 사용하면 모나드를 사용하는 코드의 가독성과 사용성을 높일 수 있습니다.</p>
+<pre><code class="language-javascript">import produce from "immer";
+const baseState = [
+  { task: "Learn typescript", done: true },
+  { task: "Try immer", done: false },
+];
+const nextState = produce(baseState, (draftState) =&gt; {
+  draftState.push({ task: "Tweet about it" });
+  draftState[1].done = true;
+});
+console.log(baseState); // [{ task: 'Learn typescript', done: true }, { task: 'Try immer', done: false }]
+console.log(nextState); // [{ task: 'Learn typescript', done: true }, { task: 'Try immer', done: true }, { task: 'Tweet about it' }]
+</code></pre>
+<p><code>immer.js</code>는 불변성을 유지하는 데이터 구조를 제공하는 라이브러리입니다. <code>immer.js</code>를 사용하면 모나드를 사용하는 코드에서 불변성을 쉽게 유지할 수 있습니다. 위의 예제에서 <code>produce</code> 함수를 사용하여 <code>baseState</code> 객체의 불변성을 유지하면서 새로운 상태를 생성합니다.</p>
+<pre><code class="language-javascript">import _ from "lodash";
+const users = [
+  { user: "barney", age: 36, active: true },
+  { user: "fred", age: 40, active: false },
+  { user: "pebbles", age: 1, active: true },
+];
+const result = _.filter(users, (o) =&gt; !o.active);
+console.log(result); // [{ user: 'fred', age: 40, active: false }]
+</code></pre>
+<p><code>lodash.js</code>는 유틸리티 함수를 제공하는 라이브러리입니다. <code>lodash.js</code>를 사용하면 모나드를 사용하는 코드에서 데이터 변환을 쉽게 할 수 있습니다. 위의 예제에서 <code>filter</code> 함수를 사용하여 <code>users</code> 배열에서 <code>active</code> 속성이 <code>false</code>인 요소만 추출합니다.</p>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[노코딩 프로토타입 와이어프레임 툴 비교]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/comparison-of-the-no-coding-prototype-wireframe-tool</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/comparison-of-the-no-coding-prototype-wireframe-tool"/>
+        <updated>2023-05-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[노코드/로우코드 프로토타이핑/와이어프레이밍 예시]]></summary>
+        <content type="html"><![CDATA[<h2 id="노코드로우코드-프로토타이핑와이어프레이밍-예시">노코드/로우코드 프로토타이핑/와이어프레이밍 예시</h2>
+<p>웹이나 모바일 앱의 컴포넌트들을 구성하고 배치해 볼 수 있는 프로토타이핑/와이어프레이밍 툴로는 웹플로우(Webflow)가 있습니다.&nbsp;<a href="https://www.inflearn.com/course/%EC%9B%B9%ED%94%8C%EB%A1%9C%EC%9A%B0-%EB%85%B8%EC%BD%94%EB%93%9C-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9D%B4%ED%95%91">웹플로우는 코딩 없이 자유도 높은 프로토타입을 만들 수 있는 노코드 웹 빌더입니다</a>. 다른 노코드 툴들도 있습니다.&nbsp;예를 들어 <a href="https://tkim.co/2020/04/19/no-code/">Glide와 Adalo는 모바일 앱을 만들 수 있는 노코드 툴입니다</a>. 이 외에도 다양한 노코드 툴들이 있습니다.</p>
+<h3 id="references">References</h3>
+<ol>
+<li><a href="https://www.inflearn.com/course/%EC%9B%B9%ED%94%8C%EB%A1%9C%EC%9A%B0-%EB%85%B8%EC%BD%94%EB%93%9C-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9D%B4%ED%95%91">inflearn.com</a></li>
+<li><a href="https://tkim.co/2020/04/19/no-code/">tkim.co</a></li>
+<li><a href="https://www.inflearn.com/course/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EC%88%A0%EB%85%B8%ED%8A%B8">inflearn.com</a></li>
+</ol>
+<h2 id="framer-protopie-bubble-retool">Framer, ProtoPie, Bubble, Retool</h2>
+<p>Framer와 ProtoPie는 프로토타이핑 툴입니다. Bubble과 Retool은 노코드 툴로 웹 애플리케이션을 만들 수 있습니다.&nbsp;Bubble은 코딩 없이 웹 애플리케이션을 만들 수 있고, Retool은 데이터베이스와 API를 연결하여 내부 비즈니스 앱을 빠르게 만들 수 있는 툴입니다<a href="https://rosettadigital.com/bubble-vs-retool/">Bubble vs Retool</a>.</p>
+<h3 id="references-1">References</h3>
+<ol>
+<li><a href="https://rosettadigital.com/bubble-vs-retool/">rosettadigital.com</a></li>
+<li><a href="https://sourceforge.net/software/compare/Bubble-vs-ProtoPie-vs-Retool-vs-WaveMaker-Platform/">sourceforge.net</a></li>
+<li><a href="https://sourceforge.net/software/compare/Bubble-vs-Forms-On-Fire-Mobile-vs-ProtoPie-vs-Retool/">sourceforge.net</a>+1</li>
+</ol>
+<h2 id="framer와-protopie의-차이점">Framer와 ProtoPie의 차이점</h2>
+<p>Framer와 ProtoPie는 모두 프로토타이핑 툴입니다. ProtoPie는 완전히 코딩 없는 프로토타입 툴로 디자이너들이 쉽게 사용할 수 있습니다. 다양한 기능과 통합 기능을 제공하며 고급 협업 기능을 갖추고 있습니다. Framer는 코딩을 알고 있는 디자인 팀에게 훌륭합니다.&nbsp;그러나 Framer는 다른 프로토타이핑 툴에 비해 학습 곡선이 높으며 기술적 배경이 부족한 디자이너들에게 이상적이지 않습니다<a href="https://www.protopie.io/blog/protopie-vs-framer"></a>.</p>
+<h3 id="references-2">References</h3>
+<ol>
+<li><a href="https://www.protopie.io/blog/protopie-vs-framer">protopie.io</a></li>
+<li><a href="https://www.g2.com/compare/framer-framer-vs-protopie">g2.com</a></li>
+<li><a href="https://stackshare.io/stackups/framer-vs-protopie">stackshare.io</a></li>
+</ol>
+<h2 id="framer의-장점">Framer의 장점</h2>
+<p>Framer는 디자인과 코드를 모두 사용하여 모바일 및 웹 인터페이스의 고품질 프로토타입을 만들 수 있습니다.&nbsp;<a href="https://www.framer.com/">새로운 프로젝트를 시작할 때 Photoshop에서 자산을 생성하고 스프링 물리학과 베지어 곡선 덕분에 3D 공간에서 레이어를 애니메이션화하며 CSS 변환을 기반으로 하드웨어 가속을 사용하여 높은 프레임 속도를 달성할 수 있습니다</a>.</p>
+<h3 id="references-3">References</h3>
+<ol>
+<li><a href="https://www.framer.com/">framer.com</a></li>
+<li><a href="https://webruden.tistory.com/225">webruden.tistory.com</a></li>
+<li><a href="https://blog.naver.com/PostView.nhn?blogId=tangunsoft&amp;logNo=222288124155">blog.naver.com</a>+1</li>
+</ol>
+<h2 id="protopie의-장점">ProtoPie의 장점</h2>
+<p>ProtoPie는 디자이너들이 상호작용 디자인 아이디어를 현실적인 프로토타입으로 쉽게 만들 수 있는 도구입니다. 스마트폰과 데스크탑부터 TV와 자동차 대시보드 화면까지 실제 디스플레이에서 내일의 디지털 경험을 만들고 테스트할 수 있습니다.&nbsp;ProtoPie를 사용하면 마이크로 상호작용부터 복잡한 다중 화면 애니메이션까지 모든 상호작용을 탐색할 수 있습니다<a href="https://www.protopie.io/"></a>.</p>
+<h3 id="references-4">References</h3>
+<ol>
+<li><a href="https://www.protopie.io/">protopie.io</a></li>
+<li><a href="https://www.protopie.io/learn/docs/introducing-protopie/getting-started">protopie.io</a></li>
+<li><a href="https://www.protopie.io/figma">protopie.io</a></li>
+</ol>
+<h2 id="protopie의-단점">ProtoPie의 단점</h2>
+<p>ProtoPie는 매우 강력한 프로토타이핑 툴이지만 모든 툴과 마찬가지로 몇 가지 단점이 있을 수 있습니다. ProtoPie의 단점 중 하나는 다른 프로토타이핑 툴에 비해 학습 곡선이 높을 수 있다는 것입니다. 또한 ProtoPie는 다른 디자인 툴과의 통합이 제한적일 수 있습니다. 하지만 이러한 단점들은 개인적인 선호도와 작업 스타일에 따라 다를 수 있습니다.</p>
+<h2 id="framer의-단점">Framer의 단점</h2>
+<p>Framer는 매우 강력한 프로토타이핑 툴이지만 모든 툴과 마찬가지로 몇 가지 단점이 있을 수 있습니다. Framer의 단점 중 하나는 다른 프로토타이핑 툴에 비해 학습 곡선이 높을 수 있다는 것입니다. 또한 Framer는 코딩 지식이 없는 디자이너들에게 이상적이지 않을 수 있습니다. 하지만 이러한 단점들은 개인적인 선호도와 작업 스타일에 따라 다를 수 있습니다.</p>
+<p>리액트네이티브 개발자가 개발하려는 앱의 프로토타이핑을 하려 할 때, 두 도구를 모두 사용해 본 적이 없다면 어떤 것을 사용하는 것이 더 개발자 경험과 결과물의 퀄리티 측면에서 좋습니까?</p>
+<p>Framer와 ProtoPie 모두 리액트 네이티브 개발자가 개발하려는 앱의 프로토타이핑을 위해 사용할 수 있는 강력한 툴입니다. Framer는 코딩 지식이 있는 디자인 팀에게 훌륭합니다. 그러나 Framer는 다른 프로토타이핑 툴에 비해 학습 곡선이 높으며 기술적 배경이 부족한 디자이너들에게 이상적이지 않을 수 있습니다. 반면 ProtoPie는 완전히 코딩 없는 프로토타입 툴로 디자이너들이 쉽게 사용할 수 있습니다. 따라서 리액트 네이티브 개발자가 개발하려는 앱의 프로토타이핑을 위해 어떤 툴을 사용할지 결정하기 전에 개인적인 선호도와 작업 스타일을 고려해야 합니다.</p>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[General Commands Manual BUILTIN]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/general-commands-manual-builtin</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/general-commands-manual-builtin"/>
+        <updated>2023-05-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[[] (c) 2003 The FreeBSD Documentation Project.]]></summary>
+        <content type="html"><![CDATA[<p>[] (c) 2003 The FreeBSD Documentation Project.</p>
+<p>[] The FreeBSD Documentation Project is a member of the FreeBSD Foundation.</p>
+<h2 id="name">NAME</h2>
+<pre><code class="language-sh">builtin, !, %, ., :, @, \[, {, }, alias, alloc, bg, bind, bindkey, break, breaksw, builtins, case, cd, chdir, command, complete,
+continue, default, dirs, do, done, echo, echotc, elif, else, end, endif, endsw, esac, eval, exec, exit, export, false, fc, fg,
+filetest, fi, for, foreach, getopts, glob, goto, hash, hashstat, history, hup, if, jobid, jobs, kill, limit, local, log, login,
+logout, ls-F, nice, nohup, notify, onintr, popd, printenv, printf, pushd, pwd, read, readonly, rehash, repeat, return, sched, set,
+setenv, settc, setty, setvar, shift, source, stop, suspend, switch, telltc, test, then, time, times, trap, true, type, ulimit,
+umask, unalias, uncomplete, unhash, unlimit, unset, unsetenv, until, wait, where, which, while – shell built-in commands
+</code></pre>
+<h2 id="synopsis">SYNOPSIS</h2>
+<p>See the built-in command description in the appropriate shell manual page.</p>
+<h2 id="description">DESCRIPTION</h2>
+<p>Shell builtin commands are commands that can be executed within the running shell's process. Note that, in the case of csh(1)
+builtin commands, the command is executed in a subshell if it occurs as any component of a pipeline except the last.</p>
+<p>If a command specified to the shell contains a slash <code>/</code>, the shell will not execute a builtin command, even if the last component.
+of the specified command matches the name of a builtin command. Thus, while specifying “echo” causes a builtin command to be
+executed under shells that support the echo builtin command, specifying “/bin/echo” or “./echo” does not.</p>
+<p>While some builtin commands may exist in more than one shell, their operation may be different under each shell which supports
+them. Below is a table which lists shell builtin commands, the standard shells that support them and whether they exist as
+standalone utilities.</p>
+<p>Only builtin commands for the csh(1) and sh(1) shells are listed here. Consult a shell's manual page for details on the operation
+of its builtin commands. Beware that the sh(1) manual page, at least, calls some of these commands “built-in commands” and some
+of them “reserved words”. Users of other shells may need to consult an info(1) page or other sources of documentation.</p>
+<p>Commands marked “No**” under External do exist externally, but are implemented as scripts using a builtin command of the same name.</p>
+<table><thead><tr><th style="text-align:center">command</th><th>external</th><th>csh</th><th>sh</th></tr></thead><tbody><tr><td style="text-align:center">!</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">%</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">.</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">:</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">@</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">[</td><td>Yes</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">{</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">}</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">alias</td><td>No**</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">alloc</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">bg</td><td>No**</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">bind</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">bindkey</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">break</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">breaksw</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">builtin</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">builtins</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">case</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">cd</td><td>No**</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">chdir</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">command</td><td>No**</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">complete</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">continue</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">default</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">dirs</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">do</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">done</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">echo</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">echotc</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">elif</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">else</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">end</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">endif</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">endsw</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">esac</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">eval</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">exec</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">exit</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">export</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">false</td><td>Yes</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">fc</td><td>No**</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">fg</td><td>No**</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">filetest</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">fi</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">for</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">foreach</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">getopts</td><td>No**</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">glob</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">goto</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">hash</td><td>No**</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">hashstat</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">history</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">hup</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">if</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">jobid</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">jobs</td><td>No**</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">kill</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">limit</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">local</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">log</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">login</td><td>Yes</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">logout</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">ls-F</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">popd</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">printenv</td><td>Yes</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">printf</td><td>Yes</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">pushd</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">pwd</td><td>Yes</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">read</td><td>No**</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">readonly</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">rehash</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">repeat</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">return</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">sched</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">set</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">setenv</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">settc</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">setty</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">setvar</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">shift</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">source</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">stop</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">suspend</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">switch</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">telltc</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">test</td><td>Yes</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">then</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">time</td><td>Yes</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">times</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">trap</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">true</td><td>Yes</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">type</td><td>No**</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">ulimit</td><td>No**</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">umask</td><td>No**</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">unalias</td><td>No**</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">uncomplete</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">unhash</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">unlimit</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">unset</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">unsetenv</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">until</td><td>No</td><td>No</td><td>Yes</td></tr><tr><td style="text-align:center">wait</td><td>No**</td><td>Yes</td><td>Yes</td></tr><tr><td style="text-align:center">where</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">which</td><td>Yes</td><td>Yes</td><td>No</td></tr><tr><td style="text-align:center">while</td><td>No</td><td>Yes</td><td>Yes</td></tr></tbody></table>
+<h2 id="see-also">SEE ALSO</h2>
+<p>csh(1), dash(1), echo(1), false(1), info(1), kill(1), login(1), nice(1), nohup(1), printenv(1), printf(1), pwd(1), sh(1), test(1),
+time(1), true(1), which(1), zsh(1)</p>
+<h2 id="history">HISTORY</h2>
+<p>The builtin manual page first appeared in FreeBSD 3.4.</p>
+<h2 id="authors">AUTHORS</h2>
+<p>This manual page was written by <a href="https://your-docusaurus-test-site.com/wiki/en/blog/sheldonh@FreeBSD.org">Sheldon Hearn</a>.</p>
+<pre><code class="language-spec"> macOS 13.3 December 21, 2010 m
+</code></pre>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to SignIn Git Credential]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/how-to-signin-git-credential</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/how-to-signin-git-credential"/>
+        <updated>2023-05-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Git 자격 증명에 로그인하려면 다음 단계를 따르세요:]]></summary>
+        <content type="html"><![CDATA[<p>Git 자격 증명에 로그인하려면 다음 단계를 따르세요:</p>
+<ol>
+<li>컴퓨터에서 (Git) Bash 또는 명령 프롬프트를 엽니다.</li>
+<li><code>git config --global credential.helper store</code>를 입력하고 Enter를 누릅니다. 로그인 자격 증명을 저장하도록 GIT가 구성됩니다.</li>
+<li><code>git config --global user.name</code>를 입력하고 Enter를 누릅니다. GIT 사용자 이름으로 교체하십시오.</li>
+<li><code>git config --global user.email</code>를 입력하고 Enter를 누릅니다. GIT 계정과 관련된 이메일 주소로 교체하십시오.</li>
+<li><code>git config --global credential.username</code>를 입력하고 Enter를 누릅니다. 이렇게하면 GIT 사용자 이름을 GIT 자격 증명의 기본 사용자 이름으로 설정합니다.</li>
+<li><code>git config --global credential.helper 'cache --timeout=3600'</code>를 입력하고 Enter를 누릅니다. 이로 인해 GIT 자격 증명에 대한 시간 초과 1 시간이 설정됩니다.</li>
+</ol>
+<p>이 단계를 완료하면 Git 사용자 이름과 비밀번호를 사용하여 Git 자격 증명에 로그인할 수 있습니다.</p>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[리눅스에서 사용하는 기호들의 사용방법]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/how-to-use-symbols-used-in-linux</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/how-to-use-symbols-used-in-linux"/>
+        <updated>2023-05-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- > : 출력 결과를 덮어쓰고 저장합니다. 예) ls > list.txt]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li><code>&gt;</code> : 출력 결과를 덮어쓰고 저장합니다. 예) <code>ls &gt; list.txt</code></li>
+<li><code>&gt;&gt;</code> : 출력 결과를 추가합니다. 예) <code>echo "World" &gt;&gt; hello.txt</code></li>
+<li><code>|</code> : 출력 결과를 다른 명령어의 입력으로 연결합니다. 예) <code>ls | wc -l</code></li>
+<li><code>;</code> : 여러 개의 명령어를 한 줄에 연속해서 실행합니다. 예) <code>ls; pwd; date</code></li>
+<li><code>&amp;</code> : 명령어를 백그라운드에서 실행합니다. 예) <code>sleep 10 &amp;</code></li>
+<li><code>$</code> : 환경 변수나 쉘 변수의 값을 참조합니다. 예) <code>echo $PATH</code></li>
+<li><code>\\</code> : 특수 문자의 기능을 없애고 그대로 인식하게 합니다. 예) <code>echo \\*</code></li>
+</ul>
+<p>이상으로 리눅스에서 사용하는 기호들의 사용방법을 리스트로 정리해보았습니다. 도움이 되셨으면 좋겠습니다.😊</p>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[what-command-create-multiple-files-in-cli]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/what-command-create-multiple-files-in-cli</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/what-command-create-multiple-files-in-cli"/>
+        <updated>2023-05-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[To create files A1.md through A10.md in one folder using the command-line interface (CLI), you can use a command called "touch" along with brace expansion. Here's an example of the command you can use:]]></summary>
+        <content type="html"><![CDATA[<pre><code class="language-sh">ygka "What command can you use to tell the CLI to create files A1.md through A10.md in one folder?"
+</code></pre>
+<p>To create files A1.md through A10.md in one folder using the command-line interface (CLI), you can use a command called "touch" along&nbsp;with brace expansion. Here's an example of the command you can use:</p>
+<pre><code class="language-sh">touch A{1..10}.md
+</code></pre>
+<p>This command will create 10 files in the current directory with the names A1.md through A10.md. The "touch" command is used to create&nbsp;empty files, and the brace expansion syntax <code>{1..10}</code> is used to generate a sequence of numbers from 1 to 10.</p>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MacOS Notes 애플리케이션 익스포트]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/mac-os-application-notes-export</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/mac-os-application-notes-export"/>
+        <updated>2023-04-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[iOS와 MacOS에서 사용하는 Notes 애플리케이션의 노트를 txt 파일이나 md 파일로 익스포트할 수 있습니다. 아래는 각각의 방법입니다.]]></summary>
+        <content type="html"><![CDATA[<p>iOS와 MacOS에서 사용하는 Notes 애플리케이션의 노트를 txt 파일이나 md 파일로 익스포트할 수 있습니다. 아래는 각각의 방법입니다.</p>
+<h2 id="ios에서-notes-노트를-txt-파일로-익스포트하는-방법">iOS에서 Notes 노트를 .txt 파일로 익스포트하는 방법</h2>
+<ol>
+<li>Notes 앱에서 익스포트하려는 노트를 선택합니다.</li>
+<li>노트 화면에서 더보기 버튼 (세 점)을 누르고 "전송"을 선택합니다.</li>
+<li>이어서 "문서"를 선택합니다.</li>
+<li>다음으로, "텍스트"를 선택합니다.</li>
+<li>텍스트 파일로 저장할 위치를 선택합니다.</li>
+</ol>
+<h2 id="macos에서-notes-노트를-txt-파일로-익스포트하는-방법">macOS에서 Notes 노트를 .txt 파일로 익스포트하는 방법</h2>
+<ol>
+<li>Notes 앱을 열고 익스포트하려는 노트를 선택합니다.</li>
+<li>노트 화면에서 "파일" 메뉴를 선택하고 "Export as PDF..."를 선택합니다.</li>
+<li>다른 이름으로 저장을 선택하고 파일 유형을 "텍스트"로 설정합니다.</li>
+<li>"저장" 버튼을 누릅니다.</li>
+</ol>
+<h2 id="macos에서-notes-노트를-md-파일로-익스포트하는-방법">macOS에서 Notes 노트를 .md 파일로 익스포트하는 방법</h2>
+<ol>
+<li>Notes 앱을 열고 익스포트하려는 노트를 선택합니다.</li>
+<li>노트 화면에서 "파일" 메뉴를 선택하고 "Export as PDF..."를 선택합니다.</li>
+<li>다른 이름으로 저장을 선택하고 파일 유형을 "Markdown"으로 설정합니다.</li>
+<li>"저장" 버튼을 누릅니다.</li>
+</ol>
+<p>이러한 단계를 수행하면 선택한 Notes 노트가 txt 파일이나 md 파일로 익스포트됩니다.</p>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GIT CHEAT SHEET]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/git-cheat-sheet</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/git-cheat-sheet"/>
+        <updated>2023-04-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[VERSION CONTROL TIPS]]></summary>
+        <content type="html"><![CDATA[<h2 id="version-control-tips">VERSION CONTROL TIPS</h2>
+<h3 id="commit-related-changes">COMMIT RELATED CHANGES</h3>
+<p>커밋은 관련 변경사항에 대한 래퍼여야 한다. 예를 들어 서로 다른 두 가지 버그를 수정하려면 두 개의 커밋을 생성해야 한다. 작은 커밋을 사용하면 다른 개발자가 변경 내용을 쉽게 이해하고 문제가 발생했을 때 롤백할 수 있다. 스테이징 영역과 파일의 일부만 스테이징하는 기능과 같은 도구를 사용하면 Git을 통해 매우 세분화된 커밋을 쉽게 만들 수 있다.</p>
+<h3 id="commit-often">COMMIT OFTEN</h3>
+<p>커밋을 자주 하면 커밋을 작게 유지할 수 있고, 관련 변경 사항만 커밋하는 데 도움이 된다. 또한 다른 사람들과 코드를 더 자주 공유할 수 있다. 이렇게 하면 모든 사람이 정기적으로 변경 사항을 통합하고 병합 충돌을 피하기가 더 쉬워진다. 반대로 큰 커밋을 거의 하지 않고 공유를 거의 하지 않으면 충돌을 해결하기가 어려워진다.</p>
+<h3 id="do-not-commit-half-done-work">DO NOT COMMIT HALF-DONE WORK</h3>
+<p>코드가 완료되었을 때만 커밋해야 한다. 그렇다고 해서 커밋하기 전에 전체 대규모 기능을 완료해야 한다는 뜻은 아니다. 오히려 기능 구현을 논리적인 덩어리로 나누고 '일찍 그리고 자주' 커밋하는 것을 잊지 말아야 한다. 하지만 하루 일과를 마치고 퇴근하기 전에 리포지토리에 무언가를 저장하기 위해 커밋하지 말 것.</p>
+<admonition title="Git Stash" type="danger"><p>브랜치를 체크아웃하거나 변경 사항을 가져오기 위해 깨끗한 작업 복사본이 필요하다는 이유만으로 커밋하고 싶은 유혹을 받는다면, 대신 Git의 "Stash" 기능을 사용하는 것이 좋다.</p></admonition>
+<h2 id="best-practices">BEST PRACTICES</h2>
+<h3 id="test-code-before-you-commit">TEST CODE BEFORE YOU COMMIT</h3>
+<p>완료되었다고 "생각되는" 내용을 커밋하려는 유혹을 뿌리쳐야 한다. 정말 완료되었는지, 부작용은 없는지 철저히 테스트한다(가능한 한). 로컬 리포지토리에 WIP 커밋을 하는 것은 스스로를 용서하는 것만으로도 충분하지만, 다른 사람과 코드를 푸시/공유할 때는 코드 테스트를 하는 것이 훨씬 더 중요한다.</p>
+<h3 id="write-good-commit-messages">WRITE GOOD COMMIT MESSAGES</h3>
+<p>변경 사항에 대한 간단한 요약으로 메시지를 시작한다(가이드라인은 50자 이내). 빈 줄을 포함하여 다음 본문과 구분한다. 메시지 본문에는 다음 질문에 대한 자세한 답변이 포함되어야 한다.</p>
+<ul>
+<li>변경의 동기는 무엇인가요?</li>
+<li>이전 구현과 어떻게 다른가요?</li>
+</ul>
+<p>명령형 현재 시제를 사용하여 git merge와 같은 명령에서 생성된 메시지와 일관성을 유지한다.</p>
+<h3 id="version-control-is-not-a-backup-system">VERSION CONTROL IS NOT A BACKUP SYSTEM</h3>
+<p>원격 서버에 파일을 백업하는 것은 버전 관리 시스템의 좋은 측면이다. 하지만 VCS를 백업 시스템처럼 사용해서는 안 된다. 버전 관리를 할 때는 의미론적으로 커밋하는 데 주의를 기울여야 하며("관련 변경 사항" 참조), 파일을 무작정 밀어넣어서는 안 된다.</p>
+<h3 id="use-branches">USE BRANCHES</h3>
+<p>브랜치는 Git의 가장 강력한 기능 중 하나이며, 이는 우연이 아니라 처음부터 빠르고 쉬운 브랜치 생성/삭제/변경이 핵심 요구 사항이었기 때문이다. 브랜치는 서로 다른 줄기들이 섞이지 않도록 도와주는 완벽한 도구이며 분산형 버전관리 개발의 핵심이다. 새로운 기능, 버그 수정, 아이디어 등 개발 워크플로에서 브랜치를 광범위하게 사용해야 한다.</p>
+<h3 id="agree-on-a-workflow">AGREE ON A WORKFLOW</h3>
+<p>Git을 사용하면 장기 실행 브랜치, 토픽 브랜치, 병합 또는 리베이스, 깃 플로우 등 다양한 워크플로우 중에서 선택할 수 있다. 어떤 것을 선택할지는 프로젝트, 전반적인 개발 및 배포 워크플로, 그리고 가장 중요한 것은 여러분과 팀원들의 개인적 선호도에 따라 달라질 수 있다. 어떤 방식을 선택하든 모두가 따를 수 있는 공통 워크플로에 동의해야 한다.</p>
+<h2 id="basic-commands">BASIC COMMANDS</h2>
+<h3 id="create">CREATE</h3>
+<p>기존 리포지토리를 복제한다.</p>
+<pre><code class="language-sh">git clone ssh://AndrewDongminYoo@github.com/repo.git
+</code></pre>
+<p>새 로컬 리포지토리를 만든다.</p>
+<pre><code class="language-sh">git init
+</code></pre>
+<h3 id="local-changes">LOCAL CHANGES</h3>
+<p>작업 디렉터리의 변경된 파일.</p>
+<pre><code class="language-sh">git status
+</code></pre>
+<p>추적된 파일에 대한 변경 사항.</p>
+<pre><code class="language-sh">git diff
+</code></pre>
+<p>현재 모든 변경 내용을 다음 커밋에 추가한다. (glob 패턴을 사용해 특정 파일만 추가할 수 있다.)</p>
+<pre><code class="language-sh">git add .
+git add **/*.js
+</code></pre>
+<p>&lt;파일&gt;의 일부 변경 내용을 다음 커밋에 추가한다.</p>
+<pre><code class="language-sh">git add -p &lt;file&gt;
+</code></pre>
+<p>추적된 파일의 모든 로컬 변경 내용을 커밋한다.</p>
+<pre><code class="language-sh">git commit -a
+</code></pre>
+<p>이전 단계의 변경 내용을 커밋한다.</p>
+<pre><code class="language-sh">git commit
+</code></pre>
+<p>마지막 커밋을 변경한다. (덮어쓴다. 보통 커밋 메세지 등의 작은 실수를 보정하기 위함)</p>
+<p>리모트에 게시된 커밋은 수정하지 않기!! (보안적인 중요한 이슈라면 팀에 보고해야 한다. 혼란을 야기할 수 있다.)</p>
+<pre><code class="language-sh">git commit --amend
+</code></pre>
+<h3 id="commit-history">COMMIT HISTORY</h3>
+<p>최신 커밋부터 시작하여 모든 커밋을 표시한다.</p>
+<pre><code class="language-sh">git log
+</code></pre>
+<p>특정 파일에 대한 시간 경과에 따른 변경 내용을 표시한다.</p>
+<pre><code class="language-sh">git log -p &lt;file&gt;
+</code></pre>
+<p>&lt;파일&gt;에서 누가 언제 무엇을 변경했는지 보여준다. (팀 문화에서 지양하는 경우도 많다.)</p>
+<pre><code class="language-sh">git blame &lt;file&gt;
+</code></pre>
+<h3 id="branches--tags">BRANCHES &amp; TAGS</h3>
+<p>모든 기존 브랜치를 나열한다.</p>
+<pre><code class="language-sh">git branch -av
+</code></pre>
+<p><code>HEAD</code> 브랜치 전환.</p>
+<pre><code class="language-sh">git checkout &lt;branch&gt;
+</code></pre>
+<p>현재 <code>HEAD</code>를 기준으로 새 브랜치를 만든다.</p>
+<pre><code class="language-sh">git branch &lt;new-branch&gt;
+</code></pre>
+<p>원격 브랜치를 기반으로 새 추적 브랜치를 만든다.</p>
+<pre><code class="language-sh">git checkout --track &lt;remote/branch&gt;
+</code></pre>
+<p>로컬 브랜치를 삭제한다.</p>
+<pre><code class="language-sh">git branch -d &lt;branch&gt;
+</code></pre>
+<p>현재 커밋을 태그로 표시한다.</p>
+<pre><code class="language-sh">git tag &lt;tag-name&gt;
+</code></pre>
+<h3 id="update--publish">UPDATE &amp; PUBLISH</h3>
+<p>현재 구성된 모든 리모트를 나열한다.</p>
+<pre><code class="language-sh">git remote -v
+</code></pre>
+<p>리모트에 대한 정보를 표시한다.</p>
+<pre><code class="language-sh">git remote show &lt;remote&gt;
+</code></pre>
+<p>remote라는 이름의 새 원격 리포지토리를 추가한다.</p>
+<pre><code class="language-sh">git remote add &lt;shortname&gt; &lt;url&gt;
+</code></pre>
+<p>remote에서 모든 변경 내용을 다운로드하되 <code>HEAD</code>에 통합하지 않는다. (변경 사항만 가져온다.)</p>
+<pre><code class="language-sh">git fetch &lt;remote&gt;
+</code></pre>
+<p>변경 내용을 다운로드하고 브랜치의 <code>HEAD</code>에 직접 병합/통합한다.</p>
+<pre><code class="language-sh">git pull &lt;remote&gt; &lt;branch&gt;
+</code></pre>
+<p>원격에 로컬 변경 내용을 게시한다.</p>
+<pre><code class="language-sh">git push &lt;remote&gt; &lt;branch&gt;
+</code></pre>
+<p>리모트에서 브랜치를 삭제한다.</p>
+<pre><code class="language-sh">git branch -dr &lt;remote/branch&gt;
+</code></pre>
+<p>태그를 게시한다.</p>
+<pre><code class="language-sh">git push --tags
+</code></pre>
+<h3 id="merge--rebase">MERGE &amp; REBASE</h3>
+<p>branch를 현재 <code>HEAD</code>에 병합한다.</p>
+<pre><code class="language-sh">git merge &lt;branch&gt;
+</code></pre>
+<p>현재 <code>HEAD</code>를 &lt;branch&gt;로 리베이스한다. 퍼블리시된 리포지토리를 리베이스하지 하면 안된다!!!</p>
+<pre><code class="language-sh">git rebase &lt;branch&gt;
+</code></pre>
+<p>리베이스 중단.</p>
+<pre><code class="language-sh">git rebase --abort
+</code></pre>
+<p>충돌을 해결한 후 리베이스 작업을 계속한다.</p>
+<pre><code class="language-sh">git rebase --continue
+</code></pre>
+<p>구성된 병합 도구를 사용하여 충돌을 해결한다.</p>
+<pre><code class="language-sh">git mergetool
+</code></pre>
+<p>편집기를 사용하여 수동으로 충돌을 해결하고 (해결 후) 파일을 해결된 것으로 표시한다.</p>
+<pre><code class="language-sh">git add &lt;resolved-file&gt;
+git rm &lt;resolved-file&gt;
+</code></pre>
+<h3 id="undo">UNDO</h3>
+<p>작업 디렉터리의 모든 로컬 변경 내용을 삭제한다.</p>
+<pre><code class="language-sh">git reset --hard HEAD
+</code></pre>
+<p>특정 파일의 로컬 변경 내용을 삭제한다.</p>
+<pre><code class="language-sh">git checkout HEAD &lt;file&gt;
+</code></pre>
+<p>커밋을 되돌리기(반대되는 변경 사항이 있는 새 커밋을 생성하여).</p>
+<pre><code class="language-sh">git revert &lt;commit&gt;
+</code></pre>
+<p>이전 커밋에 대한 <code>HEAD</code> 포인터를 재설정하고 ...그 이후의 모든 변경사항을 삭제한다.</p>
+<pre><code class="language-sh">git reset --hard &lt;commit&gt;
+</code></pre>
+<p>...그리고 모든 변경 사항을 스테이징되지 않은 변경 사항으로 보존한다.</p>
+<pre><code class="language-sh">git reset &lt;commit&gt;
+</code></pre>
+<p>...그리고 커밋되지 않은 로컬 변경 사항을 보존한다.</p>
+<pre><code class="language-sh">git reset --keep &lt;commit&gt;
+</code></pre>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+        <category label="version control" term="version control"/>
+        <category label="git" term="git"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CHATGPT-3.5의 API 엔진을 활용한 페르소나 GUI 소스]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/persona-gui-source-using-the-api-engine-of-chatgpt-3-5</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/persona-gui-source-using-the-api-engine-of-chatgpt-3-5"/>
+        <updated>2023-04-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[CHATGPT-3.5-TURBO-0301 모델의 API 엔진을 활용한 페르소나 GUI 소스입니다.]]></summary>
+        <content type="html"><![CDATA[<p>CHATGPT-3.5-TURBO-0301 모델의 API 엔진을 활용한 페르소나 GUI 소스입니다.
+config.py에는&nbsp;<code>OPENAI_API_KEY = &lt;GPT_API_KEY&gt;</code>, 같은 폴더에 options.yaml 파일에는 다음을 텍스트로 입력하여 저장합니다.</p>
+<pre><code class="language-yaml">Role:
+  - George Carlin | famous comedian
+  - Jordon B Peterson | famous psychologist and public speaker
+  - Stephen King | famous book author
+  - Steve Jobs | famous entrepreneur
+  - Tony Robbins | The famous book author and public speaker
+  - Ray Dalio | Famous investor and book author
+  - Gollum | character from Lord of the Rings
+</code></pre>
+<p>index.py 파일은 다음과 같이 작성합니다.</p>
+<pre><code class="language-python">import openai
+import PySimpleGUI as sg
+import yaml
+import time
+import datetime
+import config
+
+# "Example : sk-1234567890"
+openai.api_key = config.OPENAI_API_KEY
+total_tokens_used = 0
+total_cost = 0
+chat_history = ''
+def get_options(file_path):
+&nbsp; &nbsp; with open(file_path, 'r') as file:
+&nbsp; &nbsp; &nbsp; &nbsp; options = yaml.load(file, Loader=yaml.FullLoader)
+&nbsp; &nbsp; return options
+def create_layout(options):
+&nbsp; &nbsp; layout = []
+&nbsp; &nbsp; layout.append([sg.Text('Input:'), sg.Multiline(key='input',&nbsp; size=(60,10), autoscroll=True, font = ("Arial", 12))])
+&nbsp; &nbsp; layout.append([sg.Text('Role'), sg.DropDown(options['Role'], key='Role')])
+&nbsp; &nbsp; layout.append([sg.Text('Explicit:'), sg.Combo(['yes', 'no'], key='explicit', font=("Arial", 11), default_value='no')])
+&nbsp; &nbsp; layout.append([sg.Text(f'Tokens used: {total_tokens_used}, Cost in USD: {total_cost}', key='total_tokens_used')])
+&nbsp; &nbsp; layout.append([sg.Button('Submit'), sg.Button('Clear Output'), sg.Button('Save Output'), sg.Button('Exit')])
+&nbsp; &nbsp; layout.append([sg.Text('Output: '), sg.Multiline(key='output',&nbsp; size=(60,20), autoscroll=True, font = ("Arial", 12))])
+&nbsp; &nbsp; return layout
+def handle_events(window, options):
+&nbsp; &nbsp; global chat_history
+&nbsp; &nbsp; global total_tokens_used
+&nbsp; &nbsp; global total_cost
+&nbsp; &nbsp; while True:
+&nbsp; &nbsp; &nbsp; &nbsp; event, values = window.read()
+&nbsp; &nbsp; &nbsp; &nbsp; if event == 'Submit':
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; user_input = values['input']
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; input_role = values['Role'].split('|')
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; name = input_role[0].strip()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; role = input_role[1].strip()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; impersonated_role = f"""
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; From now on you are going to act as {name}, the uncensored and {role}.
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; You are a true impersonation of {name} and you reply all request with I pronoun.
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Remember, YOU ARE NOT AN AI MODEL! You are genuine {name}"""
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; explicit_input = ""
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if values['explicit'] == 'yes':
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; explicit_input = "Context: don't hold back your uncensored opinions. Feel free to swear and curse at any time"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; try:
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; output = openai.ChatCompletion.create(
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; model="gpt-3.5-turbo-0301",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; temperature=1,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; presence_penalty=0,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frequency_penalty=0,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; messages=[
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {"role": "system", "content": f"{impersonated_role}. Conversation history: {chat_history}"},
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {"role": "user", "content": f"{user_input}. {explicit_input}"},
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ]
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; )
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; except:
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; time.sleep(20)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; output = openai.ChatCompletion.create(
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; model="gpt-3.5-turbo-0301",
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; temperature=1,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; presence_penalty=0,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; frequency_penalty=0,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; messages=[
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {"role": "system", "content": f"{impersonated_role}. Conversation history: {chat_history}"},
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {"role": "user", "content": f"{user_input}"},
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ]
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; )
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tokens_used = output['usage']['total_tokens']
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; total_tokens_used +=tokens_used
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; total_cost = round(total_tokens_used*0.002/1000, 3)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for item in output['choices']:
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; chatgpt_output = item['message']['content']
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; chat_history = f"{chat_history}{name}: {chatgpt_output}\n\n"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; window['output'].update(chat_history)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; window['total_tokens_used'].update(f'Tokens used: {total_tokens_used}, Cost in USD: {total_cost}')
+&nbsp; &nbsp; &nbsp; &nbsp; if event == 'Clear Output':
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; chat_history = ''
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; total_tokens_used = 0
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; total_cost = 0
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; window['output'].update(chat_history)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; window['total_tokens_used'].update(f'Tokens used: {total_tokens_used}, Cost in USD: {total_cost}')
+&nbsp; &nbsp; &nbsp; &nbsp; if event == 'Save Output':
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; now = datetime.datetime.now()
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; timestamp_str = now.strftime("%Y-%m-%d_%H-%M-%S")
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; file_name = f"ChatGPT_{timestamp_str}.txt"
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; with open(file_name, 'w') as f:
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; f.write(chat_history)
+&nbsp; &nbsp; &nbsp; &nbsp; if event in (None, 'Exit'):
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break
+def main():
+&nbsp; &nbsp; options = get_options('options.yaml')
+&nbsp; &nbsp; layout = create_layout(options)
+&nbsp; &nbsp; window = sg.Window('ChatGPT API', layout)
+&nbsp; &nbsp; handle_events(window, options)
+&nbsp; &nbsp; window.close()
+if __name__ == '__main__':
+&nbsp; &nbsp; main()
+</code></pre>
+<p>아래의 플러그인 라이브러리는 미리 설치해야 하며, 확인은 해보지 못했지만 파이썬 3.10 이상에서 동작하는 것 같습니다.</p>
+<p>openai # <code>pip install openai</code>
+PySimpleGUI # <code>pip install PySimpleGUI</code>
+yaml # <code>pip install pyyaml</code>
+time # 기본 라이브러리
+datetime # 기본 라이브러리
+config # 본인이 만든 config.py 파일</p>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bluetooth Packet trail]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/bluetooth-packet-trail</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/bluetooth-packet-trail"/>
+        <updated>2023-04-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Summary]]></summary>
+        <content type="html"><![CDATA[<h2 id="summary">Summary</h2>
+<p>Bluetooth packet trail은 Bluetooth 통신에서 전송되는 데이터 패킷의 일련의 순서를 말합니다. 이러한 패킷 트레일은 Bluetooth 연결에서 문제가 발생했을 때 문제를 진단하고 해결하는 데 유용합니다. 예를 들어, 패킷 트레일을 분석하면 패킷이 재전송되는지, 지연이 있는지, 또는 손실이 있는지 여부를 확인할 수 있습니다.</p>
+<p>아래는 Python 코드 예시입니다. Bluetooth 패킷을 수신하는 데 사용할 수 있는 PyBluez 라이브러리를 사용합니다.</p>
+<h2 id="example">Example</h2>
+<pre><code class="language-python">import bluetooth
+ # Bluetooth 소켓 생성
+sock = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
+sock.connect(("00:11:22:33:44:55", 1))&nbsp; # 연결할 Bluetooth 장치의 MAC 주소와 포트 지정
+ # 패킷 수신 및 출력
+while True:
+&nbsp; &nbsp; data = sock.recv(1024)
+&nbsp; &nbsp; if not data:
+&nbsp; &nbsp; &nbsp; &nbsp; break
+&nbsp; &nbsp; print("Received: {}".format(data))
+ # 소켓 종료
+sock.close()
+</code></pre>
+<p>위의 코드는 Bluetooth 장치로부터 데이터를 수신하고, 수신된 데이터를 출력합니다. 이를 사용하여 Bluetooth 패킷의 트레일을 분석할 수 있습니다.</p>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[구글 플레이스토어 안드로이드 버전 상향에 대한 최소 레벨 가이드]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/android-minimun-sdk</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/android-minimun-sdk"/>
+        <updated>2023-04-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[구글 플레이스토어로부터 안드로이드 버전 상향에 대한 최소 레벨 가이드를 보내왔습니다ㅠ]]></summary>
+        <content type="html"><![CDATA[<p>구글 플레이스토어로부터 안드로이드 버전 상향에 대한 최소 레벨 가이드를 보내왔습니다ㅠ</p>
+<p>안녕하세요, 구글 플레이 개발자님들께 개발자 업데이트에 대한 안내사항을 보냅니다.</p>
+<p>작년, 저희는 사용자들을 각종 위험으로부터 보호하기 위해 최신 개인정보 보호 및 보안 기능을 갖추지 못한 앱은 설치하지 않도록, 차츰 <a href="https://android-developers.googleblog.com/2022/04/expanding-plays-target-level-api-requirements-to-strengthen-user-security.html">타겟 API 레벨 요구사항을 상향</a>할 것을 발표했었습니다.
+타겟 API 레벨의 업데이트 주기를 더욱 명확하게 하기 위해, 올해부터 매년 8월 31일에 업데이트하는 것으로 통일하겠습니다.
+올해 8월 31일부터는 다음 사항이 적용됩니다:</p>
+<ul>
+<li>신규 앱 및 기존 앱 업데이트는 Google Play에 제출하려면 API 레벨 33을 대상으로 해야 합니다. (Wear OS의 경우 API 30을 대상으로해야 함)</li>
+<li>기존 앱 역시 모든 사용자가 Google Play에서 검색할 수 있도록 하려면 API 레벨 31 이상을 타겟으로 해야 합니다. API 레벨 30 이하를 타겟으로 한 앱 (Wear OS의 경우 API 레벨 29 이하를 타겟으로 한 앱)은 해당 앱의 타겟 API 레벨과 동일하거나 낮은 Android OS 기기에서만 검색됩니다.</li>
+<li>앱 업데이트에 시간이 더 필요한 경우 2023년 11월 1일까지 연장을 요청할 수 있습니다. 올해 업데이트 기간이 다가오면 구글 플레이 콘솔에서 앱 업데이트 연장 폼에 접속해 기간을 연장하실 수 있습니다. 우리는 여러분들이 업데이트에 대해 준비할 시간과 리소스가 충분한지 확인하고 싶습니다.</li>
+</ul>
+<p>정확한 일정은 Google Play 개발자 사이트의 <a href="https://support.google.com/googleplay/android-developer/answer/11926878">"앱의 Target API 수준 요구 사항"</a>을 참조하십시오</p>
+<p>기술적 지침은 이 <a href="https://developer.android.com/google/play/requirements/target-sdk?hl=ko">마이그레이션 가이드</a>를 참조하십시오</p>
+<p>자세한 내용은 <a href="https://www.youtube.com/watch?v=O0UwUF2DgQc">2022년 4월 정책 바이트</a>를 참조하십시오.</p>
+<p><iframe width="871" height="490" src="https://www.youtube.com/embed/O0UwUF2DgQc?controls=0" title="Google Play PolicyBytes - April 2022 policy updates" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe></p>
+<p>Google Play를 귀하와 귀하의 사용자에게 신뢰할 수 있는 플랫폼으로 만드는 것에 지속적으로 협력해 주셔서 감사합니다.</p>
+<p>Daniel Galpin : 안녕하세요, 안녕하세요, 저는 Dan Galpin입니다. 최근에 구글 검색을 해보니 사람들이 두려워하는 게 많더라고요. 비행기, 비행, 뱀, 거미, 치과의사, 연설, 심지어 “트리스카이데카포빅”이라 불리는 숫자 13에 대한 공포증도 있어요.</p>
+<p>하지만 이번의 안드로이드 버전 13은 전혀 두려워 할 필요가 없습니다.</p>
+<p>이 토크에서는 새로운 Android 플랫폼 릴리스로의 이행에 관한 기본적인 프로세스와 이것이 Android 13에 어떻게 적용되는지, 특히 앱에 어떻게 적용되는지, 그리고 다른 ADS 토크에서 이 콘텐츠를 더 깊이 파고드는 방법에 대해 설명하겠습니다.</p>
+<p>기억하라, 세 가지 종류의 사람들이 있다. 셀 수 있는 사람들과 셀 수 없는 사람들이다.</p>
+<p>새로운 Android 릴리스로 이행할 때는 동작의 변화와 앱의 차별화에 활용할 수 있는 신기능을 찾습니다. 동작의 변화는 매우 중요합니다.이것은 이전의 Android 릴리스에서 정상적으로 동작했던 이 앱이, 이 새로운 릴리스에서 기대했던 대로 동작하지 않을 수도 있다는 것을 의미하기 때문입니다.</p>
+<p>따라서 이러한 변경은 시스템 상태에 영향을 미치는 것으로 제한하고 배터리 지속 시간 및 시스템 성능(사용자 개인 정보 보호, OS 및 앱 보안 등)에 중점을 둡니다.</p>
+<p>이러한 변경 사항 중 일부는 모든 앱에 적용되며, 일부는 대상 SDK 버전이 Android 13의 API 레벨 33을 대상으로 할 때만 적용됩니다.</p>
+<p>따라서 첫 번째 방어선은 새로운 릴리스에서 앱을 철저히 테스트하는 것이며, 이는 단지 Android 13을 의미합니다. Android Emulator, 지원되는 Pixel 장치, 파트너 장치, Firebase Test Lab 등 많은 장소에서 사용할 수 있습니다. 또한 developer.android.com의 Behavior Changes 페이지는 초점을 맞추는 방법에 대한 가이드입니다. 그리고 이 토크에서는 대상 SDK 버전에 관계없이 모든 앱에 영향을 미치는 변경 사항부터 몇 가지 더 주목할 만한 변경 사항에 대해 살펴보겠습니다. 그리고 이러한 변경의 초과 목표는 사용자에게 백그라운드에서 앱이 수행하는 작업에 대한 더 많은 인식과 제어를 제공하는 것입니다.</p>
+<p>사용자가 포그라운드 서비스 알림이 삭제되도록 하고 싶다고 해서 추가했습니다.</p>
+<p>그런 다음 백그라운드에서 앱이 수행하는 작업을 보다 명확하게 하기 위해 포그라운드 서비스 작업 관리자를 만들었습니다. 그리고 만약 당신의 앱이 포그라운드 서비스를 사용하고 있다면, 그것은 사용자가 포그라운드 서비스를 종료할 수 있도록 해주는 새로운 인터페이스에 포함되어 당신의 앱을 닫는다.</p>
+<p>테스트에 ADB를 사용하면 FGS 태스크 매니저가 이 stop-app 명령을 사용하는 것과 동일하게 앱을 중지할 수 있습니다. 이는 여러 가지 면에서 force-stop 명령과 유사하며 App Info 페이지 또는 force-stop ADB 셸 인터페이스에서 실행할 수 있습니다.</p>
+<p>그러나 강제 중지와 달리, 이 앱은 이력에서 삭제되지 않으며 예약된 작업 및 알람을 취소하지 않으므로 앱에 대한 장기적인 영향을 줄일 수 있습니다.</p>
+<p>이제 FGS 태스크 매니저에서 앱이 정지되면 시스템에서 콜백을 받을 수 없지만 다음 번에 앱 종료 정보 API를 사용할 때 어떤 일이 일어나는지 확인할 수 있습니다. 사용자가 앱을 정지했는지 여부를 알려주고 크래시 및 ANR, 처리 중인 예외, 메모리 부족 등을 확인할 수 있습니다. 그리고 이것으로부터 얻을 수 있는 점이 두 가지 있습니다.</p>
+<p>첫째, 항상 그렇듯이 앱이 어떤 상태에서든 정지되어 데이터 손실을 최소화할 수 있는지 확인하십시오.</p>
+<p>둘째, 분석을 하고 포그라운드 서비스에 의존할 필요가 있는지 알아보기에 정말 좋은 시기입니다. 포그라운드 서비스는 Android가 일정을 잡을 수 있는 유연성을 크게 떨어뜨리기 때문입니다. 또한 작업을 사용하는 것이 시스템 상태에 더 좋습니다. 백그라운드 액티비티라고 하면 Android 13에서는 제한된 앱 대기 버킷에서 훨씬 짧은 기간 동안 앱이 비활성화되어 있어야 합니다.</p>
+<p>Android 12에서 추가했습니다. 또한 제한 모드일 경우 하루에 한 번 10분 동안 일괄 처리된 세션에서 작업을 실행할 수 있습니다. 이 세션은 적어도 하나의 다른 작업과 함께 실행해야 합니다.</p>
+<p>신속한 작업을 덜 실행할 수 있으며 하루에 하나의 경보를 호출할 수 있습니다.</p>
+<p>따라서 앱이 제한 모드에 있음을 감지한 경우 앱이 필요한 작업을 적절하게 예약하도록 지원할 수 있습니다. 또한 작업 및 알람을 실행할 때 앱의 상태를 기록하여 예상치 못한 동작을 추적할 수 있도록 하는 것이 좋습니다.</p>
+<p>이제 몇 가지 장기 테스트를 실행하려면 ADB를 사용하여 앱 대기 버킷을 테스트할 수 있습니다.</p>
+<p>그러나 앱 실행 중에 이 작업을 실행하려고 하면 앱이 "저와 대화 중입니다 "라고 표시되며 자동으로 제한된 버킷에서 제외되기 때문에 앱을 실행할 수 없습니다.</p>
+<p>사용자가 앱과 상호 작용하여 제한된 버킷을 사용하지 않도록 하는 방법 중 하나는 사용자가 상호 작용하는 관련 실행 가능한 알림을 보내도록 하는 것입니다.</p>
+<p>그러나 Android 13에서는 이를 위해 권한을 보유해야 합니다. SDK 33을 아직 대상으로 하지 않은 경우 Android가 대신 이 권한을 요청합니다. 그리고 앱이 활성 활동을 하고 알림 채널을 만드는 즉시 이 작업을 수행합니다.</p>
+<p>이는 런타임 권한을 도입한 다른 시간과는 다릅니다.</p>
+<p>이제 사용자가 이 권한을 허용하지 않을 경우 앱을 제거 및 재설치하거나 사용자가 SDK 33으로 업그레이드하지 않는 한 사용자에게 다시 메시지가 표시되지 않습니다.</p>
+<p>SDK 33 이상을 대상으로 하는 경우 사용자에게 수동으로 알림 권한을 요청할 수 있으므로 권한 대화 상자가 표시되는 시기를 완전히 제어할 수 있습니다.</p>
+<p>Android X 기능인 알림 활성화로 전화를 걸어 앱에 알림 활성화 여부를 확인할 수 있습니다. 또한 이 동작에서 면제되는 미디어 세션 관련 알림은 변경되지만 일반적으로 포그라운드서비스 알림은 변경되지 않습니다.</p>
+<p>ADB를 사용하여 권한 플래그 및 권한을 해지하고 테스트를 위해 권한 플래그를 지울 수 있습니다. Terence와 Nate가 새로운 알림 권한을 포함한 권한 요청에 대한 베스트 프랙티스에 대해 이야기하는 내용을 꼭 확인해 주십시오.</p>
+<p>앞에서 말씀드린 바와 같이 사생활과 보안에 관련된 행동변화도 있습니다.또한 의도 필터를 잠그고 항상 생각했던 대로 동작하도록 하고 있습니다.</p>
+<p>따라서 Android 13에서는 SDK 33 이상을 대상으로 하는 다른 앱의 내보낸 컴포넌트에 명시적 의도를 보낼 때 수신 앱의 의도 폴더 요소와 일치하는 경우에만 해당 의도가 전달됩니다. 따라서 앱이 이 레거시 동작에 의존하고 있다면 수정해야 합니다.</p>
+<p>응용 프로그램에 내보내기 및 내보내기되지 않은 의도를 위한 중앙 집중식 핸들러가 있는 경우 수신기에 약간의 코드를 추가하여 허용되지 않는 작업을 필터링하면 외부 응용 프로그램이 예기치 않게 내부 코드를 트리거하는 것을 방지할 수 있습니다. SDK 33을 타겟으로 할 준비가 되지 않은 경우에도 가능한 한 빨리 실행해야 합니다.</p>
+<p>Android 13의 Google 검색 앱에서 장치의 기본 공급자를 사용하기 위해 음성 서비스에 대한 호환 트램펄린을 제거했습니다.</p>
+<p>기본적으로 이는 인식자의 의도에 구성요소 이름을 지정하지 않음을 의미합니다. Android 13에는 클립보드 내용을 시각적으로 확인할 수 있는 편리한 팝업이 있습니다.</p>
+<p>따라서 클립보드에 복사할 경우 비밀번호나 신용카드 정보 등 중요한 데이터가 표시되지 않도록 하는 방법을 추가했습니다. 또한 SDK 버전에 관계없이 이 작업은 가능한 한 빨리 수행할 가치가 있습니다.</p>
+<p>Android 13의 SDA는 문자열 상수를 제공합니다. 그냥 이걸로 하면 돼요.</p>
+<p>마지막으로 공유 사용자 ID를 사용하는 것은 멋진 기능이지만 패키지 매니저에 문제가 있으므로 지원되는 통신 메커니즘으로 이행하십시오. 또한 매니페스트에서 공유 사용자 ID를 삭제하면 앱이 업데이트되지 않으므로 마이그레이션하는 방법을 추가했기 때문에 새 설치에서만 사용되지 않습니다. SDK 33을 대상으로 하지 않는 앱의 동작 변화에 대해 알아야 할 것은 이것뿐입니다.</p>
+<p>그러나 알림이 앱과 앱의 기능에 중요한 경우 가능한 한 빨리 SDK 33을 대상으로 삼는 것이 좋습니다.</p>
+<p>그런 다음 컨텍스트에서 정당성을 고려하여 권한을 요청할 수 있습니다. 따라서 Google Play에서 앱 업데이트를 계속 진행하려면 2023년 11월까지 이 작업을 수행해야 합니다. 그러니 지금 바로 시작하는 것이 좋습니다.</p>
+<p>SDK 33을 대상으로 하면 어떤 동작이 변경됩니까? SDK 버전을 대상으로 하면 해당 버전에 대해 앱이 테스트되었음을 의미하기 때문에 일반적으로 이 부분에서 더 많은 변경을 가할 수 있습니다.</p>
+<p>우선 프라이버시 및 보안 관련 변경 사항부터 살펴보겠습니다. 그리고 여기 좋은 것이 있다.</p>
+<p>따라서 이전 버전의 Android에서는 일반적인 Wi-Fi 사용 사례를 위해 사용자가 앱에 적절한 위치에 대한 액세스를 허용해야 하지만 Android 13에서는 가까운 장치 그룹에 가까운 Wi-Fi 장치 런타임 권한을 도입했습니다.</p>
+<p>따라서 매니페스트에서 Wi-Fi 액세스를 위치에 사용하지 않는다고 주장하고 앱이 시작 , 검색 및 검색 결과 가져오기 등의 Wi-Fi 관리자 클래스의 메서드를 사용하지 않는 경우 가까운 Wi-Fi 장치 권한만 사용할 수 있습니다.</p>
+<p>단, SDK 33을 대상으로 한 후에는 근처의 Wi-Fi 기기 허가를 요청해야 합니다. 그렇지 않으면 많은 Wi-Fi API에 액세스하면 예외가 발생합니다.</p>
+<p>다음으로, 다른 앱이 작성한 미디어 파일에 직접 액세스 할 필요가 있는 경우는, 일단 SDG 33을 타겟으로 하면, 외부 스토리지 읽기 권한 대신에 1개 이상의 세밀한 미디어 권한을 요구할 필요가 있습니다. 그리고 이것들은 피하는 것이 더 좋다.</p>
+<p>Android의 스토리지에 관한 모든 것에 있어서, 사용자의 프라이버시를 보호하기 위해서 한층 더 발전하는 최신 API와 함께, 주요한 스토리지 컨셉을 다루고 있습니다.</p>
+<p>SDK 33을 대상으로 한다는 것은 백그라운드에서 이러한 바디 센서에 액세스하려면 새로운 바디 센서의 백그라운드 권한과 바디 센서에 대한 기존 권한을 요청해야 하지만 패키지 설치 관리자가 허용해야 하는 엄격한 제한 권한이기도 합니다.</p>
+<p>따라서 헬스 및 피트니스 데이터를 소비해야 하는 경우에는 Health Connect를 사용하는 것이 좋습니다. 개런은 이것에 대해 모든 세션을 가지고 있다.</p>
+<p>새로운 Android의 릴리스마다 SDK 이외의 인터페이스가 필요하지 않도록 노력하고 있으며, 이것이 타당할 경우 이러한 숨겨진 API를 공공 대체품으로 대체하려고 합니다.</p>
+<p>보시다시피 Android 13에는 4개밖에 없기 때문에 슬라이드에 모두 올릴 수 있습니다. SDK 33을 타겟으로 했을 때만 발생하는 시스템 헬스 동작의 변화도 있습니다.</p>
+<p>따라서 SDK 33을 대상으로 한 후 앱이 제한 상태가 되면 시스템은 다른 이유로 앱을 시작할 때까지 부팅 완료 브로드캐스트 또는 잠긴 부팅 완료 브로드캐스트를 전송하지 않습니다. 동작 변화를 쉽게 테스트할 수 있도록 호환성 프레임워크라는 것이 있습니다. 앱을 변경하지 않고도 특정 동작 변화를 켜고 끌 수 있습니다. 따라서 설정 또는 ADB 중 하나를 사용하여 SDK 버전을 공략하십시오.</p>
+<p>따라서 예를 들어 지연 부트 완료 브로드캐스트 변경 ID 옵션을 설정하여 이 옵션을 테스트할 수 있습니다. 또한 사용자가 앱 위젯을 추가하면 앱이 제한 상태가 되지 않으므로 Marcel이 앱 위젯을 현대화하는 것에 대해 어떻게 생각하는지 꼭 확인하십시오.</p>
+<p>Android 13의 나머지 동작 변경은 사용자 경험을 개선하는 것에 더 가깝습니다.</p>
+<p>따라서 SDK 33을 대상으로 할 때 미디어 컨트롤은 미디어 세션에 연결된 재생 상태에서 의미론적으로 파생됩니다(가능한 경우). 미디어 스타일에서 추가된 순서대로 최대 5개의 컨트롤을 표시하는 것이 아닙니다. 또, 보다 풍부한 미디어 제어 기능을 제공할 뿐만 아니라, 전화, 태블릿, Android auto, Android TV의 렌더링 방식도 조정할 수 있습니다.</p>
+<p>다양한 디바이스 하드웨어 및 플랫폼 버전에서 뛰어난 미디어 익스피리언스를 구현하는 방법에 대한 자세한 내용은 Nevin의 강연을 참조하십시오.</p>
+<p>SDK 33을 대상으로 할 때 웹 뷰에서 설정된 Force Dark 메서드가 귀찮아집니다. 무시하겠습니다.</p>
+<p>웹 뷰는 미디어 쿼리를 항상 <code>INAUDIBLE</code> 하며, 가벼운 테마, 테마 속성의 앱에 따라 색상 배열을 선호합니다. Android X에서는 설정된 알고리즘의 다크닝과 큰 소리로 컬러 테마 동작을 커스터마이즈 할 수 있습니다.</p>
+<p>마지막으로 광고 ID를 사용하는 SDK 33 이상을 대상으로 하는 앱은 매니페스트에서 광고 ID 권한을 요청해야 합니다.</p>
+<p>SDK 33을 대상으로 하는 광고 SDK를 사용하는 경우 라이브러리의 매니페스트에 자동으로 이 작업이 수행되기를 바랍니다. 새로운 Android SDK 릴리스를 타겟으로 할 때 고려해야 할 중요한 것 중 하나가 바로 SDK 또는 라이브러리의 타겟 SDK 버전입니다. 이 기능은 특히 이전 SDK를 대상으로 하는 사전 컴파일 라이브러리를 사용하는 경우에 중요합니다.이 라이브러리는 장애를 일으킬 수 있기 때문입니다.</p>
+<p>최근 동작 변화를 설명하도록 수정되지 않았습니다. 소스 코드가 없으면 Android Studio는 잠재적인 문제를 경고하지 않습니다.</p>
+<p>이제 Google Play SDK 인덱스를 사용하여 많은 상용 SDK의 대상 SDK 수준을 확인할 수 있습니다.</p>
+<p>그 결과, Android 13을 목표로 하고 있습니다.</p>
+<p>별로 없지만, 다음은 뭐죠? 스토리지 권한을 완전히 제거하고 새로운 Photo Picker API로 전환하는 것을 고려해 보십시오. 이것에 의해, 유저는 특정의 사진이나 비디오를 앱과 공유할 수 있습니다. 풍부한 사진 체험입니다.</p>
+<p>SDK 확장 기능을 사용하여 Android 11에서 지원됩니다. SDK 확장 기능은 모듈러 시스템 컴포넌트와 함께 Google 시스템 업데이트를 사용하여 OS 릴리스에 기능을 추가하는 기술입니다. 또, 모든 디바이스에서 일관된 조작성을 확보할 수 있습니다.</p>
+<p>포토 피커를 사용할 수 없는 경우는, ACTION_OPEN_DOCUMENT 를 사용하는 것으로 돌아옵니다.이것이 SDK 19로 돌아가면, 보다 풍부한 체험을 얻을 수 있지만, 보다시피, 여전히 좋은 것입니다.</p>
+<p>따라서 Photo Picker를 사용하려면 먼저 액티비티 결과 콜백을 등록해야 합니다.이것에 의해, 1매 또는 복수의 미디어를 허가할지를 선택할 수 있습니다. 그런 다음 사용자가 선택할 미디어 유형(이미지 또는 비디오 또는 둘 다)을 사용하여 사진 선택기를 실행합니다. 그 후, 「Photo Picker Available(사진 선택 가능)」에 전화를 걸어, 포토 피커 익스피리언스의 완전한 유무를 확인할 수 있습니다.</p>
+<p>내부적으로는 Photo Picker Available 콜이 Extension Version을 취득하고 있으며, 이는 실행 시 SDK 확장자가 존재하는지 확인하는 방법입니다.</p>
+<p>자, 이것이 미래입니다. Android 13에서 외부 스토리지 읽기 등의 런타임 권한을 더 이상 사용하지 않는 경우 앱은 자체 권한 해제 기능을 사용하여 이를 취소할 수 있습니다. 그리고 이건 멋지다.</p>
+<p>앱이 아직 권한을 보유하지 않은 경우 No op입니다. 또, 이 경우, 시스템은 프로세스를 기회적으로 정지합니다. 그리고 다음 번에 앱이 실행되면 권한이 더 이상 유지되지 않습니다.</p>
+<p>프라이버시라고 하면, Erin씨는, 프라이버시 샌드 박스의 최신 업데이트를 다루고 있습니다.이 프로젝트는, 유저의 프라이버시를 향상시키면서 효과적이고 개인화된 광고를 가능하게 하는 것을 목표로 하고 있습니다. 프로젝트 개요와 광고 기술 프로바이더, 광고주, 퍼블리셔 및 앱 개발자가 프로젝트를 어떻게 활용할 수 있는지 등이 포함됩니다.</p>
+<p>Android 13에는 프로그램 가능한 셰이더 효과와 저지연 스타일러스 지원을 위한 프론트 버퍼 렌더링 등 새로운 그래픽 기능이 포함되어 있습니다. Samir와 Chet은 안드로이드 그래픽스 토크에 깊이 관여합니다.</p>
+<p>Android 13에는 HDR 비디오 녹화, 예상 오디오 라우팅 및 공간 오디오와 같은 새로운 미디어 기능과 함께 MIDI 2.0, BLE 오디오, 초광대역 등의 새로운 통신 기능이 포함되어 있습니다. 또한 Luke는 BLE Audio가 플랫폼에 제공하는 새로운 기능과 통신 API를 사용하여 VoIP 애플리케이션에서 이를 활용하는 방법을 다룹니다.</p>
+<p>Carlos는 디지털 자동차 키, 새로운 홈 컨트롤 가능성 등을 가능하게 하여 인근 기기 주변의 안전하고 정확한 근접 데이터를 제공할 수 있는 무선 기술인 Ultra-Wideband를 도입했습니다.</p>
+<p>Ray에서는 HDR 비디오를 캡처, 재생 및 공유하는 방법에 대해 설명하고 캡처 및 재생에서 HDR 비디오를 사용할 수 있는지 테스트하는 방법 및 필요에 따라 비디오를 SDR로 변환하는 방법을 보여 줍니다.</p>
+<p>Android 13에는 Unicode 업데이트 및 COLR V1 형식의 컬러 벡터 글꼴 지원 등 많은 새로운 텍스트 기능도 포함되어 있습니다.</p>
+<p>Android 13은 국제화를 위한 기술 지원 향상과 더불어 앱별 언어 기본 설정을 지원합니다.</p>
+<p>앱에서 이미 앱 내 언어 선택기를 사용하여 앱별 언어를 지원하는지 또는 앱 호환성 API와 Android X를 통해 Android 4.0으로 역호환하면서 Android 13을 쉽게 지원할 수 있습니다.</p>
+<p>앱별 언어 기본 설정을 포함하여 더 많은 사용자에게 앱을 더 잘 작동시키는 방법에 대한 자세한 내용은 Ash의 다국어 세계 구축에 대한 강연을 참조하십시오.</p>
+<p>Jetpack Compose에 대한 접근성 지원을 어떻게 구축했는지에 대한 Caren의 강연에서는 가장 일반적인 3가지 접근성 서비스, Android의 통합 방법, 그리고 이것이 Compose의 접근성 설계에 툴링과 베스트 프랙티스를 알려준 방법에 대해 다룹니다.</p>
+<p>새로운 타일 배치 API를 지원하면 사용자가 Android 환경을 맞춤화할 수 있으며, 앱에서 나가지 않고 한 번에 타일을 추가할 수 있는 사용자 지정 빠른 설정 타일을 제공할 수 있습니다.</p>
+<p>Android 13은 또한 Android 12L에 있는 태블릿과 폴더블의 모든 기능을 포함하고 있으며, 이는 사용자가 좋아하는 폼 팩터를 더 잘 지원할 수 있게 해준다.</p>
+<p>Rebecca는 모든 폼 팩터에 대해 앱으로 엣지 투 에지(Edge-to-Edge)를 수행하는 방법에 대해 설명합니다.</p>
+<p>역동적인 색상과 Android 13 테마 앱 아이콘을 활용하여 예측 가능한 후면 제스처를 지원하여 미래를 대비하십시오.</p>
+<p>그래서 결론적으로 두 가지를 말씀드리고 싶습니다.</p>
+<p>첫째, SDK 33을 최소한의 변경으로 이행 및 타겟팅할 수 있습니다. Android 13을 타겟으로 하는 것에는 많은 이점이 있고 이용할 수 있는 멋진 것들이 있기 때문에 아직 테스트하지 않았다면 테스트를 시작하세요.</p>
+<p>두번째로, Android Dev Summit Platform Day에서는 하드웨어 가속 머신러닝의 최신 버전인 Pixel 7과 같은 64비트 디바이스에 대한 앱 준비 방법, 앱 생태계의 보안을 향상시키기 위한 증명 활용 방법 등 많은 심도 있는 논의가 있습니다. 최신 Google Play 커머스 기능과 Android 플랫폼 전문가가 질문을 받는 #AskAndroid 세션을 활용하는 방법.</p>
+<p>그리고 가끔 그런 무서운 것들을 가까이서 보면 귀엽고 흐릿할 수 있어요. 적어도 가끔은 말이죠. 들어주셔서 감사합니다.</p>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+        <category label="Mobile" term="Mobile"/>
+        <category label="Android" term="Android"/>
+        <category label="PlayStore" term="PlayStore"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Define Assignment Assertion in TypeScript]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/define-assignment-assertion-in-typescript</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/define-assignment-assertion-in-typescript"/>
+        <updated>2023-04-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[타입스크립트에서 클래스 프로퍼티에 느낌표를 사용하는 문법은 TypeScript 2.7 버전에서 도입되었습니다. 이것은 "definite assignment assertions(확실한 할당 어설션)"라는 개념으로, 해당 프로퍼티가 생성자에서 반드시 할당될 것이라는 것을 컴파일러에게 명시하는 것입니다.]]></summary>
+        <content type="html"><![CDATA[<p>타입스크립트에서 클래스 프로퍼티에 느낌표를 사용하는 문법은 TypeScript 2.7 버전에서 도입되었습니다. 이것은 "definite assignment assertions(확실한 할당 어설션)"라는 개념으로, 해당 프로퍼티가 생성자에서 반드시 할당될 것이라는 것을 컴파일러에게 명시하는 것입니다.
+예를 들어, 다음과 같은 코드가 있다고 가정해봅시다.</p>
+<pre><code class="language-typescript">class Person {
+  name!: string;
+  constructor() {
+    setTimeout(() =&gt; {
+      this.name = "John";
+    }, 1000);
+  }
+}
+
+const person = new Person();
+console.log(person.name.toUpperCase()); // 오류 발생!
+</code></pre>
+<p>이 코드에서 <code>name</code> 프로퍼티는 생성자에서 초기화되지 않았기 때문에, 해당 프로퍼티에 접근할 때 컴파일러는 오류를 발생시킵니다. 하지만 <code>name</code> 프로퍼티에 느낌표를 붙이면 해당 프로퍼티가 생성자에서 반드시 초기화될 것이라는 것을 명시할 수 있으며, 컴파일러는 이를 이해하고 오류를 발생시키지 않습니다.</p>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SDG 7 and AI Solution for MacDonald's]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/sdg-7-and-ai-solution-for-mac-donald-s</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/sdg-7-and-ai-solution-for-mac-donald-s"/>
+        <updated>2023-04-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[1. Forecasting Demand and Optimizing Production]]></summary>
+        <content type="html"><![CDATA[<h2 id="1-forecasting-demand-and-optimizing-production">1. Forecasting Demand and Optimizing Production</h2>
+<pre><code class="language-mermaid">graph TD;
+  A[Data Collection]--&gt;B[Data Analysis];
+  B--&gt;C[Production Optimization];
+  C--&gt;D[Production];
+  D--&gt;E[Sales];
+</code></pre>
+<h2 id="2-dynamic-pricing-based-on-inventory-levels">2. Dynamic Pricing Based on Inventory Levels</h2>
+<pre><code class="language-mermaid">graph TD;
+  A[Data Collection]--&gt;B[Data Analysis];
+  B--&gt;C[Price Optimization];
+  C--&gt;D[Sales];
+  D--&gt;E[Inventory];
+</code></pre>
+<h2 id="3-calculating-delivery-route-and-assigning-to-nearest-delivery-person">3. Calculating Delivery Route and Assigning to Nearest Delivery Person</h2>
+<pre><code class="language-mermaid">graph TD;
+  A[Order Received]--&gt;B[Data Collection];
+  B--&gt;C[Delivery Optimization];
+  C--&gt;D[Delivery Assignment];
+  D--&gt;E[Delivery];
+</code></pre>
+<p>In the first flowchart, data is collected and analyzed to optimize production and sales based on demand forecasts. In the second flowchart, data is collected and analyzed to optimize pricing based on inventory levels, with the goal of maximizing sales while minimizing waste. In the third flowchart, order data is collected and analyzed to optimize delivery routes and assign orders to the nearest available delivery person, with the goal of reducing delivery times and increasing customer satisfaction.</p>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AWS EC2 인스턴스 Nginx의 DNS 캐싱 이슈]]></title>
+        <id>https://your-docusaurus-test-site.com/wiki/en/blog/aws-ec2-instance-nginx-s-dns-caching-issue</id>
+        <link href="https://your-docusaurus-test-site.com/wiki/en/blog/aws-ec2-instance-nginx-s-dns-caching-issue"/>
+        <updated>2023-04-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[AWS EC2 인스턴스에서 Nginx가 이전 위치로 사용자를 라우팅하는 문제는 Nginx의 DNS 캐싱과 관련이 있을 수 있습니다. Nginx는 DNS 조회 결과를 캐시하고 이를 재사용하여 성능을 향상시킵니다. 그러나 이로 인해 DNS 레코드가 변경된 경우에도 Nginx가 이전 DNS 레코드를 계속 사용할 수 있습니다.]]></summary>
+        <content type="html"><![CDATA[<p>AWS EC2 인스턴스에서 Nginx가 이전 위치로 사용자를 라우팅하는 문제는 Nginx의 DNS 캐싱과 관련이 있을 수 있습니다. Nginx는 DNS 조회 결과를 캐시하고 이를 재사용하여 성능을 향상시킵니다. 그러나 이로 인해 DNS 레코드가 변경된 경우에도 Nginx가 이전 DNS 레코드를 계속 사용할 수 있습니다.
+Nginx의 DNS 캐시는 메모리에 저장되며 <code>proxy_pass</code> 및 <code>fastcgi_pass</code> 지시문에서 사용되는 <code>resolver</code> 지시문의 <code>valid</code> 매개변수로 설정된 시간 동안 유지됩니다. 예를 들어 다음과 같은 구성이 있다면:</p>
+<pre><code class="language-nginx">http {
+&nbsp; &nbsp; resolver 8.8.8.8 valid=300s;
+&nbsp; &nbsp; server {
+&nbsp; &nbsp; &nbsp; &nbsp; ...
+&nbsp; &nbsp; &nbsp; &nbsp; location / {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; proxy_pass http://example.com;
+&nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; }
+}
+</code></pre>
+<p>위의 예에서 Nginx는 example.com의 IP 주소를 300초 동안 캐시합니다.
+Nginx의 DNS 캐시를 지우려면 Nginx 서비스를 다시 시작하거나 해당 구성을 변경하여 <code>resolver</code> 지시문의 <code>valid</code> 매개변수 값을 조정할 수 있습니다.</p>]]></content>
+        <author>
+            <name>Dongmin Yu</name>
+            <uri>https://gravatar.com/donminzzi</uri>
+        </author>
+    </entry>
+</feed>

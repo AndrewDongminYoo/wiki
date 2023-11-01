@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_wiki=self.webpackChunkmy_wiki||[]).push([[4684],{6396:e=>{e.exports=JSON.parse('{"label":"API","permalink":"/wiki/en/blog/tags/api","allTagsPath":"/wiki/en/blog/tags","count":1,"unlisted":false}')}}]);

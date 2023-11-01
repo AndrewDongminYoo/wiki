@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_wiki=self.webpackChunkmy_wiki||[]).push([[1806],{3948:i=>{i.exports=JSON.parse('{"label":"Android","permalink":"/wiki/blog/tags/android","allTagsPath":"/wiki/blog/tags","count":1,"unlisted":false}')}}]);
