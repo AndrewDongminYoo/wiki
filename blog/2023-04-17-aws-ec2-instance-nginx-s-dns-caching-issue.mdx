@@ -1,0 +1,26 @@
+---
+slug: aws-ec2-instance-nginx-s-dns-caching-issue
+title: AWS EC2 인스턴스 Nginx의 DNS 캐싱 이슈
+authors: andrew
+tags: []
+---
+
+# AWS EC2 인스턴스 Nginx의 DNS 캐싱 이슈
+
+AWS EC2 인스턴스에서 Nginx가 이전 위치로 사용자를 라우팅하는 문제는 Nginx의 DNS 캐싱과 관련이 있을 수 있습니다. Nginx는 DNS 조회 결과를 캐시하고 이를 재사용하여 성능을 향상시킵니다. 그러나 이로 인해 DNS 레코드가 변경된 경우에도 Nginx가 이전 DNS 레코드를 계속 사용할 수 있습니다.
+Nginx의 DNS 캐시는 메모리에 저장되며 `proxy_pass` 및 `fastcgi_pass` 지시문에서 사용되는 `resolver` 지시문의 `valid` 매개변수로 설정된 시간 동안 유지됩니다. 예를 들어 다음과 같은 구성이 있다면:
+
+```nginx
+http {
+    resolver 8.8.8.8 valid=300s;
+    server {
+        ...
+        location / {
+            proxy_pass http://example.com;
+        }
+    }
+}
+```
+
+위의 예에서 Nginx는 example.com의 IP 주소를 300초 동안 캐시합니다.
+Nginx의 DNS 캐시를 지우려면 Nginx 서비스를 다시 시작하거나 해당 구성을 변경하여 `resolver` 지시문의 `valid` 매개변수 값을 조정할 수 있습니다.

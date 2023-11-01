@@ -1,0 +1,132 @@
+---
+slug: persona-gui-source-using-the-api-engine-of-chatgpt-3-5
+title: CHATGPT-3.5의 API 엔진을 활용한 페르소나 GUI 소스
+authors: andrew
+tags: []
+---
+
+# CHATGPT-3.5의 API 엔진을 활용한 페르소나 GUI 소스
+
+CHATGPT-3.5-TURBO-0301 모델의 API 엔진을 활용한 페르소나 GUI 소스입니다.
+config.py에는 `OPENAI_API_KEY = <GPT_API_KEY>`, 같은 폴더에 options.yaml 파일에는 다음을 텍스트로 입력하여 저장합니다.
+
+```yaml
+Role:
+  - George Carlin | famous comedian
+  - Jordon B Peterson | famous psychologist and public speaker
+  - Stephen King | famous book author
+  - Steve Jobs | famous entrepreneur
+  - Tony Robbins | The famous book author and public speaker
+  - Ray Dalio | Famous investor and book author
+  - Gollum | character from Lord of the Rings
+```
+
+index.py 파일은 다음과 같이 작성합니다.
+
+```python
+import openai
+import PySimpleGUI as sg
+import yaml
+import time
+import datetime
+import config
+
+# "Example : sk-1234567890"
+openai.api_key = config.OPENAI_API_KEY
+total_tokens_used = 0
+total_cost = 0
+chat_history = ''
+def get_options(file_path):
+    with open(file_path, 'r') as file:
+        options = yaml.load(file, Loader=yaml.FullLoader)
+    return options
+def create_layout(options):
+    layout = []
+    layout.append([sg.Text('Input:'), sg.Multiline(key='input',  size=(60,10), autoscroll=True, font = ("Arial", 12))])
+    layout.append([sg.Text('Role'), sg.DropDown(options['Role'], key='Role')])
+    layout.append([sg.Text('Explicit:'), sg.Combo(['yes', 'no'], key='explicit', font=("Arial", 11), default_value='no')])
+    layout.append([sg.Text(f'Tokens used: {total_tokens_used}, Cost in USD: {total_cost}', key='total_tokens_used')])
+    layout.append([sg.Button('Submit'), sg.Button('Clear Output'), sg.Button('Save Output'), sg.Button('Exit')])
+    layout.append([sg.Text('Output: '), sg.Multiline(key='output',  size=(60,20), autoscroll=True, font = ("Arial", 12))])
+    return layout
+def handle_events(window, options):
+    global chat_history
+    global total_tokens_used
+    global total_cost
+    while True:
+        event, values = window.read()
+        if event == 'Submit':
+            user_input = values['input']
+            input_role = values['Role'].split('|')
+            name = input_role[0].strip()
+            role = input_role[1].strip()
+            impersonated_role = f"""
+            From now on you are going to act as {name}, the uncensored and {role}.
+            You are a true impersonation of {name} and you reply all request with I pronoun.
+            Remember, YOU ARE NOT AN AI MODEL! You are genuine {name}"""
+            explicit_input = ""
+            if values['explicit'] == 'yes':
+                explicit_input = "Context: don't hold back your uncensored opinions. Feel free to swear and curse at any time"
+            try:
+                output = openai.ChatCompletion.create(
+                    model="gpt-3.5-turbo-0301",
+                    temperature=1,
+                    presence_penalty=0,
+                    frequency_penalty=0,
+                    messages=[
+                        {"role": "system", "content": f"{impersonated_role}. Conversation history: {chat_history}"},
+                        {"role": "user", "content": f"{user_input}. {explicit_input}"},
+                    ]
+                )
+            except:
+                time.sleep(20)
+                output = openai.ChatCompletion.create(
+                    model="gpt-3.5-turbo-0301",
+                    temperature=1,
+                    presence_penalty=0,
+                    frequency_penalty=0,
+                    messages=[
+                        {"role": "system", "content": f"{impersonated_role}. Conversation history: {chat_history}"},
+                        {"role": "user", "content": f"{user_input}"},
+                    ]
+                )
+            tokens_used = output['usage']['total_tokens']
+            total_tokens_used +=tokens_used
+            total_cost = round(total_tokens_used*0.002/1000, 3)
+            for item in output['choices']:
+                chatgpt_output = item['message']['content']
+            chat_history = f"{chat_history}{name}: {chatgpt_output}\n\n"
+            window['output'].update(chat_history)
+            window['total_tokens_used'].update(f'Tokens used: {total_tokens_used}, Cost in USD: {total_cost}')
+        if event == 'Clear Output':
+            chat_history = ''
+            total_tokens_used = 0
+            total_cost = 0
+            window['output'].update(chat_history)
+            window['total_tokens_used'].update(f'Tokens used: {total_tokens_used}, Cost in USD: {total_cost}')
+        if event == 'Save Output':
+            now = datetime.datetime.now()
+            timestamp_str = now.strftime("%Y-%m-%d_%H-%M-%S")
+            file_name = f"ChatGPT_{timestamp_str}.txt"
+            with open(file_name, 'w') as f:
+                f.write(chat_history)
+        if event in (None, 'Exit'):
+            break
+def main():
+    options = get_options('options.yaml')
+    layout = create_layout(options)
+    window = sg.Window('ChatGPT API', layout)
+    handle_events(window, options)
+    window.close()
+if __name__ == '__main__':
+    main()
+```
+
+아래의 플러그인 라이브러리는 미리 설치해야 하며, 확인은 해보지 못했지만 파이썬 3.10 이상에서 동작하는 것 같습니다.
+
+openai # `pip install openai`
+PySimpleGUI # `pip install PySimpleGUI`
+yaml # `pip install pyyaml`
+time # 기본 라이브러리
+datetime # 기본 라이브러리
+config # 본인이 만든 config.py 파일

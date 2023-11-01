@@ -1,0 +1,47 @@
+---
+slug: remote-git-hosting-and-publishing
+title: Remote Git Hosting and Publishing
+authors: andrew
+tags: []
+---
+
+# Remote Git Hosting and Publishing
+
+## Typical Git Versioning System Public Repositories
+
+깃을 사용해서 클라우드를 쓰듯이 소스들을 업로드해서 저장하고, 다른 개발자들과 공유, 협업 할 수 있는 깃 저장소들 중에 대표적인 것으로 Bitbucket, Gitlab, Github가 있습니다. 그 중 깃허브가 가장 유명합니다.
+
+### References
+
+1. [[GIT] ⚡️ 깃헙 - 원격 저장소 연동 💯 정리 (git remote / push / pull)](https://inpa.tistory.com/entry/GIT-⚡️-깃헙-원격-저장소-관리-git-remote)
+2. [Git remote 원격 저장소와 Github](https://dev-youngjun.tistory.com/46)
+3. [Git - 리모트 저장소](https://git-scm.com/book/ko/v2/Git의-기초-리모트-저장소)
+4. [Git - Git 저장소 만들기](https://git-scm.com/book/ko/v2/Git의-기초-Git-저장소-만들기)
+5. [나만의 git 서버 만들기 - (3) 원격저장소 생성하기](https://velog.io/@kimjjs100/나만의-git-서버-만들기-3-원격저장소-생성하기)
+
+이 외에도 Amazon AWS CodeCommit, Assembla, Beanstalk, Codebase, Fog Creek Kiln,  Launchpad, Microsoft Azure DevOps, Perforce 및 Planio가 있습니다.
+
+### References
+
+1. [14 Git Hosting Services Compared | Tower Blog](https://www.git-tower.com/blog/git-hosting-services-compared/)
+2. [GitHub Pages | Websites for you and your projects, hosted directly from your GitHub ...](https://pages.github.com/)
+3. [GitHosting - Git SCM Wiki - Linux kernel](http://git.wiki.kernel.org/index.php/GitHosting)
+
+## 각 사이트들의 URL 호스트 패턴
+
+다음은 깃 저장소를 제공하는 몇 가지 사이트들의 URL 호스트 목록입니다:
+
+- Amazon AWS CodeCommit: `aws.amazon.com`
+- Assembla: `assembla.com`
+- Beanstalk: `beanstalkapp.com`
+- Bitbucket: `bitbucket.org`
+- Codebase: `codebasehq.com`
+- Fog Creek Kiln: `fogcreek.com`
+- GitHub: `github.com`
+- GitLab: `gitlab.com`
+- Launchpad: `launchpad.net`
+- Microsoft Azure DevOps: `dev.azure.com`
+- Perforce: `perforce.com`
+- Planio: `plan.io`
+
+일반적으로 가장 많은 개발자들이 사용하는 깃 원격 저장소인 GitHub, GitLab, Bitbucket 모두 `.git`으로 끝나는 URL을 제공합니다. 이들 호스트에서 깃 저장소를 클론할 때는 URL의 마지막에 `.git`을 추가하여 클론할 수 있습니다. 하지만 다른 호스트에서는 그렇지 않을 수 있습니다. 항상 http URL의 마지막이 `.git`으로 끝나지는 않습니다. 따라서 깃 저장소를 클론할 때는 해당 호스트의 문서를 참조하여 올바른 URL 형식을 확인하는 것이 좋습니다.

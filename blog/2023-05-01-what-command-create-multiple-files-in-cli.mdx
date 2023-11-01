@@ -1,0 +1,20 @@
+---
+slug: what-command-create-multiple-files-in-cli
+title: what-command-create-multiple-files-in-cli
+authors: andrew
+tags: []
+---
+
+# what-command-create-multiple-files-in-cli
+
+```sh
+ygka "What command can you use to tell the CLI to create files A1.md through A10.md in one folder?"
+```
+
+To create files A1.md through A10.md in one folder using the command-line interface (CLI), you can use a command called "touch" along with brace expansion. Here's an example of the command you can use:
+
+```sh
+touch A{1..10}.md
+```
+
+This command will create 10 files in the current directory with the names A1.md through A10.md. The "touch" command is used to create empty files, and the brace expansion syntax `{1..10}` is used to generate a sequence of numbers from 1 to 10.

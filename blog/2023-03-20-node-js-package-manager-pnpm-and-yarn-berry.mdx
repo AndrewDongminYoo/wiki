@@ -1,0 +1,197 @@
+---
+slug: node-js-package-manager-pnpm-and-yarn-berry
+title: Node.js의 Package Manager pnpm and Yarn berry
+authors: andrew
+tags: []
+---
+
+# Node.js의 Package Manager pnpm and Yarn berry
+
+## Node.js 패키지 매니저
+
+Node.js 패키지 매니저는 Node.js에서 사용할 수 있는 모듈을 패키지 형태로 저장해 둔 패키지 생태계이자 패키지 설치 및 관리를 위한 CLI를 제공하는 도구입니다. npm은 Node.js와 함께 설치되어 가장 널리 쓰이는 패키지 매니저입니다. Yarn과 pnpm 외에도 다른 패키지 매니저들이 있습니다. 예를 들어, cnpm, ied, npmd 등이 있습니다. 각 도구마다 장단점이 있으므로 프로젝트의 요구사항과 개인의 취향에 따라 선택하시면 됩니다.
+
+### References
+
+(1) [[Node.js] 인기 NPM 패키지 알아보기 | 가비아 라이브러리](https://library.gabia.com/contents/8206/)
+(2) [처음 시작하는 Node.js 개발 \- 2 - npm | HEROPY](https://heropy.blog/2018/02/18/node-js-npm/)
+(3) [패키지 매니저로 Node.js 설치하기 | Node.js](https://nodejs.org/ko/download/package-manager)
+(4) [Installing Node.js via package manager | Node.js](https://nodejs.org/en/download/package-manager)
+(5) [npm - a JavaScript package manager](https://www.npmjs.com/package/npm)
+
+## 각 패키지 매니저의 강점
+
+- npm: Node.js와 함께 설치되어 가장 널리 쓰이는 패키지 매니저입니다. 모든 Node.js 모듈을 호환하고 사용하기 쉽습니다.
+- yarn: npm보다 빠르고 안정적인 설치 속도를 제공합니다. 오프라인 모드와 워크스페이스 기능을 지원합니다.
+- pnpm: 디스크 공간과 메모리를 절약하는 방식으로 패키지를 설치합니다. 중복된 패키지를 하나의 복사본으로 관리하고 심볼릭 링크로 연결합니다.
+- cnpm: 중국에서 개발된 패키지 매니저로 npm의 미러 서버를 사용하여 중국 내에서 빠른 다운로드 속도를 제공합니다.
+
+### References
+
+(1) [JavaScript package managers compared: npm, Yarn, or pnpm?](https://blog.logrocket.com/javascript-package-managers-compared/)
+(2) [JavaScript Package Managers: NPM Vs YARN Vs PNPM - Atatus](https://www.atatus.com/blog/npm-vs-yarn-vs-pnpm/)
+(3) [Why you should prefer using pnpm over npm and yarn? | refine](https://refine.dev/blog/pnpm-vs-npm-and-yarn/)
+
+## 리액트 네이티브 개발의 패키지 매니저
+
+yarn berry와 pnpm은 모두 Plug'n'Play(PnP)라는 기능을 지원합니다. PnP는 패키지를 설치할 때 node_modules 폴더를 생성하지 않고, 하나의 복사본으로 관리하고 심볼릭 링크로 연결하는 방식입니다. 이렇게 하면 디스크 공간과 메모리를 절약하고 설치 속도를 향상시킬 수 있습니다.
+그러나 yarn berry와 pnpm은 PnP를 구현하는 방식에 차이가 있습니다. yarn berry는 PnP를 기본적으로 활성화하고, 호환되지 않는 패키지들을 위해 loose 모드라는 옵션을 제공합니다. pnpm은 PnP 대신 node_modules 폴더에 심볼릭 링크를 생성하는 방식을 사용합니다. 이 방식은 호환성 문제가 적으나, 일부 패키지들이 심볼릭 링크로 인식하지 못하는 경우가 있습니다.
+따라서 리액트 네이티브 개발자에게 어떤 패키지 매니저가 더 적합한지는 프로젝트의 특성과 사용하는 패키지들에 따라 다르겠습니다. 일반적으로 yarn berry는 PnP의 장점을 최대한 활용하고 싶은 경우에 좋으며, pnpm은 node_modules 폴더의 구조를 유지하면서 캐싱의 장점을 얻고 싶은 경우에 좋습니다.
+
+### References
+
+(1) [Advanced package manager features for npm, Yarn, and pnpm](https://blog.logrocket.com/advanced-package-manager-features-npm-yarn-pnpm/)
+(2) [JavaScript package managers compared: npm, Yarn, or pnpm?](https://blog.logrocket.com/javascript-package-managers-compared/)
+(3) [Plug'n'Play | Yarn - Package Manager](https://yarnpkg.com/features/pnp/)
+(4) [reactjs - NPM or Yarn? What is the standard practice of starting React Native projects ...](https://stackoverflow.com/questions/58464279/npm-or-yarn-what-is-the-standard-practice-of-starting-react-native-projects-and)
+
+## 두 패키지 도구의 차이점과 각각의 장단점
+
+yarn berry와 pnpm의 차이점
+
+- yarn berry는 PnP를 기본적으로 활성화하고, 호환되지 않는 패키지들을 위해 loose 모드라는 옵션을 제공합니다. pnpm은 PnP 대신 node_modules 폴더에 심볼릭 링크를 생성하는 방식을 사용합니다.
+- yarn berry는 워크스페이스 기능을 지원하며, 여러 프로젝트를 하나의 저장소에서 관리할 수 있습니다. pnpm은 워크스페이스 기능을 지원하지 않으며, 각 프로젝트마다 별도의 패키지 매니저를 사용해야 합니다.
+- yarn berry는 플러그인 시스템을 제공하며, 다양한 기능들을 추가할 수 있습니다. pnpm은 플러그인 시스템을 제공하지 않으며, 필요한 기능들은 별도의 도구나 스크립트로 구현해야 합니다.
+
+yarn berry와 pnpm의 장단점
+
+- yarn berry의 장점은 PnP의 장점을 최대한 활용하고 싶은 경우에 좋으며, 워크스페이스와 플러그인 등 다양한 기능들을 제공한다는 점입니다. 단점은 PnP가 호환되지 않는 패키지들이 있어서 loose 모드를 사용해야 하는 경우가 있다는 점입니다.
+- pnpm의 장점은 node_modules 폴더의 구조를 유지하면서 캐싱의 장점을 얻고 싶은 경우에 좋으며, 호환성 문제가 적다는 점입니다. 단점은 워크스페이스와 플러그인 등 다양한 기능들이 부족하다는 점입니다.
+
+### References
+
+(1) [JavaScript Package Managers: NPM Vs YARN Vs PNPM - Atatus](https://www.atatus.com/blog/npm-vs-yarn-vs-pnpm/)
+(2) [JavaScript package managers compared: npm, Yarn, or pnpm?](https://blog.logrocket.com/javascript-package-managers-compared/)
+(3) [Benchmarks of JavaScript Package Managers | pnpm](https://pnpm.io/benchmarks)
+
+## yarn berry와 pnpm 각각에 대한 성능 벤치마크 결과
+
+- yarn berry는 PnP 모드를 사용하면 설치 시간이 가장 빠르고, 캐시가 없는 경우에도 빠른 속도를 유지합니다. 하지만 업데이트 시간은 다른 패키지 매니저들보다 느립니다.
+- pnpm은 캐시가 있는 경우에 설치 시간이 가장 빠르고, 캐시가 없는 경우에도 yarn berry보다 느리지 않습니다. 업데이트 시간은 npm보다 빠르고, yarn classic보다 조금 느립니다.
+  성능 벤치마크 결과는 프로젝트의 크기나 구조에 따라 달라질 수 있으므로 참고만 하시기 바랍니다.
+
+### References
+
+(1) [Benchmarks of JavaScript Package Managers | pnpm](https://pnpm.io/benchmarks)
+(2) [JavaScript package managers compared: npm, Yarn, or pnpm?](https://blog.logrocket.com/javascript-package-managers-compared/)
+(3) [pnpm/benchmarks-of-javascript-package-managers - GitHub](https://github.com/pnpm/benchmarks-of-javascript-package-managers)
+
+## yarn berry가 업데이트 시간이 느린 이유
+
+- yarn berry는 PnP 모드를 사용하면 node_modules 폴더를 생성하지 않고, .pnp.js 파일에 패키지의 위치를 기록합니다. 이 방식은 설치 시간을 줄여주지만, 업데이트 시간을 늘리는 단점이 있습니다.
+- yarn berry는 업데이트할 때 peer dependencies의 충돌 여부를 체크하고, 문제가 있으면 경고 메시지를 출력합니다. 이 과정은 업데이트 시간에 영향을 줄 수 있습니다.
+
+## yarn berry의 업데이트 시간을 최소화하는 방법
+
+- yarn berry의 설정 파일인 .yarnrc.yml 파일에 nodeLinker: node-modules 라고 추가하면 PnP 모드를 비활성화하고, node_modules 폴더를 생성하는 방식으로 바꿀 수 있습니다. 이렇게 하면 업데이트 시간이 줄어들 수 있습니다.
+- yarn berry의 명령어인 yarn up 을 사용하면 패키지들을 최신 버전으로 업데이트할 수 있습니다. 이 명령어는 peer dependencies의 충돌 여부를 무시하므로, 경고 메시지가 나오지 않습니다. 하지만 peer dependencies가 정상적으로 작동하지 않을 수도 있으므로 주의해야 합니다.
+
+### References
+
+(1) [Migration | Yarn - Package Manager](https://yarnpkg.com/getting-started/migration/)
+(2) [Make your CI faster and improve developer experience: Upgrade to Yarn >2 with (or ...](https://medium.com/inato/make-your-ci-faster-and-improve-developer-experience-upgrade-to-yarn-2-with-or-without-939524d9bef2)
+(3) [[Bug?]: yarn install link step very slow · Issue #3476 · yarnpkg/berry - GitHub](https://github.com/yarnpkg/berry/issues/3476)
+
+## yarn berry의 loose 모드 활성화 방법
+
+- yarn berry의 설정 파일인 .yarnrc.yml 파일에 pnpMode: loose 라고 추가하면 loose 모드를 활성화할 수 있습니다.
+- loose 모드는 PnP 모드와 비슷하지만, node_modules 링커에서 hoist되었을 패키지들에 대해서는 경고 메시지만 출력하고 접근을 허용합니다. 이렇게 하면 호환성 문제를 줄일 수 있습니다.
+
+## 특정 패키지가 PnP를 지원하지 않는 것을 미리 알 수 있는 방법
+
+- yarn berry의 명령어인 yarn dlx @yarnpkg/doctor 을 사용하면 프로젝트에 있는 패키지들이 PnP를 지원하는지 검사할 수 있습니다. 이 명령어는 문제가 있는 패키지들을 보여주고, 해결 방법을 제안합니다.
+- [yarn berry 웹사이트](https://yarnpkg.com/) 에서 패키지 이름을 검색하면 해당 패키지가 PnP를 지원하는지 여부를 확인할 수 있습니다. PnP를 지원하는 패키지는 아이콘으로 표시됩니다.
+
+### References
+
+(1) [berry/CHANGELOG.md at master · yarnpkg/berry · GitHub](https://github.com/yarnpkg/berry/blob/master/CHANGELOG.md)
+(2) [yarnpkg - Fallback pool in yarn v2 "loose" mode - Stack Overflow](https://stackoverflow.com/questions/61901805/fallback-pool-in-yarn-v2-loose-mode)
+(3) [Yarn 2.1 🐱‍🏍 Git Workspaces, Focused Installs, Loose mode, Live Playground ...](https://dev.to/arcanis/yarn-2-1-git-workspaces-focused-installs-loose-mode-live-playground-4kfc)
+
+## yarn berry에서 nodeLinker: node_modules 옵션과 pnpMode: loose 옵션의 차이점
+
+- nodeLinker: node_modules 옵션은 PnP 모드를 완전히 비활성화하고, 전통적인 node_modules 폴더를 생성하는 방식으로 패키지들을 설치하고 관리합니다. 이 옵션은 호환성 문제를 없애지만, 설치 시간과 디스크 공간을 많이 소모합니다.
+- pnpMode: loose 옵션은 PnP 모드를 부분적으로 활성화하고, node_modules 링커에서 hoist되었을 패키지들에 대해서는 경고 메시지만 출력하고 접근을 허용합니다. 이 옵션은 호환성 문제를 줄이면서도 설치 시간과 디스크 공간을 절약할 수 있습니다.
+
+두 옵션은 동시에 사용할 수 없습니다. 왜냐하면 두 옵션은 서로 다른 링커 방식을 사용하기 때문입니다. 만약 두 옵션을 동시에 설정하면 yarn berry는 오류 메시지를 출력하고 작동하지 않습니다.
+
+### References
+
+(1) [Advanced package manager features for npm, Yarn, and pnpm](https://blog.logrocket.com/advanced-package-manager-features-npm-yarn-pnpm/)
+(2) [yarnpkg - Yarn 3 nodeLinker: node-modules - Stack Overflow](https://stackoverflow.com/questions/71063201/yarn-3-nodelinker-node-modules)
+(3) [Yarn PnP 의존성 에러 해결기 | 햣 블로그](https://woong-jae.com/projects/220711-pnp-dependency-error/)
+(4) [Plug'n'Play | Yarn - Package Manager](https://yarnpkg.com/features/pnp/)
+(5) [Default nodeLinker is node_modules instead of pnp · Issue #3482 · yarnpkg/berry ...](https://github.com/yarnpkg/berry/issues/3482)
+
+## yarn berry 마이그레이션 방법
+
+yarn classic을 사용하던 프로젝트에서 yarn berry로 업데이트하고 나서, 다음과 같은 작업을 해야 합니다:
+
+- yarn set version berry 명령어를 실행하여 yarn berry를 활성화합니다.
+- .npmrc나 .yarnrc 파일이 있다면 새로운 형식인 .yarnrc.yml 파일로 변환합니다. 이 과정에서 기존의 설정들을 유지하거나 변경할 수 있습니다.
+- yarn install 명령어를 실행하여 프로젝트의 의존성들을 설치합니다. 이때 PnP 모드가 기본적으로 적용되므로 호환성 문제가 발생할 수 있습니다. 이런 경우에는 nodeLinker: node_modules 옵션을 사용하거나 pnpMode: loose 옵션을 사용하여 해결할 수 있습니다.
+- package.json 파일에 있는 scripts 설정들을 검토하고 필요한 경우 수정합니다. 예를 들어 node_modules 폴더에 직접 접근하는 스크립트는 PnP 모드와 충돌할 수 있으므로 yarn dlx 명령어를 사용하여 대체할 수 있습니다.
+
+.yarnrc.yml 파일과 .yarnrc 파일은 동시에 사용할 수 없습니다. 왜냐하면 두 파일은 서로 다른 형식의 설정 파일이기 때문입니다. 만약 두 파일이 동시에 존재한다면 yarn berry는 오류 메시지를 출력하고 작동하지 않습니다.
+
+### References
+
+(1) [Migration | Yarn - Package Manager](https://yarnpkg.com/getting-started/migration/)
+(2) [Feedback on Yarn 3 migration from Yarn classic · Discussion #3448 · yarnpkg/berry ...](https://github.com/yarnpkg/berry/discussions/3448)
+(3) [yarnpkg/yarn: The 1.x line is frozen - GitHub](https://github.com/yarnpkg/yarn)
+
+## yarn berry의 dlx 커맨드
+
+- dlx 커맨드는 npx 커맨드와 유사하게 한 번만 실행할 패키지를 설치하고 실행하는 명령어입니다. 예를 들어 yarn dlx create-react-app 명령어는 create-react-app 패키지를 임시로 설치하고 프로젝트를 생성한 후 삭제합니다.
+- dlx 커맨드는 yarn berry의 PnP 모드와 호환되도록 설계되었습니다. 따라서 node_modules 폴더에 직접 접근하는 패키지들을 dlx 커맨드로 대체할 수 있습니다. 예를 들어 yarn dlx eslint --init 명령어는 eslint 패키지를 임시로 설치하고 설정 파일을 생성한 후 삭제합니다.
+- dlx 커맨드는 -p,--package 플래그를 사용하여 실행할 패키지와 실행할 명령어를 구분할 수 있습니다. 예를 들어 yarn dlx -p jest jest 명령어는 jest 패키지에서 jest 명령어를 실행합니다.
+
+### References
+
+(1) [`yarn dlx` | Yarn - Package Manager](https://yarnpkg.com/cli/dlx/)
+(2) [GitHub - yarnpkg/berry: 📦🐈 Active development trunk for Yarn ⚒](https://github.com/yarnpkg/berry)
+(3) [Yarn berry에서 React + Jest + Cypress + TypeScript + Github Actions CI/CD를 ...](https://haranglog.tistory.com/28)
+(4) [yarn berry로 React.js 프로젝트 시작하기 | Kasterra's Archive](https://kasterra.github.io/setting-yarn-berry/)
+(5) [Migration | Yarn - Package Manager](https://yarnpkg.com/getting-started/migration/)
+
+## yarn dlx 명령어와 npx 명령어의 충돌 가능성
+
+dlx 커맨드는 npx 커맨드와 거의 동일한 기능을 제공하지만 yarn berry의 PnP 모드와 호환되도록 만들어졌습니다. 따라서 yarn berry를 사용하는 프로젝트에서는 dlx 커맨드를 사용하는 것이 권장됩니다. npx 커맨드는 node_modules 폴더에 의존하기 때문에 PnP 모드와 충돌할 수 있습니다.
+
+패키지 매니저는 프로젝트의 의존성을 관리하는 도구입니다. 각 프로젝트마다 다른 패키지 매니저를 사용할 수 있습니다. 예를 들어, npm, yarn, pnpm 등의 패키지 매니저를 선택할 수 있습니다.
+
+각 패키지 매니저는 자신만의 장단점이 있으므로, 프로젝트의 목적과 요구사항에 따라 적합한 패키지 매니저를 선택하는 것이 좋습니다. 또한, 패키지 매니저를 바꾸고 싶다면, 기존에 설치된 패키지들을 삭제하고 새로운 패키지 매니저로 다시 설치하는 과정이 필요합니다. 각 패키지 매니저 사이에 간섭은 전혀 없다고 단언하기는 어렵습니다. 가능하면 한 프로젝트에서는 한 가지 패키지 매니저만 사용하시는 것이 안전하고 편리할 것입니다.
+
+### References
+
+(1) [Package management basics - Learn web development | MDN - Mozilla](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Package_management)
+(2) [JavaScript package managers compared: npm, Yarn, or pnpm?](https://blog.logrocket.com/javascript-package-managers-compared/)
+(3) [Adding Nuget Packages From One Project To Another](https://stackoverflow.com/questions/42142993/adding-nuget-packages-from-one-project-to-another)
+
+## Yarn Berry로 업그레이드하지 않아도 되는 경우
+
+pnpm과 yarn berry를 프로젝트에 적용시켜 보고자 하는 개발자들을 대상으로, 다음과 같은 경우에는 기존의 npm이나 yarn classic을 쓰는 게 낫다고 말할 수 있습니다:
+
+- Node.js의 버전이 16.9.0 미만인 경우: pnpm과 yarn berry는 Corepack이라는 도구를 사용하여 패키지 매니저를 관리합니다. 하지만 Corepack은 Node.js 16.9.0 이상에서만 사전 설치되어 있으므로, 그 이하의 버전에서는 별도로 설치하고 활성화해야 합니다. 이 과정이 번거롭거나 오류가 발생할 수 있는 경우에는 npm이나 yarn classic을 사용하는 것이 편리할 수 있습니다.
+- 패키지가 node_modules 폴더에 의존하는 경우: pnpm과 yarn berry는 node_modules 폴더를 생성하지 않고, 의존성을 공유하거나 가상화하는 방식으로 패키지를 관리합니다. 이는 디스크 공간과 설치 속도를 절약할 수 있지만, node_modules 폴더에 직접 접근하거나 수정하는 패키지와 호환되지 않을 수 있습니다. 이런 패키지들은 pnpm의 \--shamefully-hoist 옵션이나 yarn berry의 nodeLinker 옵션으로 해결할 수 있기도 하지만, 그렇게 되면 pnpm과 yarn berry의 장점을 잃게 될 수 있습니다. 따라서 이런 패키지들을 사용해야 하는 경우에는 npm이나 yarn classic을 사용하는 것이 안전할 수 있습니다.
+
+위의 예시 외에도 다른 상황에 따라서 pnpm과 yarn berry가 적합하지 않을 수도 있습니다. 따라서 프로젝트의 특성과 요구사항을 잘 파악하고, 패키지 매니저를 선택하시기 바랍니다.
+
+### References
+
+(1) [JavaScript package managers compared: npm, Yarn, or pnpm?](https://blog.logrocket.com/javascript-package-managers-compared/)
+(2) [Why you should prefer using pnpm over npm and yarn? | refine](https://refine.dev/blog/pnpm-vs-npm-and-yarn/)
+(3) [JavaScript Package Managers: NPM Vs YARN Vs PNPM - Atatus](https://www.atatus.com/blog/npm-vs-yarn-vs-pnpm/)
+
+## yarn classic, yarn berry, pnpm의 인기
+
+yarn classic과 pnpm, yarn berry의 각 사용자 비율을 정확하게 알려주기는 어렵습니다. 패키지 매니저의 사용률은 다양한 요인에 따라 변화할 수 있고, 중복 사용자가 많을 수 있기 때문입니다. 하지만 대략적인 사용률을 알고 싶으시다면, 다음과 같은 방법으로 참고할 수 있습니다:
+
+- npm registry에서 각 패키지 매니저의 다운로드 횟수를 확인하는 방법: 이 방법은 각 패키지 매니저의 인기도를 나타낼 수 있습니다. 예를 들어, 2022년 12월 1일부터 2023년 1월 8일까지의 기간 동안, yarn classic은 약 **2억 5천만**번 다운로드되었고, pnpm은 약 **1천만**번 다운로드되었으며, yarn berry는 약 **3백만**번 다운로드되었습니다. 이 결과를 보면, yarn classic이 가장 인기있는 패키지 매니저라고 할 수 있습니다.
+- 각 패키지 매니저의 벤치마크 결과를 확인하는 방법: 이 방법은 각 패키지 매니저의 성능을 비교할 수 있습니다. 예를 들어, pnpm 공식 웹사이트에서 제공하는 벤치마크 결과에 따르면, pnpm이 npm과 yarn classic보다 설치 속도와 디스크 공간 절약 면에서 우수하다고 합니다. 또한 yarn berry는 node_modules 폴더를 생성하지 않는 PnP 모드로 실행될 때 가장 빠른 설치 속도와 가장 적은 디스크 공간을 차지한다고 합니다. 이 결과를 보면, pnpm과 yarn berry가 성능 면에서 우위에 있다고 할 수 있습니다.
+
+### References
+
+(1) [JavaScript package managers compared: npm, Yarn, or pnpm?](https://blog.logrocket.com/javascript-package-managers-compared/)
+(2) [JavaScript Package Managers: NPM Vs YARN Vs PNPM - Atatus](https://www.atatus.com/blog/npm-vs-yarn-vs-pnpm/)
+(3) [Benchmarks of JavaScript Package Managers | pnpm](https://pnpm.io/benchmarks)

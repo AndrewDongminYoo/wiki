@@ -1,0 +1,27 @@
+---
+slug: define-assignment-assertion-in-typescript
+title: Define Assignment Assertion in TypeScript
+authors: andrew
+tags: []
+---
+
+# Define Assignment Assertion in TypeScript
+
+타입스크립트에서 클래스 프로퍼티에 느낌표를 사용하는 문법은 TypeScript 2.7 버전에서 도입되었습니다. 이것은 "definite assignment assertions(확실한 할당 어설션)"라는 개념으로, 해당 프로퍼티가 생성자에서 반드시 할당될 것이라는 것을 컴파일러에게 명시하는 것입니다.
+예를 들어, 다음과 같은 코드가 있다고 가정해봅시다.
+
+```typescript
+class Person {
+  name!: string;
+  constructor() {
+    setTimeout(() => {
+      this.name = "John";
+    }, 1000);
+  }
+}
+
+const person = new Person();
+console.log(person.name.toUpperCase()); // 오류 발생!
+```
+
+이 코드에서 `name` 프로퍼티는 생성자에서 초기화되지 않았기 때문에, 해당 프로퍼티에 접근할 때 컴파일러는 오류를 발생시킵니다. 하지만 `name` 프로퍼티에 느낌표를 붙이면 해당 프로퍼티가 생성자에서 반드시 초기화될 것이라는 것을 명시할 수 있으며, 컴파일러는 이를 이해하고 오류를 발생시키지 않습니다.

@@ -1,0 +1,127 @@
+---
+slug: truthy-falsy-concept-and-introduction
+title: Truthy & Falsy 개념 및 사용방법 소개
+authors: andrew
+tags: []
+---
+
+# Truthy & Falsy 개념 및 사용방법 소개
+
+## 프로그래밍 언어에서 Truthy와 Falsy 값
+
+Truthy와 Falsy 값은 프로그래밍 언어에서 Boolean 컨텍스트에서 true 또는 false로 평가되는 값입니다. 예를 들어, 0은 false로 평가되기 때문에 falsy 값이지만 “0”은 정의된 문자열로 truthy 값입니다.
+JavaScript에서는 모든 값이 falsy로 정의되지 않는 한 truthy입니다. 즉, false, 0, -0, 0n, "", null, undefined 및 NaN을 제외한 모든 값이 truthy입니다.
+Python에서는 다음과 같은 값들이 falsy로 간주됩니다: None, False, 0과 같은 숫자들(0.0, 0j), 빈 시퀀스와 컬렉션([]-빈 리스트, {}-빈 딕셔너리, ()-빈 튜플, set()-빈 세트), ''-빈 str, b''-빈 bytes 등.
+다른 프로그래밍 언어들도 비슷한 방식으로 truthy와 falsy 값을 정의합니다. 이러한 값들은 코드를 더 간결하게 만드는 데 사용될 수 있습니다.
+
+### References
+
+(1) [What Is a Boolean Data Type, and What Are Some Uses? — SitePoint](https://www.sitepoint.com/boolean-data-type/)
+(2) [Truthy - MDN Web Docs Glossary: Definitions of Web-related terms | MDN - Mozilla](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
+(3) [What is Truthy and Falsy? How is it different from True and False?](https://stackoverflow.com/questions/39983695/what-is-truthy-and-falsy-how-is-it-different-from-true-and-false)
+(4) [Truthy and Falsy Values in Python: A Detailed Introduction](https://www.freecodecamp.org/news/truthy-and-falsy-values-in-python/)
+
+다른 프로그래밍 언어들도 비슷한 방식으로 truthy와 falsy 값을 정의합니다. 예를 들어, PHP에서는 다음과 같은 값들이 falsy로 간주됩니다: false, 0, 0.0, "", "0", null, array().
+Truthy와 Falsy 값은 프로그래밍 언어들 간의 비교에서 널리 사용됩니다 (예: PHP vs PERL vs Python vs JS). 이러한 값들은 코드를 더 간결하게 만드는 데 사용될 수 있습니다.
+
+### References
+
+(1) [What Is a Boolean Data Type, and What Are Some Uses? — SitePoint](https://www.sitepoint.com/boolean-data-type/)
+(2) [What is Truthy and Falsy? How is it different from True and False?](https://stackoverflow.com/questions/39983695/what-is-truthy-and-falsy-how-is-it-different-from-true-and-false)
+(3) [Truthy - MDN Web Docs Glossary: Definitions of Web-related terms | MDN - Mozilla](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
+(4) [Truthy and Falsy Values in Python: A Detailed Introduction](https://www.freecodecamp.org/news/truthy-and-falsy-values-in-python/)
+
+Java는 C와 달리 숫자 조건문을 허용하지 않습니다. 예를 들어, 다음과 같은 코드는 Java에서 오류가 발생합니다:
+
+```java
+if (5) {
+    System.out.println("true");
+} else {
+    System.out.println("false");
+}
+```
+
+이 코드는 다음과 같은 오류 메시지를 발생시킵니다:
+`incompatible types: int cannot be converted to boolean`
+Java에서는 boolean 타입의 값만 if문의 조건으로 사용할 수 있습니다. 따라서 Java에서는 truthy와 falsy 값이 존재하지 않습니다.
+Go 언어에서도 Java와 마찬가지로 boolean 타입의 값만 if문의 조건으로 사용할 수 있습니다. 따라서 Go 언어에서도 truthy와 falsy 값이 존재하지 않습니다.
+Java와 Go 언어 모두 toBoolean()이라는 내장 메소드를 가지고 있지 않습니다. 하지만, 사용자 정의 클래스에서 boolean 값을 반환하는 메소드를 정의할 수 있습니다.
+예를 들어, Java에서는 다음과 같이 작성할 수 있습니다:
+
+```java
+class MyClass {
+    private int value;
+    public MyClass(int value) {
+        this.value = value;
+    }
+    public boolean toBoolean() {
+        return value != 0;
+    }
+}
+MyClass myObject = new MyClass(5);
+if (myObject.toBoolean()) {
+    System.out.println("true");
+} else {
+    System.out.println("false");
+}
+```
+
+이 코드는 "true"를 출력합니다.
+Go 언어에서도 비슷한 방식으로 작성할 수 있습니다:
+
+```go
+type MyClass struct {
+    value int
+}
+func (m MyClass) toBoolean() bool {
+    return m.value != 0
+}
+func main() {
+    myObject := MyClass{5}
+    if myObject.toBoolean() {
+        fmt.Println("true")
+    } else {
+        fmt.Println("false")
+    }
+}
+```
+
+이 코드도 "true"를 출력합니다.
+
+사용자 정의 클래스에서 boolean 값을 반환하는 메소드의 동작 방식은 사용자가 정의한대로 작동합니다. 따라서 false를 반환하도록 강제할 수 있습니다.
+Java에서 모든 클래스는 Object 클래스를 상속합니다. Object 클래스에는 몇 가지 메소드가 정의되어 있습니다. 이 중 일부 메소드는 사용자 정의 클래스에서 오버라이딩하는 것이 좋습니다.
+
+- `equals(Object obj)`: 객체가 다른 객체와 "동일"한지 여부를 결정합니다. 이 메소드는 일반적으로 오버라이딩하는 것이 좋습니다.
+- `hashCode()`: 객체의 해시 코드 값을 반환합니다. equals 메소드를 오버라이딩하는 경우, hashCode 메소드도 함께 오버라이딩해야 합니다.
+- `toString()`: 객체를 문자열로 표현합니다. 이 메소드는 일반적으로 오버라이딩하는 것이 좋습니다.
+
+하지만, 이러한 메소드들을 반드시 오버라이딩해야 하는 것은 아닙니다. 이러한 메소드들을 오버라이딩하지 않으면 Object 클래스에 정의된 기본 구현이 사용됩니다.
+Java에서 hashCode() 메소드는 객체의 해시 코드 값을 반환합니다. 이 메소드는 equals 메소드와 함께 오버라이딩하는 것이 좋습니다. equals 메소드가 두 객체를 "동일"하다고 판단하면, 두 객체의 hashCode 메소드는 같은 값을 반환해야 합니다.
+다음은 hashCode 메소드를 오버라이딩하는 예시 코드입니다:
+
+```java
+class MyClass {
+    private int value;
+    public MyClass(int value) {
+        this.value = value;
+    }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        MyClass other = (MyClass) obj;
+        return value == other.value;
+    }
+    @Override
+    public int hashCode() {
+        return value;
+    }
+}
+```
+
+이 코드에서 MyClass 클래스는 value 필드를 가지고 있습니다. equals 메소드는 두 객체의 value 필드가 같은 경우에만 true를 반환합니다. 따라서 hashCode 메소드도 value 필드의 값을 반환합니다.
+이렇게 함으로써, equals 메소드가 두 객체를 "동일"하다고 판단하면, 두 객체의 hashCode 메소드는 같은 값을 반환하게 됩니다.

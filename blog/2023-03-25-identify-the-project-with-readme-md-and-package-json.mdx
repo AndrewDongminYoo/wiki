@@ -1,0 +1,200 @@
+---
+slug: identify-the-project-with-readme-md-and-package-json
+title: README.md + package.json로 프로젝트 파악
+authors: andrew
+tags: []
+---
+
+# README.md + package.json로 프로젝트 파악
+
+Github 프로젝트의 README.md나 package.json의 내용을 컨텍스트로 제공할 경우, 해당 프로젝트에서 사용한 기술들의 전반적인 개요를 파악할 수 있습니까? 그런 방법이 있는지가 아니라, 당신이 할 수 있는지에 대한 질문입니다.
+
+README.md 파일과 package.json 파일은 프로젝트의 전반적인 정보를 제공하는 데 유용합니다. README.md 파일은 프로젝트의 설명, 사용 방법 및 기타 정보를 제공하는 반면, package.json 파일은 프로젝트에서 사용하는 패키지 및 의존성에 대한 정보를 제공합니다. 이러한 파일들을 통해 해당 프로젝트에서 사용된 기술들의 전반적인 개요를 파악할 수 있습니다.
+
+[이 파일](https://github.com/anaclumos/extracranial/blob/main/package.json)은 package.json 파일의 일부로 보입니다. 이 파일은 프로젝트에서 사용하는 패키지 및 의존성에 대한 정보를 제공합니다. 이 파일에서 볼 수 있듯이, 이 프로젝트는 Docusaurus, React, TypeScript 등의 기술을 사용하고 있습니다.
+
+## How to render 3D Graph in React
+
+이 프로젝트에서 3D 마인드맵을 구현하는 데 사용된 기술은 package.json 파일에서 확인할 수 있습니다. 이 파일에 따르면, 이 프로젝트는 `three`와 `react-force-graph` 패키지를 사용하고 있습니다. 이러한 패키지들은 3D 그래픽과 관련된 작업을 수행하는 데 사용됩니다.
+
+## Detail about react-force-graph Package
+
+`react-force-graph`는 2D, 3D, VR 및 AR의 force-directed 그래프를 위한 React 컴포넌트입니다. 이 모듈은 `ForceGraph2D`, `ForceGraph3D`, `ForceGraphVR` 및 `ForceGraphAR`의 4가지 React 컴포넌트를 내보냅니다. 각각은 force-directed 반복 레이아웃을 사용하여 2차원 또는 3차원 공간에서 그래프 데이터 구조를 나타내는 데 사용될 수 있습니다. 이 패키지는 canvas/WebGL을 렌더링에 사용하고 d3-force-3d를 기본 물리 엔진으로 사용합니다. 확대/축소, 노드 드래그 및 노드/링크 호버/클릭 상호 작용을 지원합니다.
+
+### References
+
+(1) [react-force-graph - npm](https://www.npmjs.com/package/react-force-graph)
+(2) [GitHub - react-force-graph: React component for 2D, 3D, VR and AR force ...](https://github.com/react-force-graph)
+(3) [react-force-graph - npm](https://www.npmjs.com/package/react-force-graph/v/1.30.3)
+
+force-directed 그래프란 무엇인가요?
+
+force-directed 그래프는 그래프를 미적으로 만족스럽게 그리기 위한 알고리즘의 한 클래스입니다. 이 알고리즘의 목적은 그래프의 노드를 2차원 또는 3차원 공간에 배치하여 모든 엣지가 거의 같은 길이가 되고 교차하는 엣지가 최소화되도록 엣지 집합과 노드 집합 사이에 힘을 할당하고, 이러한 힘을 사용하여 엣지와 노드의 운동을 시뮬레이션하거나 에너지를 최소화하는 것입니다. 일반적으로, Hooke의 법칙에 기반한 스프링과 같은 매력적인 힘이 그래프의 엣지의 끝점 쌍을 서로 끌어당기는 데 사용되며, 동시에 Coulomb의 법칙에 기반한 전기적으로 충전된 입자와 같은 반발력이 모든 노드 쌍을 분리하는 데 사용됩니다. 이 시스템의 평형 상태에서 엣지는 균일한 길이를 갖게 되며(스프링 힘 때문에), 엣지로 연결되지 않은 노드들은 서로 멀어집니다(전기적 반발력 때문에).
+
+### References
+
+(1) [Force-directed graph drawing - Wikipedia](https://en.wikipedia.org/wiki/Force-directed_graph_drawing)
+(2) [GitHub - force-graph: Force-directed graph rendered on HTML5 canvas](https://github.com/force-graph)
+(3) [Force-directed graph layouts explained - Cambridge Intelligence](https://cambridge-intelligence.com/keylines-faq-force-directed-layouts/)
+
+## canvas/WebGL과 OpenGL ES
+
+WebGL은 OpenGL ES 2.0을 기반으로 한 API로, 브라우저의 HTML canvas에서 2D 및 3D 렌더링을 수행할 수 있도록 합니다. 이를 통해 플러그인을 사용하지 않고도 3D 웹 콘텐츠 제작이 가능합니다. WebGL 프로그램은 자바스크립트로 작성된 제어 코드와 컴퓨터의 그래픽 처리 장치(GPU)에서 실행되는 셰이더 코드(GLSL)로 구성됩니다.
+Canvas는 HTML5의 요소 중 하나로, 자바스크립트를 이용하여 그래픽을 그릴 수 있는 강력한 옵션을 제공합니다. 캔버스를 사용하면 WebGL 렌더링 컨텍스트를 생성할 수 있습니다.
+
+### References
+
+(1) [Getting started with WebGL - Web APIs | MDN - Mozilla](https://developer.mozilla.org/en-US/docs/web/api/webgl_api/tutorial/getting_started_with_webgl)
+(2) [Getting started with WebGL - Web API | MDN](https://developer.mozilla.org/ko/docs/Web/API/WebGL_API/Tutorial/Getting_started_with_WebGL)
+(3) [javascript - canvas to WebGL - Stack Overflow](https://stackoverflow.com/questions/38923695/canvas-to-webgl)
+(4) [WebGL이란 무엇인가(+ HTML Canvas, WebGL 기초)](https://code-masterjung.tistory.com/110)
+
+## d3-force-3d 기본 물리 엔진
+
+`d3-force-3d`는 `d3-force`의 확장 버전으로, 2D 이외의 다른 차원을 지원합니다. 이는 `numDimensions` 메소드를 통해 1, 2 또는 3(기본값은 2)의 값을 지원합니다. 이 모듈은 입자에 대한 물리적 힘을 시뮬레이션하기 위해 velocity Verlet 수치적 적분기를 구현합니다.
+이 시뮬레이션은 단순화되어 있습니다: 각 단계마다 일정한 단위 시간 단계 Δt = 1을 가정하고, 모든 입자에 대해 일정한 단위 질량 m = 1을 가정합니다. 따라서 입자에 작용하는 힘 F는 시간 간격 Δt 동안 일정한 가속도 a와 동일하며, 입자의 속도에 더해져서 입자의 위치에 더해집니다.
+
+### References
+
+(1) [d3-force-3d - GitHub](https://github.com/d3-force-3d)
+(2) [d3/d3-force: Force-directed graph layout using velocity Verlet integration. - GitHub](https://github.com/d3/d3-force)
+(3) [过来，了解一下 D3-force! - 知乎](https://zhuanlan.zhihu.com/p/458336202)
+
+## 마크다운으로 작성한 위키 문서들을 .mdx 기술로 하위 페이지들로
+
+마크다운으로 작성된 위키 문서들을 .mdx로 변환하려면 `mdx-js/mdx`와 같은 라이브러리를 사용할 수 있습니다. 이 라이브러리는 마크다운 파일을 JSX로 변환하여 React 컴포넌트로 사용할 수 있도록 해줍니다.
+three.js와 react-force-graph를 사용하여 3D 마인드맵을 렌더링하려면, 각 노드에 대한 정보와 연결 정보를 포함하는 데이터 구조를 준비해야 합니다. 이 데이터 구조는 react-force-graph의 `graphData` prop으로 전달되어야 합니다.
+각 노드에 위키 문서들을 링크하려면, react-force-graph의 `onNodeClick` prop을 사용하여 클릭 이벤트 핸들러를 지정할 수 있습니다. 이 핸들러에서는 클릭된 노드의 정보를 사용하여 해당 위키 문서로 이동하거나 해당 문서의 내용을 표시하는 등의 작업을 수행할 수 있습니다.
+
+## three.js와 react-force-graph로 3D 마인드맵을 구현하는 예제
+
+`react-force-graph` 라이브러리는 `ForceGraph3D` 컴포넌트를 제공합니다. 이 컴포넌트를 사용하면 3D 마인드맵을 쉽게 렌더링할 수 있습니다. 이 컴포넌트는 사용자의 마우스 드래그 동작으로 3D 회전이 가능합니다.
+
+다음은 간단한 예제 코드입니다.
+
+```jsx
+import React from "react";
+import { ForceGraph3D } from "react-force-graph";
+const data = {
+  nodes: [{ id: "A" }, { id: "B" }, { id: "C" }, { id: "D" }],
+  links: [
+    { source: "A", target: "B" },
+    { source: "B", target: "C" },
+    { source: "C", target: "D" },
+    { source: "D", target: "A" },
+  ],
+};
+function MyForceGraph() {
+  return <ForceGraph3D graphData={data} />;
+}
+```
+
+이 코드는 `data` 객체에 정의된 노드와 링크 정보를 사용하여 3D 마인드맵을 렌더링합니다. 이 마인드맵은 사용자의 마우스 드래그 동작으로 회전할 수 있습니다.
+
+## react-force-graph에서 노드와 링크에 이벤트 핸들러를 어떻게 지정하나요? 해당 코드에 사용자 인터랙션이 명시되어 있지 않은데, 따로 프로퍼티를 입력하지 않아도 기본적으로 활성화되어 있습니까?
+
+`react-force-graph` 라이브러리에서는 노드와 링크에 대한 이벤트 핸들러를 지정할 수 있는 다양한 prop을 제공합니다. 예를 들어, `onNodeClick`, `onNodeHover`, `onLinkClick`, `onLinkHover` 등의 prop을 사용하여 클릭 및 호버 이벤트 핸들러를 지정할 수 있습니다.
+
+다음은 간단한 예제 코드입니다.
+
+```jsx
+import React from "react";
+import { ForceGraph3D } from "react-force-graph";
+const data = {
+  nodes: [{ id: "A" }, { id: "B" }, { id: "C" }, { id: "D" }],
+  links: [
+    { source: "A", target: "B" },
+    { source: "B", target: "C" },
+    { source: "C", target: "D" },
+    { source: "D", target: "A" },
+  ],
+};
+function MyForceGraph() {
+  return (
+    <ForceGraph3D
+      graphData={data}
+      onNodeClick={(node) => console.log(`Clicked node ${node.id}`)}
+      onLinkClick={(link) =>
+        console.log(`Clicked link between ${link.source} and ${link.target}`)
+      }
+    />
+  );
+}
+```
+
+이 코드는 `onNodeClick`과 `onLinkClick` prop을 사용하여 노드와 링크의 클릭 이벤트 핸들러를 지정합니다. 각 핸들러에서는 클릭된 노드 또는 링크의 정보를 사용하여 콘솔에 로그를 출력합니다.
+`react-force-graph` 컴포넌트는 기본적으로 마우스 드래그 동작으로 회전하는 기능이 활성화되어 있습니다. 이 기능은 별도의 prop을 지정하지 않아도 작동합니다.
+
+## Three.JS 라이브러리의 역할
+
+`react-force-graph` 라이브러리는 `three.js` 라이브러리를 사용하여 3D 그래픽을 렌더링합니다. `three.js`는 WebGL을 기반으로 하는 JavaScript 3D 라이브러리로, 3D 그래픽을 쉽게 만들 수 있도록 도와줍니다.
+`react-force-graph`의 `ForceGraph3D` 컴포넌트를 사용하면, 사용자가 직접 `three.js`를 사용할 필요 없이 간단하게 3D 그래프를 렌더링할 수 있습니다. 이 컴포넌트는 내부적으로 `three.js`를 사용하여 3D 그래픽을 렌더링합니다.
+따라서 `react-force-graph`의 `ForceGraph3D` 컴포넌트를 사용하는 경우, 사용자는 `three.js`에 대한 지식이 없어도 3D 그래프를 쉽게 만들 수 있습니다.
+
+## Docusaurus와 `react-force-graph`를 사용하여 `ForceGraph3D` 그래프의 각 노드에 MDX 페이지를 링크하는 방법
+
+1. Docusaurus 프로젝트에서 MDX 페이지를 생성합니다. 이 페이지들은 Docusaurus의 문서 시스템을 사용하여 작성하고 관리할 수 있습니다.
+2. `ForceGraph3D` 컴포넌트의 `graphData` prop에 전달되는 데이터 구조에서 각 노드에 대한 정보를 정의합니다. 이 정보에는 노드의 ID와 노드와 연결된 MDX 페이지의 경로가 포함될 수 있습니다.
+3. `ForceGraph3D` 컴포넌트의 `onNodeClick` prop을 사용하여 클릭 이벤트 핸들러를 지정합니다. 이 핸들러에서는 클릭된 노드의 정보를 사용하여 해당 MDX 페이지로 이동하거나 해당 페이지의 내용을 표시하는 등의 작업을 수행할 수 있습니다.
+
+다음은 간단한 예제 코드입니다.
+
+```jsx
+import React from "react";
+import { ForceGraph3D } from "react-force-graph";
+import { useHistory } from "@docusaurus/router";
+const data = {
+  nodes: [
+    { id: "A", path: "/docs/page-a" },
+    { id: "B", path: "/docs/page-b" },
+    { id: "C", path: "/docs/page-c" },
+    { id: "D", path: "/docs/page-d" },
+  ],
+  links: [
+    { source: "A", target: "B" },
+    { source: "B", target: "C" },
+    { source: "C", target: "D" },
+    { source: "D", target: "A" },
+  ],
+};
+function MyForceGraph() {
+  const history = useHistory();
+  const handleNodeClick = (node) => {
+    history.push(node.path);
+  };
+  return <ForceGraph3D graphData={data} onNodeClick={handleNodeClick} />;
+}
+```
+
+이 코드는 `onNodeClick` prop을 사용하여 노드의 클릭 이벤트 핸들러를 지정합니다. 이 핸들러에서는 클릭된 노드의 정보를 사용하여 Docusaurus의 라우터 기능을 사용하여 해당 MDX 페이지로 이동합니다.
+
+## 데이터의 각 노드의 릴레이션을 카테고리와 서브 카테고리 등으로 표현한 객체로 업데이트한 예시
+
+프로그래밍 언어의 종류에 대한 강제 그래프를 리액트에서 구현하려면, 각 노드의 관계를 표현하는 데이터 구조를 준비해야 합니다. 이 데이터 구조는 카테고리와 서브 카테고리 등의 정보를 포함할 수 있습니다. 다음은 간단한 예제 데이터 구조입니다.
+
+```js
+const data = {
+  nodes: [
+    { id: "Database", category: "Category" },
+    { id: "Low-level", category: "Category" },
+    { id: "High-level", category: "Category" },
+    { id: "SQL", category: "Database" },
+    { id: "C", category: "Low-level" },
+    { id: "C++", category: "Low-level" },
+    { id: "Python", category: "High-level" },
+    { id: "JavaScript", category: "High-level" },
+    { id: "TypeScript", category: "JavaScript" },
+  ],
+  links: [
+    { source: "Database", target: "SQL" },
+    { source: "Low-level", target: "C" },
+    { source: "Low-level", target: "C++" },
+    { source: "High-level", target: "Python" },
+    { source: "High-level", target: "JavaScript" },
+    { source: "JavaScript", target: "TypeScript" },
+  ],
+};
+```
+
+이 데이터 구조는 프로그래밍 언어의 종류와 관계를 표현합니다. 각 노드는 `id`와 `category` 속성을 가지며, 이 속성들은 노드의 이름과 카테고리를 나타냅니다. 링크들은 각 노드 간의 관계를 나타냅니다.
+이 데이터 구조를 `react-force-graph`의 `ForceGraph3D` 컴포넌트의 `graphData` prop에 전달하여 강제 그래프를 렌더링할 수 있습니다.

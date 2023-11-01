@@ -1,0 +1,269 @@
+---
+slug: native-battery-provider-react-context-provider-pattern
+title: NativeBatteryProvider - React Context Provider Pattern
+authors: andrew
+tags: []
+---
+
+# NativeBatteryProvider : React Context Provider Pattern
+
+다음은 `NativeBatteryProvider`라는 이름의 컴포넌트를 만드는 예시 코드입니다. 이 컴포넌트는 기기의 배터리 잔량을 정기적으로 쿼리하여 `State<number>` 형태로 하위 컴포넌트들에게 전달합니다.
+
+```jsx
+import React, { createContext, useState, useEffect } from "react";
+import { NativeModules } from "react-native";
+const BatteryContext = createContext();
+const NativeBatteryProvider = ({ children }) => {
+  const [batteryLevel, setBatteryLevel] = useState(null);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      NativeModules.BatteryStatus.getBatteryStatus((level) => {
+        setBatteryLevel(level);
+      });
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+  return (
+    <BatteryContext.Provider value={batteryLevel}>
+            {children}
+    </BatteryContext.Provider>
+  );
+};
+export { BatteryContext, NativeBatteryProvider };
+```
+
+이 예제에서는 `NativeModules.BatteryStatus.getBatteryStatus` 메소드를 사용하여 배터리 잔량을 가져옵니다. 이 메소드는 네이티브 모듈에서 구현해야 합니다. 또한 `setInterval` 함수를 사용하여 1초마다 배터리 잔량을 쿼리합니다.
+이제 다른 컴포넌트에서 `useContext` Hook을 사용하여 `BatteryContext`의 값을 가져올 수 있습니다.
+
+```jsx
+import React, { useContext } from "react";
+import { Text } from "react-native";
+import { BatteryContext } from "./NativeBatteryProvider";
+const BatteryLevel = () => {
+  const batteryLevel = useContext(BatteryContext);
+  return <Text>Battery Level: {batteryLevel}</Text>;
+};
+```
+
+이 예제에서는 `useContext` Hook을 사용하여 `BatteryContext`의 값을 가져와서 화면에 표시합니다.
+
+특정 무선 이어폰을 위한 네이티브 블루투스 모듈을 사용하여 여러가지 동작을 실행하고 이벤트 응답을 받으려면 다음과 같은 단계를 따르십시오:
+
+1. 네이티브 모듈에서 블루투스 이벤트를 구독하고 이벤트가 발생할 때마다 React Native로 전달합니다. 이를 위해 `NativeEventEmitter` 클래스를 사용할 수 있습니다.
+2. React Native에서 `NativeEventEmitter` 인스턴스를 생성하고 `addListener` 메소드를 사용하여 이벤트를 구독합니다.
+3. 이벤트가 발생할 때마다 상태를 업데이트하고 하위 컴포넌트들에게 전달합니다. 이를 위해 `Context.Provider`와 `useContext` Hook을 사용할 수 있습니다.
+   다음은 이러한 기능을 구현하는 예시 코드입니다.
+
+```jsx
+import React, { createContext, useState, useEffect } from "react";
+import { NativeModules, NativeEventEmitter } from "react-native";
+const BluetoothContext = createContext();
+const BluetoothProvider = ({ children }) => {
+  const [batteryLevel, setBatteryLevel] = useState(null);
+  useEffect(() => {
+    const eventEmitter = new NativeEventEmitter(NativeModules.BluetoothModule);
+    const subscription = eventEmitter.addListener(
+      "BatteryLevelChanged",
+
+      (level) => {
+        setBatteryLevel(level);
+      },
+    );
+    return () => subscription.remove();
+  }, []);
+  return (
+    <BluetoothContext.Provider value={{ batteryLevel }}>
+            {children}
+    </BluetoothContext.Provider>
+  );
+};
+export { BluetoothContext, BluetoothProvider };
+```
+
+이 예제에서는 `NativeEventEmitter` 클래스를 사용하여 네이티브 모듈에서 발생하는 `BatteryLevelChanged` 이벤트를 구독합니다. 이벤트가 발생할 때마다 상태를 업데이트하고 하위 컴포넌트들에게 전달합니다.
+이제 다른 컴포넌트에서 `useContext` Hook을 사용하여 `BluetoothContext`의 값을 가져올 수 있습니다.
+
+```jsx
+import React, { useContext } from "react";
+import { Text } from "react-native";
+import { BluetoothContext } from "./BluetoothProvider";
+const BatteryLevel = () => {
+  const { batteryLevel } = useContext(BluetoothContext);
+  return <Text>Battery Level: {batteryLevel}</Text>;
+};
+```
+
+이 예제에서는 `useContext` Hook을 사용하여 `BluetoothContext`의 값을 가져와서 화면에 표시합니다.
+음악 재생 출력 변경 등의 메소드를 실행하려면 네이티브 모듈에서 해당 기능을 구현하고 React Native에서 해당 메소드를 호출해야 합니다.
+
+커스텀 훅이나 컨텍스트 프로바이더를 만드는 것에 대한 아키텍쳐 가이드는 다양한 방법이 있습니다. 일반적으로는 앱의 상태를 전역적으로 관리하고 하위 컴포넌트들에게 전달하는 데 사용됩니다.
+다음은 `NativeModules.BluetoothModule.changePlayback` 메소드를 호출하고 `changePlaybackResult` 이벤트를 리턴받아 상태를 업데이트하는 예시 코드입니다.
+
+```jsx
+import React, { createContext, useState, useEffect } from "react";
+import { NativeModules, NativeEventEmitter } from "react-native";
+const BluetoothContext = createContext();
+const BluetoothProvider = ({ children }) => {
+  const [playbackDevice, setPlaybackDevice] = useState(null);
+  useEffect(() => {
+    const eventEmitter = new NativeEventEmitter(NativeModules.BluetoothModule);
+    const subscription = eventEmitter.addListener(
+      "changePlaybackResult",
+
+      (device) => {
+        setPlaybackDevice(device);
+      },
+    );
+    return () => subscription.remove();
+  }, []);
+  const changePlayback = () => {
+    NativeModules.BluetoothModule.changePlayback();
+  };
+  return (
+    <BluetoothContext.Provider value={{ playbackDevice, changePlayback }}>
+            {children}
+    </BluetoothContext.Provider>
+  );
+};
+export { BluetoothContext, BluetoothProvider };
+```
+
+이 예제에서는 `NativeEventEmitter` 클래스를 사용하여 네이티브 모듈에서 발생하는 `changePlaybackResult` 이벤트를 구독합니다. 이벤트가 발생할 때마다 상태를 업데이트하고 하위 컴포넌트들에게 전달합니다. 또한 `changePlayback` 함수를 정의하여 `NativeModules.BluetoothModule.changePlayback` 메소드를 호출합니다.
+이제 다른 컴포넌트에서 `useContext` Hook을 사용하여 `BluetoothContext`의 값을 가져올 수 있습니다.
+
+```jsx
+import React, { useContext } from "react";
+import { Text, Button } from "react-native";
+import { BluetoothContext } from "./BluetoothProvider";
+const PlaybackDevice = () => {
+  const { playbackDevice, changePlayback } = useContext(BluetoothContext);
+  return (
+    <>
+            <Text>Playback Device: {playbackDevice}</Text>
+            <Button onPress={changePlayback} title="Change Playback" />
+    </>
+  );
+};
+```
+
+이 예제에서는 `useContext` Hook을 사용하여 `BluetoothContext`의 값을 가져와서 화면에 표시합니다. 또한 `Button` 컴포넌트의 `onPress` prop에 `changePlayback` 함수를 전달하여 버튼을 클릭하면 `NativeModules.BluetoothModule.changePlayback` 메소드가 호출되도록 합니다.
+
+`Context.Provider`의 `value` prop에 전달하는 객체에는 프로바이더에서 관리하는 모든 상태와 메소드를 포함하는 것이 일반적입니다. 이렇게 하면 하위 컴포넌트들이 `useContext` Hook을 사용하여 상태와 메소드를 가져올 수 있습니다.
+예를 들어, 다음과 같은 코드에서는 `BluetoothContext.Provider`의 `value` prop에 전달하는 객체에 `playbackDevice` 상태와 `changePlayback` 메소드가 포함되어 있습니다.
+
+```jsx
+const BluetoothProvider = ({ children }) => {
+  const [playbackDevice, setPlaybackDevice] = useState(null);
+  const changePlayback = () => {
+    console.log("changed...!");
+  };
+  return (
+    <BluetoothContext.Provider value={{ playbackDevice, changePlayback }}>
+            {children}
+    </BluetoothContext.Provider>
+  );
+};
+```
+
+이제 다른 컴포넌트에서 `useContext` Hook을 사용하여 `BluetoothContext`의 값을 가져올 수 있습니다.
+
+```jsx
+const PlaybackDevice = () => {
+  const { playbackDevice, changePlayback } = useContext(BluetoothContext);
+};
+```
+
+이 예제에서는 `useContext` Hook을 사용하여 `BluetoothContext`의 값을 가져와서 `playbackDevice` 상태와 `changePlayback` 메소드를 사용할 수 있습니다.
+
+`useContext` Hook과 `Context.Provider`를 사용하지 않는 다른 접근 방법도 있습니다. 예를 들어, Redux와 같은 상태관리 라이브러리를 사용하여 앱의 상태를 전역적으로 관리할 수 있습니다.
+Redux는 전역 상태 저장소를 제공하고 액션을 사용하여 상태를 업데이트합니다. 이를 통해 앱의 모든 컴포넌트에서 상태를 가져오고 업데이트할 수 있습니다.
+다음은 Redux를 사용하여 앱의 상태를 관리하는 예시 코드입니다.
+
+```jsx
+import { createStore } from "redux";
+// 리듀서 함수 정의
+
+const reducer = (state = { playbackDevice: null }, action) => {
+  switch (action.type) {
+    case "SET_PLAYBACK_DEVICE":
+      return { ...state, playbackDevice: action.device };
+    default:
+      return state;
+  }
+};
+// 스토어 생성
+
+const store = createStore(reducer);
+// 스토어 구독
+
+store.subscribe(() => {
+  console.log(store.getState());
+});
+// 액션 디스패치
+
+store.dispatch({ type: "SET_PLAYBACK_DEVICE", device: "Speaker" });
+```
+
+이 예제에서는 `createStore` 함수를 사용하여 Redux 스토어를 생성합니다. 또한 `reducer` 함수를 정의하여 상태를 업데이트하는 방법을 지정합니다. 이후 `store.subscribe` 메소드를 사용하여 스토어의 변경 사항을 구독하고 `store.dispatch` 메소드를 사용하여 액션을 디스패치합니다.
+이 방법 외에도 MobX와 같은 다른 상태관리 라이브러리를 사용할 수도 있습니다. 이러한 라이브러리는 각각 고유한 방식으로 상태관리를 제공합니다.
+
+`useContext` Hook과 `Context.Provider`를 사용하는 방법은 외부 라이브러리를 사용하지 않고 전역 상태를 관리하는 일반적인 방법 중 하나입니다. 그러나 이것이 유일한 방법은 아닙니다.
+예를 들어, React의 `props`를 사용하여 상위 컴포넌트에서 하위 컴포넌트로 상태와 메소드를 전달할 수 있습니다. 이 방법은 컴포넌트 계층이 깊지 않은 경우에 적합합니다.
+다음은 `props`를 사용하여 상위 컴포넌트에서 하위 컴포넌트로 상태와 메소드를 전달하는 예시 코드입니다.
+
+```jsx
+import React, { useState } from "react";
+import { Text, Button } from "react-native";
+const Parent = () => {
+  const [playbackDevice, setPlaybackDevice] = useState(null);
+  const changePlayback = () => {
+    console.log("changed...!");
+  };
+  return (
+    <Child playbackDevice={playbackDevice} changePlayback={changePlayback} />
+  );
+};
+const Child = ({ playbackDevice, changePlayback }) => {
+  return (
+    <>
+            <Text>Playback Device: {playbackDevice}</Text>
+            <Button onPress={changePlayback} title="Change Playback" />
+    </>
+  );
+};
+```
+
+이 예제에서는 `Parent` 컴포넌트에서 `useState` Hook을 사용하여 상태를 정의하고 `Child` 컴포넌트의 `props`로 전달합니다. 또한 `changePlayback` 함수를 정의하고 `Child` 컴포넌트의 `props`로 전달합니다.
+이 방법은 간단한 경우에 적합하지만 컴포넌트 계층이 깊어지면 복잡해질 수 있습니다. 이 경우에는 `useContext` Hook과 `Context.Provider`를 사용하는 것이 더 적합할 수 있습니다.
+
+`RefObject`와 `useRef` Hook은 컴포넌트의 인스턴스 또는 DOM 요소에 대한 참조를 저장하는 데 사용됩니다. 이러한 기능은 상태관리와는 직접적으로 관련이 없습니다.
+그러나 `useRef` Hook을 사용하여 컴포넌트 간에 데이터를 전달하는 데 사용할 수 있습니다. 예를 들어, `forwardRef` 함수를 사용하여 하위 컴포넌트의 메소드를 상위 컴포넌트에서 호출할 수 있습니다.
+다음은 `useRef` Hook과 `forwardRef` 함수를 사용하여 하위 컴포넌트의 메소드를 상위 컴포넌트에서 호출하는 예시 코드입니다.
+
+```jsx
+import React, { useRef, forwardRef } from "react";
+import { Button } from "react-native";
+const Parent = () => {
+  const childRef = useRef();
+  const handleClick = () => {
+    childRef.current.changePlayback();
+  };
+  return (
+    <>
+            <Child ref={childRef} />
+            <Button onPress={handleClick} title="Change Playback" />
+    </>
+  );
+};
+const Child = forwardRef((props, ref) => {
+  const changePlayback = () => {
+    console.log("changed...!");
+  }; // ref 객체에 메소드 할당
+  ref.current = { changePlayback };
+  return null;
+});
+```
+
+이 예제에서는 `Parent` 컴포넌트에서 `useRef` Hook을 사용하여 `childRef` 객체를 생성합니다. 이 객체는 `Child` 컴포넌트의 인스턴스에 대한 참조를 저장합니다. 또한 `Button` 컴포넌트의 `onPress` prop에 `handleClick` 함수를 전달하여 버튼을 클릭하면 `Child` 컴포넌트의 `changePlayback` 메소드가 호출되도록 합니다.
+`Child` 컴포넌트에서는 `forwardRef` 함수를 사용하여 `ref` prop을 전달받습니다. 이 prop은 상위 컴포넌트에서 생성한 `childRef` 객체와 동일합니다. 이제 이 객체의 `current` 속성에 `changePlayback` 메소드를 할당하여 상위 컴포넌트에서 호출할 수 있도록 합니다.
+이 방법은 특정 경우에 유용할 수 있지만 일반적으로는 상태관리에 사용되지 않습니다. 상태관리에는 일반적으로 `useContext` Hook과 `Context.Provider`, 또는 외부 상태관리 라이브러리가 사용됩니다.

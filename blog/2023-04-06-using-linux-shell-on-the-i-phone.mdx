@@ -1,0 +1,95 @@
+---
+slug: using-linux-shell-on-the-i-phone
+title: 아이폰에서 리눅스 셸 사용하기
+authors: andrew
+tags: []
+---
+
+# 아이폰에서 리눅스 셸 사용하기
+
+## 아이폰의 SSH 셸에 접근하기
+
+아이폰의 SSH 셸에 접근하려면 아이폰을 탈옥해야 합니다. 탈옥한 아이폰에서는 Cydia 앱을 사용하여 OpenSSH 애플리케이션을 설치할 수 있습니다. 그런 다음 컴퓨터에서 Cyberduck 애플리케이션을 사용하여 아이폰과 컴퓨터 간의 안전한 연결을 설정할 수 있습니다.
+또한 iSH라는 앱을 사용하여 iOS에서 리눅스 셸을 실행할 수도 있습니다. 이 앱은 Alpine Linux 환경을 제공하며 apk 패키지 관리자가 포함되어 있습니다.
+다만, 이러한 작업은 아이폰의 보안 및 기능에 영향을 줄 수 있으므로 신중하게 결정해야 합니다.
+
+### References
+
+(1) [How to SSH Into an iPhone (with Pictures) - wikiHow](https://www.wikihow.com/SSH-Into-an-iPhone)
+(2) [How to Run a Linux Shell on iOS](https://www.howtogeek.com/devops/how-to-run-a-linux-shell-on-ios/)
+(3) [Best SSH Client Apps for iOS To Manages Remote Servers](https://techwiser.com/best-ssh-client-ios/)
+
+## 아이폰 탈옥의 위험성
+
+1. 과열 문제
+2. 악성 코드에 노출
+3. 안정성 부족
+4. 배터리 수명 단축
+5. 보증 취소
+6. 아이폰을 벽돌로 만드는 위험 증가
+
+따라서 아이폰 탈옥은 신중하게 결정해야 합니다.
+
+### References
+
+(1) [What is iPhone Jailbreaking?](https://www.malwarebytes.com/iphone-jailbreaking)
+(2) [The risks of jailbreaking your iPhone outweigh any benefits](https://www.imore.com/risks-jailbreaking-your-iphone-outweigh-any-benefits)
+(3) [10 Pros and Cons of Jailbreaking Your iPhone or iPad](https://www.tomsguide.com/us/pictures-story/537-jailbreaking-iphone-pros-cons.html)
+(4) [How Jailbreaking Puts Your iPhone at Risk | Tom's Guide](https://www.tomsguide.com/us/iphone-jailbreak-risks,news-18850.html)
+(5) [What Is Jailbreaking an iPhone & Is Jailbreaking Safe?](https://sectigostore.com/blog/what-is-jailbreaking-an-iphone-is-jailbreaking-safe/)
+(6) [What Is Jailbreaking & Is It Safe? | Jailbreaking Definition | Avast](https://www.avast.com/c-jailbreaking)
+
+아이폰의 SSH 셸에 접근하려면 일반적으로 아이폰을 탈옥해야 합니다. 하지만 iSH와 같은 앱을 사용하여 iOS에서 리눅스 셸을 실행할 수 있습니다. 이 앱은 Alpine Linux 환경을 제공하며 apk 패키지 관리자가 포함되어 있습니다 .
+리눅스 셸에서는 일반적으로 `iwconfig` 명령어를 사용하여 현재 연결된 Wifi 네트워크의 정보를 확인할 수 있습니다. 하지만 iOS에서 iSH 앱을 사용하는 경우에는 이 명령어가 작동하지 않을 수 있습니다. iSH 앱은 iOS의 기능에 제한적인 접근 권한을 가지고 있기 때문입니다.
+`iwconfig` 명령어는 리눅스에서 무선 네트워크 인터페이스의 구성을 확인하고 변경하는 데 사용됩니다. 이 명령어를 사용하면 현재 연결된 무선 네트워크의 SSID, 신호 강도, 전송 속도 등의 정보를 확인할 수 있습니다.
+`iwconfig` 명령어를 입력하면 시스템에 있는 모든 네트워크 인터페이스의 정보가 표시됩니다. 특정 인터페이스의 정보만 확인하려면 `iwconfig [인터페이스 이름]`과 같이 입력하면 됩니다.
+예를 들어, `wlan0` 인터페이스의 정보만 확인하려면 `iwconfig wlan0`을 입력하면 됩니다.
+다만 이 명령어는 일반적인 리눅스 시스템에서만 작동합니다. iOS에서 iSH 앱을 사용하는 경우에는 이 명령어가 작동하지 않을 수 있습니다.
+`iwconfig` 명령어는 무선 네트워크 인터페이스의 구성을 확인하고 변경하는 데 사용되는 명령어로, Wifi 비밀번호를 암호화하여 전송하는 기능은 제공하지 않습니다.
+Wifi 비밀번호를 타인에게 안전하게 전송하려면 다른 방법을 사용해야 합니다. 예를 들어, 암호화된 메시지 전송 앱이나 이메일 서비스를 사용하여 비밀번호를 전송할 수 있습니다.
+
+## Can I read my WiFi password from my iPhone?
+
+`iwconfig` 명령어를 사용하여 Wifi 비밀번호를 읽을 수 없습니다. 이 명령어는 무선 네트워크 인터페이스의 구성을 확인하고 변경하는 데 사용되며, Wifi 비밀번호를 확인하는 기능은 제공하지 않습니다.
+리눅스 셸에서는 일반적으로 `iwconfig` 명령어를 사용하여 현재 연결된 Wifi 네트워크의 SSID를 확인할 수 있습니다. 하지만 이 명령어로는 Wifi 비밀번호를 확인할 수 없습니다.
+일반적으로 Wifi 비밀번호는 라우터의 관리 페이지에서 확인하거나 변경할 수 있습니다. 라우터의 관리 페이지에 접속하려면 웹 브라우저의 주소창에 라우터의 IP 주소를 입력하면 됩니다. 일반적으로 라우터의 IP 주소는 `192.168.0.1` 또는 `192.168.1.1`입니다.
+다만 iOS에서 iSH 앱을 사용하는 경우에는 `iwconfig` 명령어가 작동하지 않을 수 있습니다. iSH 앱은 iOS의 기능에 제한적인 접근 권한을 가지고 있기 때문입니다.
+라우터의 관리 페이지에 접속하려면 다음과 같은 단계를 따르면 됩니다:
+
+1. 컴퓨터나 모바일 장치의 웹 브라우저를 실행합니다.
+2. 주소창에 라우터의 IP 주소를 입력하고 엔터 키를 누릅니다. 일반적으로 라우터의 IP 주소는 `192.168.0.1` 또는 `192.168.1.1`입니다.
+3. 라우터의 관리 페이지에 로그인합니다. 일반적으로 라우터의 기본 사용자 이름과 비밀번호는 `admin`입니다.
+
+라우터의 관리 페이지에 접속한 후에는 Wifi 설정, 포트 포워딩, 방화벽 설정 등 다양한 설정을 변경할 수 있습니다.
+다만 라우터 제조사마다 관리 페이지의 디자인과 기능이 다르므로, 자세한 내용은 라우터의 사용 설명서를 참조하시기 바랍니다.
+일반적으로 프로그래밍 언어를 사용하여 현재 연결된 Wifi 네트워크의 IP 주소와 SSID를 확인할 수 있습니다. 예를 들어, Python의 `socket` 모듈을 사용하여 로컬 IP 주소를 확인할 수 있습니다.
+하지만 Wifi 비밀번호는 프로그래밍 언어로 확인할 수 없습니다. 일반적으로 Wifi 비밀번호는 라우터의 관리 페이지에서 확인하거나 변경할 수 있습니다.
+다만 iOS에서 iSH 앱을 사용하는 경우에는 일부 기능이 제한될 수 있습니다. iSH 앱은 iOS의 기능에 제한적인 접근 권한을 가지고 있기 때문입니다.
+iOS 기기에서는 bash나 sh와 같은 명령어를 사용할 수 없습니다. 하지만 iOS 기기에서는 설정 앱을 열고 Wi-Fi 섹션으로 이동하여 현재 연결된 Wi-Fi 네트워크의 이름(SSID)을 확인할 수 있습니다. 그러나 Wi-Fi 비밀번호는 iOS 기기에서 직접 확인할 수 없습니다. 비밀번호를 확인하려면 라우터의 관리자 페이지에 로그인하거나 라우터에 연결된 다른 기기에서 확인해야 합니다.
+MacOS나 Linux에서 현재 연결된 Wi-Fi 네트워크의 SSID를 확인하는 방법은 다양합니다. MacOS에서는 터미널을 열고 다음 명령어를 입력하면 됩니다:
+
+```sh
+/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'
+```
+
+Linux에서는 터미널을 열고 다음 명령어 중 하나를 입력하면 됩니다:
+
+```sh
+iwgetid -r
+```
+
+또는
+
+```sh
+nmcli -t -f active,ssid dev wifi | egrep '^yes' | cut -d: -f2
+```
+
+하지만 Wi-Fi 비밀번호는 이러한 방법으로 확인할 수 없습니다. Wi-Fi 비밀번호는 라우터의 관리자 페이지에 로그인하여 확인하거나 라우터에 연결된 다른 기기에서 확인해야 합니다.
+MacOS에서는 키체인 접근 유틸리티를 사용하여 저장된 Wi-Fi 비밀번호를 확인할 수 있습니다. 키체인 접근을 열고 '시스템' 키체인을 선택한 다음 '분류'에서 '비밀번호'를 선택합니다. 그런 다음 목록에서 해당하는 Wi-Fi 네트워크를 찾아 더블클릭하고 '비밀번호 보기'를 선택한 다음 관리자 비밀번호를 입력하면 됩니다.
+Linux에서는 NetworkManager를 사용하여 저장된 Wi-Fi 비밀번호를 확인할 수 있습니다. 터미널을 열고 다음 명령어를 입력하면 됩니다:
+
+```sh
+sudo cat /etc/NetworkManager/system-connections/[NETWORK NAME] | grep psk=
+```
+
+위의 명령어에서 \[NETWORK NAME]은 확인하려는 Wi-Fi 네트워크의 이름으로 바꿔야 합니다. 그러나 이 방법은 NetworkManager가 설치되어 있고 해당 Wi-Fi 네트워크에 연결된 적이 있는 경우에만 작동합니다.

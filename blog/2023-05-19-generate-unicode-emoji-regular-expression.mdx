@@ -1,0 +1,70 @@
+---
+slug: generate-unicode-emoji-regular-expression
+title: Generate Unicode emoji regular expression
+authors: andrew
+tags: []
+---
+
+# Generate Unicode emoji regular expression
+
+## Question
+
+```plaintext
+⚙ <fe0f> gear Unicode: `U+2699` `U+FE0F`, `UTF-8: E2 9A 99 EF B8 8F`
+```
+
+Write a regular expression that matches all Unicode emojis of this type.
+
+## Answer
+
+Sure, I can help you with that! Here's a regular expression that matches all Unicode emojis of this type:
+
+```RegExp
+\u2699[\uFE0E\uFE0F]
+```
+
+This regular expression matches the gear Unicode character (`U+2699`) followed by either the text presentation selector (`U+FE0E`) or the emoji presentation
+selector (`U+FE0F`). The "g" at the end of the regular expression means that it will match all occurrences of this pattern in a given string.
+
+I hope this helps! Let me know if you have any other questions.
+
+## Question
+
+Write a regular expression that matches all Unicode emojis of this type.
+
+## Answer
+
+Sure, I can help you with that! Here's a regular expression that matches all Unicode emojis of this type:
+
+```RegExp
+[\u{1f600}-\u{1f64f}]
+```
+
+This regular expression uses the Unicode code point range for emoticons, which is U+1F600 to U+1F64F. The `/u` flag at the end of the expression enables
+Unicode mode in JavaScript, which allows the matching of Unicode characters beyond the BMP (Basic Multilingual Plane).
+
+This regular expression will match all emojis of this type, including smileys, people, animals, and other objects.
+
+## Question
+
+Write a regular expression that matches all Unicode emoji characters of this type. not only people emojis but all of them
+
+## Answer
+
+Sure, I can help you with that! Here's a regular expression that matches all Unicode emoji characters:
+
+```RegExp
+[\u{1F000}-\u{1F6FF}\u{1F900}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{1F1E0}-\u{1F1FF}]
+```
+
+This regular expression uses Unicode character ranges to match all the different types of emoji characters. The ranges include:
+
+- `\u{1F000}-\u{1F6FF}`: 기타 기호 및 그림, 이모티콘, 교통 및 지도 기호 등.
+- `\u{1F900}-\u{1F9FF}`: 보조 기호 및 픽토그램.
+- `\u{2600}-\u{26FF}`: 기타 기호, 딩벳 등.
+- `\u{2700}-\u{27BF}`: 딩벳, 보조 화살표-C 등.
+- `\u{1F300}-\u{1F5FF}`: 날씨, 시간 등을 포함한 기타 기호 및 픽토그램.
+- `\u{1F680}-\u{1F6FF}`: 자동차, 자전거, 비행기 등을 포함한 교통수단 및 지도 기호.
+- `\u{1F1E0}-\u{1F1FF}`: 국가 국기를 나타내는 데 사용되는 지역 표시 기호.
+
+I hope this helps! Let me know if you have any other questions.

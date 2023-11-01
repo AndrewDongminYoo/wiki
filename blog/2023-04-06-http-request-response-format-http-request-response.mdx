@@ -1,0 +1,82 @@
+---
+slug: http-request-response-format-http-request-response
+title: HTTP 요청/응답 형식, HTTP Request/Response
+authors: andrew
+tags: []
+---
+
+# HTTP 요청/응답 형식, HTTP Request/Response
+
+## 이미지의 URL을 브라우저에 입력하고 엔터를 눌렀을 때 일어나는 일
+
+이미지의 URL을 브라우저에 입력하고 엔터를 누르면 브라우저는 해당 URL로 HTTP 요청을 보냅니다. 이 때 HTTP 요청의 header는 다음과 같은 정보를 포함합니다:
+
+- Request Method : GET
+- Request URL : 입력한 URL
+- Request Headers :
+- Accept : text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,_/_;q=0.8
+- Accept-Encoding : gzip, deflate, br
+- Accept-Language : ko-KR,ko;q=0.8,en-US;q=0.5,en;q=0.3
+- Connection : keep-alive
+- Host : 입력한 URL의 호스트 이름
+- Referer : 이전 페이지의 URL (이전 페이지가 없으면 생략)
+- User-Agent : 브라우저 정보
+
+요청 헤더에는 클라이언트가 서버에게 전달하는 정보가 포함되어 있습니다.
+
+### References
+
+1. [HTTP 헤더 \- HTTP | MDN - Mozilla Developer](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers)
+2. [[Network] HTTP 헤더의 종류 및 항목 \- Heee's Development Blog](https://gmlwjd9405.github.io/2019/01/28/http-header-types.html)
+3. [웹 브라우저에 URL을 입력하면 어떤 일이 생기나요? | Amazon Web ...](https://aws.amazon.com/ko/blogs/korea/what-happens-when-you-type-a-url-into-your-browser/)
+   HTTP 요청 헤더는 HTTP 요청 메시지의 일부로, 클라이언트가 서버로 보내는 요청에 대한 추가 정보를 포함합니다. HTTP 요청 헤더는 키-값 쌍 형태로 구성되며, 반드시 포함되어야 하는 정보는 없습니다. 하지만 일반적으로 HTTP 요청 헤더에는 다음과 같은 정보가 포함됩니다:
+
+- Accept : 클라이언트가 받아들일 수 있는 미디어 타입
+- Accept-Encoding : 클라이언트가 받아들일 수 있는 인코딩 방식
+- Accept-Language : 클라이언트가 받아들일 수 있는 언어
+- Connection : 클라이언트와 서버 간의 연결 유지 방법
+- Host : 요청을 보내는 호스트 이름
+- Referer : 이전 페이지의 URL (이전 페이지가 없으면 생략)
+- User-Agent : 클라이언트의 브라우저 정보
+
+요청 헤더에는 클라이언트가 서버에게 전달하는 정보가 포함되어 있습니다.
+
+### References
+
+1. [HTTP / HTTPS](https://velog.io/@yunsu0928/HTTP-HTTPS)
+2. [HTTP 헤더 \- HTTP | MDN - Mozilla Developer](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers)
+3. [[Network] HTTP 헤더의 종류 및 항목 \- Heee's Development Blog](https://gmlwjd9405.github.io/2019/01/28/http-header-types.html)
+4. [[HTTP-Header] HTTP Request Header :: 요청 헤더](https://wonit.tistory.com/310)
+
+HTTP GET 메소드로 이미지의 URL에 HTTP 요청을 보낼 때, 헤더는 다음과 같이 구성됩니다:
+
+- Host : 요청을 보내는 호스트 이름
+- User-Agent : 클라이언트의 브라우저 정보
+- Accept : 클라이언트가 받아들일 수 있는 미디어 타입
+- Accept-Language : 클라이언트가 받아들일 수 있는 언어
+- Accept-Encoding : 클라이언트가 받아들일 수 있는 인코딩 방식
+
+하지만 이미지의 확장자를 알 수 없다면, Accept 헤더에 모든 미디어 타입을 포함시키는 것이 좋습니다. 예를 들어, 다음과 같은 헤더를 사용할 수 있습니다:
+
+```plaintext
+Accept: */*
+```
+
+### References
+
+1. [HTTP HEAD 메소드](https://living-only-today.tistory.com/366)
+2. [HTTP 요청 메서드 \- HTTP | MDN - Mozilla Developer](https://developer.mozilla.org/ko/docs/Web/HTTP/Methods)
+3. [HTTP 요청 메소드 정리 :: Carry On Progamming](https://zorba91.tistory.com/136)
+4. [파이썬 requests 모듈로 HTTP 메소드(GET,POST,PUT 등)](https://an-ju-seong-coding.tistory.com/32)
+
+User-Agent 값은 브라우저와 디바이스 등 사용자 소프트웨어의 식별 정보를 담고 있는 request header의 한 종류입니다. User-Agent 값은 보통 HTTP 요청 에러가 발생했을 때 요청을 보낸 사용자 환경을 알아보기 위해 사용됩니다. 가장 보편적으로 쓰이는 User-Agent 값은 다음과 같습니다:
+
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299
+
+하지만 User-Agent 값은 브라우저마다 다르게 설정될 수 있으므로, 정확한 User-Agent 값을 확인하려면 브라우저에서 navigator.userAgent 값을 확인하는 것이 좋습니다.
+
+### References
+
+1. [User-agent 정확하게 해석하기](https://velog.io/@ggong/User-agent-정확하게-해석하기)
+2. [User Agent 파헤치기 (navigator.userAgent) - 꿀벌개발일지](https://ohgyun.com/292)
+3. [User-Agent Client Hints의 도입, UA 프리징을 대비하라](https://d2.naver.com/helloworld/6532276)

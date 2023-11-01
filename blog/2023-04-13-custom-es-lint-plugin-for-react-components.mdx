@@ -1,0 +1,33 @@
+---
+slug: custom-es-lint-plugin-for-react-components
+title: Custom ESLint Plugin for React Components
+authors: andrew
+tags: []
+---
+
+# Custom ESLint Plugin for React Components
+
+ESLint의 공식 웹사이트에서 ESLint 플러그인을 만드는 방법에 대한 가이드를 제공하고 있습니다. 이 가이드에서는 ESLint 플러그인이 무엇인지, 어떻게 추가 규칙과 구성 옵션을 추가하는지에 대한 정보가 제공됩니다.
+
+(1) [https://eslint.org/docs/latest/extend/plugins](https://eslint.org/docs/latest/extend/plugins)
+
+ESLint 플러그인을 만들기 위해서는 ESLint의 공식 웹사이트에서 제공하는 가이드를 참조하시면 됩니다. 이 가이드에서는 ESLint 플러그인의 이름 규칙, 규칙 추가 방법, 환경 설정 방법 등에 대한 정보가 제공됩니다. 예를 들어, 플러그인의 이름이 `eslint-plugin-myplugin`이라면, ESLint 구성에서 규칙의 이름은 `myplugin/dollar-sign`으로 지정해야 합니다.
+
+(1) [https://eslint.org/docs/latest/extend/plugins](https://eslint.org/docs/latest/extend/plugins)
+
+ESLint 플러그인을 만들어 리액트 컴포넌트에 필수적으로 특정 프로퍼티를 입력하도록 강제하거나, 린터 픽스를 실행했을 때 파일의 상대적 경로와 컴포넌트가 속해 있는 함수 또는 클래스 스코프의 네임스페이스를 조합한 고유 아이디를 생성하는 기능을 구현하려면 다음과 같은 요소들이 필요합니다:
+
+1. ESLint 플러그인 개발에 대한 기본적인 지식: ESLint 플러그인 개발에 대한 기본적인 지식을 습득해야 합니다. ESLint의 공식 웹사이트에서 제공하는 가이드를 참조하시면 됩니다.
+2. 리액트 컴포넌트 구조에 대한 이해: 리액트 컴포넌트의 구조와 프로퍼티 설정 방법에 대한 이해가 필요합니다.
+3. AST(Abstract Syntax Tree) 분석: ESLint는 코드를 분석하기 위해 AST(Abstract Syntax Tree)를 사용합니다. 따라서 AST 분석 방법에 대한 이해가 필요합니다.
+4. 자바스크립트 언어 지식: ESLint 플러그인은 자바스크립트로 작성되므로 자바스크립트 언어에 대한 지식이 필요합니다.
+   위의 요소들을 준비하시면 ESLint 플러그인을 만들어 원하는 기능을 구현할 수 있습니다.
+   AST(Abstract Syntax Tree) 분석은 코드의 구조를 이해하고 분석하는 데 사용되는 방법입니다. 코드를 분석하기 위해서는 먼저 코드를 토큰화하여 토큰 목록을 생성합니다. 이후 구문 분석(파싱) 단계에서 토큰 목록을 AST로 변환합니다. 이 과정에서 토큰들이 코드의 실제 구조를 나타내는 트리로 변환됩니다.
+   AST 분석을 위해서는 AST의 구조와 작동 방식에 대한 이해가 필요합니다. 또한, 코드를 분석하고자 하는 언어의 구문 규칙에 대한 지식도 필요합니다. 이러한 지식을 바탕으로 AST를 생성하고 분석하여 코드의 구조와 의미를 파악할 수 있습니다.
+
+(1) [https://www.twilio.com/blog/abstract-syntax-trees](https://www.twilio.com/blog/abstract-syntax-trees)
+(2) [https://asbestos.me.go.kr/user/ha/astAnalysisPage.do](https://asbestos.me.go.kr/user/ha/astAnalysisPage.do?tab=tab1)
+(3) [https://www.synbiosis.com/application-notes/antibiotic...](https://www.synbiosis.com/application-notes/antibiotic-susceptibility-test-ast/)
+
+AST 분석을 위해서는 코드를 토큰화하고 구문 분석하여 AST를 생성하는 도구가 필요합니다. 이러한 도구로는 파서 생성기가 있습니다. 파서 생성기는 언어의 구문 규칙을 입력으로 받아 파서를 생성하는 도구입니다. 생성된 파서를 사용하여 코드를 토큰화하고 구문 분석하여 AST를 생성할 수 있습니다.
+또한, AST를 시각화하고 분석하는 데 사용되는 도구도 있습니다. 이러한 도구로는 AST Explorer와 같은 웹 기반 도구가 있습니다. 이러한 도구를 사용하면 코드를 입력하여 AST를 생성하고 시각화하여 분석할 수 있습니다.

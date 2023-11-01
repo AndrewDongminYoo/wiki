@@ -1,0 +1,90 @@
+---
+slug: export-all-d-ts-files-in-turbo-module
+title: 터보 모듈의 모든 d.ts 파일 내보내기
+authors: andrew
+tags: []
+---
+
+# 터보 모듈의 모든 d.ts 파일 내보내기
+
+## index.ts뿐만 아니라 React Native Turbo 모듈 개발에서 생성된 모든 타입스크립트 파일을 내보내는 방법
+
+React Native 터보 모듈을 사용하면 별도의 스레드에서 실행되는 네이티브 모듈을 생성할 수 있어 성능과 안정성이 향상됩니다. TypeScript로 터보 모듈을 개발할 때 애플리케이션의 다른 부분에서 사용하기 위해 내보내야 하는 함수와 클래스가 다른 여러 파일이 있는 것이 일반적입니다.
+Turbo 모듈의 모든 TypeScript 파일을 내보내려면 index.ts 파일을 다른 파일에서 필요한 모든 컴포넌트를 내보내기 위한 시작점으로 사용할 수 있습니다. index.ts 파일에서 다른 TypeScript 파일에서 컴포넌트를 가져온 다음 export 키워드를 사용하여 다시 내보낼 수 있습니다.
+다음은 터보 모듈의 여러 TypeScript 파일에서 컴포넌트를 내보내는 방법의 예시입니다:
+
+```ts
+// components.ts 파일
+export const Component1 = () => {
+  // 컴포넌트 로직
+};
+export const Component2 = () => {
+  // // 컴포넌트 로직 }.
+  // 컴포넌트 로직
+};
+// utils.ts 파일을 생성합니다:
+export const Utils = {
+  // 유틸리티 함수
+};
+// index.ts 파일:
+export { Component1, Component2 } from "./components";
+export { Utils } from "./utils";
+```
+
+이 예제에서는 components.ts 파일에서 Component1과 Component2를 내보내고, utils.ts 파일에서 Utils를 내보내고 있습니다. 이제 이러한 컴포넌트를 가져와 애플리케이션의 다른 부분에서 사용할 수 있습니다.
+
+package.json 파일에서 메인 필드를 사용하여 패키지의 진입점을 지정할 수 있습니다. 기본적으로 기본 필드를 지정하지 않으면 기본적으로 index.js 또는 index.json으로 지정됩니다.
+그러나 package.json 파일을 사용하여 패키지의 각 파일을 명시적으로 내보낼 수는 없습니다.
+패키지의 각 파일을 명시적으로 내보낼 수 있게 하려면 각 파일에 대한 진입점을 만든 다음 package.json 파일에서 메인 필드를 사용하여 각 진입점을 지정해야 합니다.
+예를 들어 패키지에 file1.js와 file2.js라는 두 개의 파일이 있고 각 파일을 명시적으로 내보낼 수 있도록 하려고 한다고 가정해 보겠습니다. 각 파일에 대한 진입점을 만들면 됩니다:
+
+file1.js:
+
+```js
+exports.function1 = function() {
+  // 함수 로직
+}
+exports.function2 = function() { // 함수 로직 }
+  // 함수 로직
+}
+file2.js:
+exports.function3 = function() {
+  // 함수 로직
+}
+exports.function4 = function() { // 함수 로직 }
+  // 함수 로직
+}
+```
+
+그런 다음 package.json 파일에서 메인 필드를 사용하여 각 진입점을 지정합니다:
+
+```json
+{
+  "name": "my-package",
+  "버전": "1.0.0",
+  "main": {
+    "file1": "./file1.js",
+    "file2": "./file2.js"
+  }
+}
+```
+
+이 구성을 사용하면 각각의 진입점을 사용하여 각 파일을 가져올 수 있습니다:
+
+```js
+const file1 = require("my-package/file1");
+const file2 = require("my-package/file2");
+file1.function1();
+file2.function3();
+```
+
+그러나 이 접근 방식은 패키지가 커짐에 따라 다루기 힘들고 유지 관리가 어려워질 수 있습니다. 일반적으로 index.js와 같은 단일 진입점을 사용하고 해당 진입점에서 패키지의 모든 함수와 클래스를 내보내는 것이 좋습니다.
+
+`json "main": "lib/commonjs/index", "module": "lib/module/index", "types": "lib/typescript/index.d.ts", "react-native": "src/index", "source": "src/index"`
+
+현재 리포지토리의 package.json에 있는 메인 프로퍼티 값입니다. 이 모든 파일을 오브젝트로 변경하고 각각의 경로를 입력해야 하나요?
+
+package.json 파일을 사용하면 메인, 모듈, 유형, 리액트 네이티브 및 소스 필드를 포함하여 패키지의 진입점과 유형을 정의하는 여러 속성을 지정할 수 있습니다.
+제공한 예제에서 main, module 및 types의 값은 각각 패키지의 CommonJS, ES6 및 TypeScript 빌드에 대한 진입점을 가리키는 문자열입니다. react-native 및 source 필드도 각각 React Native 빌드 및 소스 코드의 진입점을 가리키는 문자열입니다.
+이러한 값은 객체로 변경할 필요가 없습니다. 실제로 이러한 필드의 값은 일반적으로 패키지의 다른 빌드 및 소스 코드에 대한 관련 진입점을 가리키는 문자열입니다.
+엔트리 포인트 또는 소스 파일의 경로를 업데이트해야 하는 경우 이러한 필드의 값을 수정하여 올바른 경로를 가리키도록 할 수 있습니다. 하지만 해당 값이 패키지의 빌드 및 유형에 맞는 올바른 엔트리 포인트 또는 소스 파일을 가리키는 유효한 문자열인지 확인해야 합니다.

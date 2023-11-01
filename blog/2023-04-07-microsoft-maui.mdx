@@ -1,0 +1,196 @@
+---
+slug: microsoft-maui
+title: microsoft의 MAUI
+authors: andrew
+tags: []
+---
+
+# microsoft의 MAUI
+
+## .NET과 Multi-platform App UI
+
+.NET Multi-platform App UI (.NET MAUI)는 C#과 XAML을 사용하여 네이티브 모바일 및 데스크탑 앱을 만들기 위한 크로스 플랫폼 프레임워크입니다. .NET MAUI를 사용하면 Android, iOS, macOS 및 Windows에서 단일 공유 코드베이스에서 실행할 수 있는 앱을 개발할 수 있습니다. .NET MAUI는 오픈 소스이며 Xamarin.Forms의 진화이며 모바일에서 데스크탑 시나리오로 확장되고 성능 및 확장성을 위해 UI 컨트롤이 처음부터 다시 구축되었습니다.
+.NET MAUI를 사용하면 하나의 프로젝트를 사용하여 멀티 플랫폼 앱을 만들 수 있지만 필요한 경우 플랫폼별 소스 코드와 리소스를 추가할 수 있습니다. .NET MAUI의 주요 목표 중 하나는 앱 로직과 UI 레이아웃을 가능한 한 많이 단일 코드베이스에서 구현할 수 있도록 하는 것입니다.
+
+### References
+
+1. [What is .NET MAUI? - .NET MAUI | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/maui/what-is-maui?view=net-maui-7.0)
+2. [.NET Multi-platform App UI (.NET MAUI) | .NET](https://dotnet.microsoft.com/en-us/apps/maui)
+3. [¿Qué es .NET MAUI? - .NET MAUI | Microsoft Learn](https://learn.microsoft.com/es-es/dotnet/maui/what-is-maui?view=net-maui-7.0)
+4. [Interfaz de usuario de aplicaciones multiplataforma (.NET MAUI) de .NET | .NET](https://dotnet.microsoft.com/es-es/apps/maui)
+
+## MAUI는 C#과 같은 단일 언어로만 만들어집니까?
+
+.NET MAUI는 C#과 XAML을 사용하여 앱을 만들 수 있습니다. 이를 통해 개발자는 단일 공유 코드베이스에서 Android, iOS, macOS 및 Windows에서 실행할 수 있는 앱을 개발할 수 있습니다 .
+MAUI는 기존의 크로스플랫폼 애플리케이션 개발 도구들과 열려있는 호환을 제공합니까?
+.NET MAUI는 다른 크로스 플랫폼 애플리케이션 개발 도구와의 호환성에 대한 정보를 찾지 못했습니다. 하지만 .NET MAUI는 Windows, macOS, iOS 및 Android에서 네이티브 앱을 구축하기 위한 최신 기술을 사용하여 이들을 .NET 기반의 일반 프레임워크로 추상화합니다.
+
+### References
+
+1. [.NET Multi-platform App UI (.NET MAUI) | .NET](https://dotnet.microsoft.com/en-us/apps/maui)
+2. [Install Visual Studio 2022 to develop cross-platform apps using .NET MAUI - .NET MAUI ...](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation?view=net-maui-7.0)
+3. [Target multiple platforms from .NET MAUI single project](https://learn.microsoft.com/en-us/dotnet/maui/fundamentals/single-project?view=net-maui-7.0)
+4. [Configure .NET MAUI multi-targeting - .NET MAUI | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/maui/platform-integration/configure-multi-targeting?view=net-maui-7.0)
+
+## Concept of MAUI
+
+"MAUI(Multi-platform App UI)는 여느 크로스플랫폼에서 접하기 힘든 독보적인 컨셉을 갖추고 있습니다. 그것은 네이티브 친화적인 크로스 플랫폼을 지향한다는 것입니다. "
+이것이 의미하는 바를 좀 더 이해하기 쉽게 설명해 주세요.
+.NET MAUI는 Windows, macOS, iOS 및 Android에서 네이티브 앱을 구축하기 위한 최신 기술을 사용하여 이들을 .NET 기반의 일반 프레임워크로 추상화합니다. 이는 개발자가 모든 디바이스 대상에 대해 단일 C# 코드베이스와 프로젝트 시스템을 사용하여 네이티브 플랫폼과 같은 느낌의 앱을 구축할 수 있음을 의미합니다 .
+이것은 개발자가 하나의 코드베이스에서 여러 플랫폼에 대한 앱을 만들 수 있도록 지원하면서 각 플랫폼의 네이티브 기능과 성능을 최대한 활용할 수 있도록 지원하는 것입니다.
+단일 언어로 멀티 플랫폼 애플리케이션을 개발하고자 하는 시도는 코틀린이나 오브젝티브 C++ 등이 꽤 오랫동안 공을 들이고 있는 목표 중 하나입니다. MAUI의 현재 스테이지는 마일스톤에서 어느 정도 단계에 와 있습니까? 안드로이드나 iOS 개발자들이 당장 자바 코틀린과 ObjC 스위프트 대신 닷넷을 학습하기 시작해야 할 만큼의 성능이나 탁월한 개발 경험을 제공합니까?
+
+.NET MAUI는 Android, iOS, macOS 및 Windows API를 단일 API로 통합하여 여러 플랫폼에서 네이티브로 실행되는 하나의 앱을 작성할 수 있도록 합니다. 개발자의 일상적인 생산성과 애플리케이션의 성능 모두 개선하는 데 중점을 두고 있습니다. 개발자 생산성의 증가는 애플리케이션 성능의 비용으로 이루어져서는 안됩니다.
+.NET 7에서 .NET MAUI의 성능은 주요한 초점입니다. Android에서 시작 성능이 향상되었으며 iOS에서는 애플리케이션 크기가 줄어들었습니다. 뷰의 렌더링 경로가 최적화되었습니다.
+.NET MAUI는 현재 스테이지에서도 이미 매우 강력한 프레임워크입니다. 그러나 개발자가 자바 코틀린과 ObjC 스위프트 대신 닷넷을 학습하기 시작해야 할 만큼의 성능이나 탁월한 개발 경험을 제공하는지 여부는 개인적인 판단에 따라 다릅니다.
+
+### References
+
+1. [Performance Improvements in .NET MAUI - .NET Blog](https://devblogs.microsoft.com/dotnet/performance-improvements-in-dotnet-maui/)
+2. [What's new in .NET MAUI for .NET 7 - .NET MAUI | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/maui/whats-new/dotnet-7?view=net-maui-7.0)
+3. [How has .NET MAUI been tuned for performance? | Microsoft Learn](https://learn.microsoft.com/en-us/shows/one-dev-minute/how-has-dotnet-maui-been-tuned-for-performance)
+
+## Support of Apple and Google
+
+구글이나 애플과 같은 각 플랫폼의 관리 조직들의 협조 상태는 어떠합니까? 특히 애플의 폐쇄적인 정책에 젯브레인 등이 고배를 마신 바 있어 닷넷 애플리케이션의 iOS 애플리케이션의 개발 및 배포에 애플이 얼마나 협조적인지 궁금합니다.
+.NET MAUI는 iOS 앱을 개발하고 배포하는 데 필요한 Apple의 빌드 도구에 액세스해야 하므로, Visual Studio 2022는 .NET MAUI iOS 앱을 빌드하기 위해 네트워크에 연결된 Mac에 연결해야 합니다. 이를 위해 Apple의 정책과 지침을 따라야 합니다.
+그러나 구글이나 애플과 같은 각 플랫폼의 관리 조직들의 협조 상태에 대한 정보를 찾지 못했습니다.
+
+### References
+
+1. [Pair to Mac for iOS development - .NET MAUI | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/maui/ios/pair-to-mac?view=net-maui-7.0)
+2. [Publish a .NET MAUI iOS app for App Store distribution - .NET MAUI](https://learn.microsoft.com/en-us/dotnet/maui/ios/deployment/publish-app-store?view=net-maui-7.0)
+3. [c# - Sign in with Apple in .Net MAUI - Stack Overflow](https://stackoverflow.com/questions/73556534/sign-in-with-apple-in-net-maui)
+
+## Launch Date of MAUI
+
+MAUI는 본격적으로 베타테스트를 끝낸지 얼마 정도 된 도구입니까?
+.NET MAUI는 현재 베타 테스트를 끝낸지 얼마 되지 않은 도구입니다. 하지만 정확한 날짜에 대한 정보를 찾지 못했습니다.
+
+### References
+
+1. [.NET Multi-platform App UI (.NET MAUI) | .NET](https://dotnet.microsoft.com/en-us/apps/maui)
+2. [Deployment - .NET MAUI | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/maui/deployment/?view=net-maui-7.0)
+3. [Introducing the .NET MAUI Community Toolkit (Preview)](https://devblogs.microsoft.com/dotnet/introducing-the-net-maui-community-toolkit-preview/)
+
+## MAUI와 Xamarin.Forms의 차이점
+
+.NET MAUI는 Xamarin.Forms의 진화입니다. Xamarin.Forms는 모바일 앱 개발을 위한 크로스 플랫폼 프레임워크였습니다. .NET MAUI는 이를 확장하여 데스크탑 앱 개발도 지원하며 성능 및 확장성을 위해 UI 컨트롤이 처음부터 다시 구축되었습니다.
+.NET MAUI는 단일 프로젝트 구조를 사용하여 여러 플랫폼에 대한 앱을 만들 수 있습니다. 이는 개발자가 하나의 코드베이스에서 여러 플랫폼에 대한 앱을 만들 수 있도록 지원하면서 각 플랫폼의 네이티브 기능과 성능을 최대한 활용할 수 있도록 지원하는 것입니다.
+MAUI를 통해 제작되는 애플리케이션은 플러터와 같이 독립적인 UI를 구축합니까, 리액트 네이티브와 같이 플랫폼의 컨셉에 보다 친화적인 UI를 제공합니까?
+
+.NET MAUI는 각 플랫폼의 네이티브 UI 컨트롤을 사용하여 앱을 구축합니다. 이는 앱이 각 플랫폼의 네이티브 느낌과 디자인 가이드라인을 따르도록 지원합니다.
+.NET MAUI는 개발자가 하나의 코드베이스에서 여러 플랫폼에 대한 앱을 만들 수 있도록 지원하면서 각 플랫폼의 네이티브 기능과 성능을 최대한 활용할 수 있도록 지원하는 것입니다.
+완벽하게 네이티브 친화적인 애플리케이션을 지향한다는 선언의 뜻이 이제 이해가 됩니다. 현재 MAUI로 만들어진 애플리케이션 중 iOS 대한민국 앱스토어 기준으로 사용 가능한 상업적인 애플리케이션에는 어떤 것이 있습니까? 아직 그러한 주목할 만한 앱이 없다면 101으로 제공하는 데모 애플리케이션의 링크를 제공해 주세요.
+현재 대한민국 앱스토어에서 사용 가능한 상업적인 .NET MAUI 애플리케이션에 대한 정보를 찾지 못했습니다. 하지만 .NET MAUI는 새로운 프레임워크이므로 앞으로 더 많은 앱이 출시될 것으로 예상됩니다.
+.NET MAUI의 공식 웹사이트에서는 .NET MAUI의 기능과 사용 방법을 보여주는 다양한 예제와 데모 애플리케이션이 제공됩니다. 이러한 예제와 데모 애플리케이션은 .NET MAUI의 공식 웹사이트에서 확인하실 수 있습니다.
+
+### References
+
+1. [Enterprise Application Patterns Using .NET MAUI | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/architecture/maui/)
+2. [.NET MAUI eBook Now Available - Enterprise Application Patterns](https://devblogs.microsoft.com/dotnet/dotnet-maui-ebook-released/)
+3. [.NET Multi-platform App UI (.NET MAUI) | .NET](https://dotnet.microsoft.com/en-us/apps/maui)
+
+## IDE for MAUI Development
+
+MAUI를 사용한 개발은 어떤 IDE를 사용하는 것이 최적의 개발 경험을 제공합니까? 역시 Visual Code입니까? 어느 정도는 안드로이드 스튜디오와 XCode의 도움을 받아야 합니까?
+
+.NET MAUI 앱 개발에는 Visual Studio 2022가 권장됩니다. Visual Studio 2022는 .NET MAUI 프로젝트 템플릿, 디버깅 및 배포 도구를 제공하여 개발자가 빠르게 시작할 수 있도록 지원합니다.
+iOS 앱을 개발하려면 Apple의 빌드 도구에 액세스해야 하므로 Visual Studio 2022는 .NET MAUI iOS 앱을 빌드하기 위해 네트워크에 연결된 Mac에 연결해야 합니다. 이를 위해 Xcode가 설치되어 있어야 합니다.
+Android 앱을 개발하려면 Android SDK와 Android Emulator가 필요합니다. 이들은 Visual Studio 2022 설치 중에 설치할 수 있습니다.
+
+## Global Share of MAUI or Xamarin.Forms
+
+MAUI의 경우 아직 데이터가 많지 않을 것으로 예상되므로, 그의 전신인 Xamarin.Forms의 경우, 기존의 시장 점유율이나 개발자 선호도는 어느 정도였습니까?
+
+Xamarin.Forms는 전 세계 개발자들이 사용하는 크로스 플랫폼 모바일 프레임워크 중 하나입니다. 하지만 시장 점유율이나 개발자 선호도에 대한 정확한 정보를 찾지 못했습니다.
+.NET MAUI의 공식 웹사이트에서는 .NET MAUI의 기능과 사용 방법을 보여주는 다양한 예제와 데모 애플리케이션이 제공됩니다. 이러한 예제와 데모 애플리케이션은 .NET MAUI의 공식 웹사이트에서 확인하실 수 있습니다.
+
+### References
+
+1. [Persisting Settings and Preferences in Mobile Apps with Xamarin.Essentials - Xamarin Blog](https://devblogs.microsoft.com/xamarin/persisting-settings-preferences-mobile-apps-xamarin-essentials/)
+2. [Cross-platform mobile frameworks used by global developers 2021 - Statista](https://www.statista.com/statistics/869224/worldwide-software-developer-working-hours/)
+3. [Xamarin.Essentials: Share - Xamarin | Microsoft Learn](https://learn.microsoft.com/en-us/xamarin/essentials/share)
+
+## What is Others saying about MAUI?
+
+답변의 레퍼런스로 대부분 마이크로소프트의 기술블로그 혹은 도큐먼트가 링크되고 있는데, 외부 기관이나 개발자 커뮤니티에서 평가하는 MAUI에 대한 평가 정보를 찾을 수 있습니까?
+
+.NET MAUI는 새로운 프레임워크이므로 외부 기관이나 개발자 커뮤니티에서의 평가 정보가 제한적입니다. 하지만 일부 개발자들은 .NET MAUI가 너무 이른 시기에 출시되었다고 느끼며 기능이 미완성된 상태라고 지적하고 있습니다.
+.NET MAUI는 지속적으로 개발되고 있으며 앞으로 더 많은 개선이 이루어질 것으로 예상됩니다. .NET MAUI 커뮤니티 툴킷 (Preview)와 같은 커뮤니티에서 제공하는 확장 기능도 있습니다.
+
+### References
+
+1. [Did .NET MAUI Ship Too Soon? Devs Sound Off on 'Massive Mistake'](https://visualstudiomagazine.com/articles/2022/09/29/net-maui-complaints.aspx)
+2. [Introducing the .NET MAUI Community Toolkit (Preview)](https://devblogs.microsoft.com/dotnet/introducing-the-net-maui-community-toolkit-preview/)
+3. [.NET MAUI Reviews - 2023 - Slashdot](https://slashdot.org/software/p/.NET-MAUI/)
+
+MAUI와 Xamarin.Forms의 관계에 대해, Xamarin의 라이프사이클이 종료되면 MAUI가 그 역할을 대신할 수 있을 정도의 슈퍼셋과 같은 관계입니까, 리부트 개념으로 새롭게 개발된 완전한 별개의 도구입니까?
+
+.NET MAUI는 Xamarin.Forms의 진화입니다. Xamarin.Forms는 모바일 앱 개발을 위한 크로스 플랫폼 프레임워크였습니다. .NET MAUI는 이를 확장하여 데스크탑 앱 개발도 지원하며 성능 및 확장성을 위해 UI 컨트롤이 처음부터 다시 구축되었습니다.
+.NET MAUI는 Xamarin.Forms의 코드베이스를 기반으로 하지만 새로운 기능과 개선 사항이 추가되어 완전히 새로운 프레임워크로 발전하였습니다. 따라서 .NET MAUI는 Xamarin.Forms의 슈퍼셋이라고 볼 수 있습니다.
+일부에서 MAUI가 아직 실험적 단계라고 지적하는 이유는 무엇입니까? Xamarin.Forms 만으로 충분히 모바일 크로스플랫폼 개발에서 역할을 수행하고 있었다면 이러한 지적은 데스크톱 개발의 부족함에 대한 지적입니까? Xamarin.Forms부터 이어져 온 특유의 고질병입니까?
+
+.NET MAUI는 새로운 프레임워크이므로 일부 개발자들은 아직 실험적 단계라고 지적할 수 있습니다. 모든 새로운 프레임워크는 초기에 버그와 문제가 발생할 수 있으며 지속적인 개선이 필요합니다.
+Xamarin.Forms는 모바일 앱 개발을 위한 크로스 플랫폼 프레임워크였습니다. .NET MAUI는 이를 확장하여 데스크탑 앱 개발도 지원하며 성능 및 확장성을 위해 UI 컨트롤이 처음부터 다시 구축되었습니다. 따라서 .NET MAUI는 Xamarin.Forms의 기능을 계승하면서 데스크탑 앱 개발을 지원하는 새로운 프레임워크입니다.
+MAUI의 컨셉을 중심으로 생각하면, 특히 어떤 성격의 비즈니스에서 가장 효과적으로 성능을 발휘할 수 있는 엔지니어링 도구라고 할 수 있습니까? 나는 닷넷이 빠른 성능으로 게임 개발에 많이 쓰여온 것을 알고 있습니다. 닷넷 개발자 출신이라면 누구라도 쉽게 시작할 수 있을 만한 유사한 개발경험을 제공하는지도 궁금합니다.
+.NET MAUI는 다양한 종류의 비즈니스에서 사용될 수 있습니다. .NET MAUI는 개발자가 하나의 코드베이스에서 여러 플랫폼에 대한 앱을 만들 수 있도록 지원하면서 각 플랫폼의 네이티브 기능과 성능을 최대한 활용할 수 있도록 지원하는 것입니다. 따라서 .NET MAUI는 다양한 종류의 앱을 만들 수 있습니다.
+.NET 개발자라면 .NET MAUI를 사용하여 앱을 개발하는 데 쉽게 시작할 수 있습니다. .NET MAUI는 C#과 XAML을 사용하여 앱을 만들 수 있으며 .NET 개발자에게 익숙한 개발 경험을 제공합니다.
+XAML은 DTD나 XML과 같이 \<\>로 감싸진 태그로 작성되어 지는 언어입니까?
+
+XAML은 eXtensible Application Markup Language의 약자로, XML 기반의 선언적 마크업 언어입니다. XAML은 애플리케이션의 UI를 정의하는 데 사용되며, XML과 유사한 구조를 가지고 있습니다.
+XAML에서는 요소와 속성을 사용하여 UI를 정의합니다. 요소는 \<\>로 감싸진 태그로 작성되며, 속성은 태그 내부에서 이름=값 형태로 작성됩니다.
+MAUI의 애플리케이션의 예제에서 XAML 코드의 예제를 보고 싶습니다. 간단한 예제를 제공할 수 있습니까?
+
+간단한 .NET MAUI 애플리케이션의 XAML 코드 예제를 제공해 드리겠습니다.
+다음은 간단한 "Hello, World!" 앱의 XAML 코드 예제입니다.
+
+```xml
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.MainPage">
+    <StackLayout>
+        <Label Text="Welcome to .NET MAUI!"
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="CenterAndExpand" />
+    </StackLayout>
+</ContentPage>
+```
+
+이 코드는 `ContentPage` 요소를 사용하여 페이지를 정의하고 있습니다. StackLayout`요소는 페이지 내부의 레이아웃을 정의하며,`Label` 요소는 텍스트를 표시하는 데 사용됩니다.
+MAUI 개발에서 모든 UI 관련 코드는 XAML로 작성되어진다고 봐도 무방합니까?
+
+.NET MAUI에서는 UI를 정의하는 데 XAML을 사용할 수 있지만 필수는 아닙니다. 개발자는 C# 코드로도 UI를 정의할 수 있습니다.
+XAML은 선언적 마크업 언어로, UI를 정의하는 데 사용하기 쉽고 직관적입니다. XAML을 사용하면 디자이너와 개발자가 협업하기 쉬워지며, UI와 로직을 분리하여 코드의 가독성이 향상됩니다.
+하지만 개발자가 원한다면 C# 코드로도 UI를 정의할 수 있습니다. 이 경우에는 코드로 UI 요소를 생성하고 레이아웃을 정의해야 합니다.
+따라서 .NET MAUI 개발에서 모든 UI 관련 코드가 XAML로 작성되는 것은 아닙니다. 개발자가 선택한 방법에 따라 XAML 또는 C# 코드로 UI를 정의할 수 있습니다.
+위와 같은 기능의 "Hello, World!" 앱의 C# 코드 버전을 보여주실 수 있습니까?
+
+간단한 "Hello, World!" 앱의 C# 코드 예제를 제공해 드리겠습니다.
+다음은 MainPage.xaml.cs 파일의 코드 예제입니다.
+
+```csharp
+
+using Microsoft.Maui.Controls;
+namespace HelloWorld
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            var stackLayout = new StackLayout();
+            var label = new Label
+            {
+                Text = "Welcome to .NET MAUI!",
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+                VerticalOptions = LayoutOptions.CenterAndExpand
+            };
+            stackLayout.Children.Add(label);
+            Content = stackLayout;
+        }
+    }
+}
+```
+
+이 코드는 `ContentPage` 클래스를 상속받아 페이지를 정의하고 있습니다. `StackLayout` 클래스와 `Label` 클래스를 사용하여 레이아웃과 텍스트를 정의하고 있습니다.

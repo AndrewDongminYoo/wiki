@@ -1,0 +1,329 @@
+---
+slug: yarn-berry-and-classic
+title: Yarn Berry and Classic
+authors: andrew
+tags: []
+---
+
+# Yarn Berry and Classic
+
+## What is Yarn Berry?
+
+Yarn Berry는 Yarn의 새로운 버전으로, Node.js를 위한 패키지 관리 시스템입니다. Yarn Berry는 node_modules 폴더를 사용하지 않고 zip 파일로 모듈들을 관리하며, Plug'n'Play (PnP)라는 기능을 제공합니다. PnP는 모듈 설치 시간을 줄이고 디스크 공간을 절약하며 호환성 문제를 해결하는 등의 장점이 있습니다. Yarn Berry를 사용하려면 다음과 같은 단계를 따라야 합니다:
+
+- npm install -g yarn 명령어로 글로벌 yarn 버전을 최신 v1으로 업데이트합니다.
+- 프로젝트 디렉토리로 이동합니다.
+- yarn set version berry 명령어로 v2를 활성화합니다.
+- .npmrc 또는 .yarnrc 파일이 있다면 새로운 형식으로 변경합니다.
+- .yarnrc.yml 파일에 nodeLinker: node-modules 를 추가합니다.
+
+### References
+
+(1) [node_modules로부터 우리를 구원해 줄 Yarn Berry](https://toss.tech/article/node-modules-and-yarn-berry)
+(2) [[Devlog] yarn berry](https://subtlething.tistory.com/126)
+(3) [yarn berry로 React.js 프로젝트 시작하기 | Kasterra's Archive](https://kasterra.github.io/setting-yarn-berry/)
+(4) [GitHub - yarnpkg/berry: 📦🐈 Active development trunk for Yarn ⚒](https://github.com/yarnpkg/berry)
+(5) [Migration | Yarn - Package Manager](https://yarnpkg.com/getting-started/migration/)
+
+## yarn Berry와 Yarn Classic의 차이점
+
+Yarn Berry와 Yarn Classic의 가장 큰 차이점은 모듈 관리 방식입니다. Yarn Classic은 node_modules 폴더에 모든 의존성을 설치하고, package.json 파일에 버전 정보를 기록합니다. Yarn Berry는 zip 파일로 모든 의존성을 압축하고, .yarn 폴더에 저장합니다. 또한 package.json 파일 대신 .yarnrc.yml 파일에 버전 정보를 기록합니다. 이러한 차이점으로 인해 Yarn Berry는 설치 속도가 빠르고 디스크 공간을 절약하며 호환성 문제를 해결할 수 있습니다. 그러나 Yarn Berry는 아직 새로운 버전이기 때문에 일부 툴이나 라이브러리와의 호환성 문제가 발생할 수 있습니다. 따라서 프로젝트의 특성과 요구사항에 따라 적절한 버전을 선택하는 것이 중요합니다.
+
+### References
+
+(1) [Migration | Yarn - Package Manager](https://yarnpkg.com/getting-started/migration/)
+(2) [GitHub - yarnpkg/berry: 📦🐈 Active development trunk for Yarn ⚒](https://github.com/yarnpkg/berry)
+(3) [yarnpkg - Difference between yarn versions - Stack Overflow](https://stackoverflow.com/questions/71634861/difference-between-yarn-versions)
+
+## Yarn Berry의 장점
+
+- 설치 시간이 빠릅니다. zip 파일로 모듈을 관리하고 캐시를 사용하기 때문에 node_modules 폴더를 생성하거나 의존성을 다운로드할 필요가 없습니다.
+- 디스크 공간을 절약합니다. zip 파일은 일반 파일보다 용량이 작으며, 캐시를 공유할 수 있기 때문에 중복된 모듈을 저장할 필요가 없습니다.
+- 호환성 문제를 해결합니다. PnP 기능을 사용하면 모듈 간의 충돌이나 버전 문제를 방지할 수 있습니다.
+
+## Yarn Berry의 단점
+
+- 저장소 크기가 증가합니다. zip 파일을 저장소에 푸시하면 git이 모든 변경 내역을 기억하기 때문에 저장소의 크기가 커질 수 있습니다.
+- 클론 시간이 증가합니다. 저장소 크기가 커지면 클론하는데 걸리는 시간도 길어질 수 있습니다.
+- 일부 툴이나 라이브러리와 호환되지 않을 수 있습니다. Yarn Berry는 아직 새로운 버전이기 때문에 일부 툴이나 라이브러리가 node_modules 폴더나 package.json 파일에 의존하는 경우 호환성 문제가 발생할 수 있습니다.
+
+따라서 Yarn Berry를 사용하기 전에 프로젝트의 특성과 요구사항에 따라 장단점을 고려하는 것이 좋습니다.😊
+
+### References
+
+(1) [Should i push the .yarn/cache folder to Github - Yarn2](https://stackoverflow.com/questions/69885538/should-i-push-the-yarn-cache-folder-to-github-yarn2)
+(2) [State of Yarn 2 (Berry) in 2021 · Hao's learning log](https://blog.hao.dev/state-of-yarn-2-berry-in-2021/)
+(3) [Yarn 1 vs Yarn 2 vs NPM - Medium](https://shift.infinite.red/yarn-1-vs-yarn-2-vs-npm-a69ccf0229cd)
+
+## Yarn Berry don't need package.json?
+
+Yarn Berry는 package.json 파일을 사용하지 않는 것이 아니라, package.json 파일에 버전 정보를 기록하지 않는 것입니다. Yarn Berry는 대신 .yarnrc.yml 파일에 버전 정보를 기록합니다. 따라서 package.json 파일은 여전히 프로젝트의 이름, 설명, 스크립트 등의 정보를 담고 있습니다.😊
+
+## Yarn Berry를 사용하는 Node.js 프로젝트의 gitignore 파일을 작성하는 방법
+
+- .yarn 폴더 내에 있는 캐시 파일들은 저장소에 커밋하지 않는 것이 좋습니다. 이 파일들은 zip 파일로 압축된 모듈들이며, 저장소의 용량을 증가시킬 수 있습니다. 따라서 .yarn/cache 폴더를 gitignore 파일에 추가합니다.
+- .yarn 폴더 내에 있는 설정 파일들은 저장소에 커밋하는 것이 좋습니다. 이 파일들은 Yarn Berry의 버전 정보나 PnP 설정 등을 담고 있으며, 프로젝트의 의존성 관리에 필요합니다. 따라서 .yarnrc.yml 파일이나 .pnp.js 파일 등을 gitignore 파일에서 제외합니다.
+- node_modules 폴더는 Yarn Berry를 사용하면 생성되지 않으므로 gitignore 파일에 추가할 필요가 없습니다.
+
+따라서 Yarn Berry를 사용하는 Node.js 프로젝트의 gitignore 파일은 다음과 같이 작성할 수 있습니다:
+
+```gitignore
+# Ignore cache files
+.yarn/cache
+
+# Do not ignore settings files
+!.yarnrc.yml
+!.pnp.js
+```
+
+### References
+
+(1) [berry/.gitignore at master · yarnpkg/berry · GitHub](https://github.com/yarnpkg/berry/blob/master/.gitignore)
+(2) [[Question] What files should be listed in `.gitignore` ? · Issue #454 · yarnpkg/berry](https://github.com/yarnpkg/berry/issues/454)
+(3) [Better gitignore for Yarn 2 (berry) see [https://github.com/github/gitignore/pull/3479]](https://gist.github.com/nickmccurdy/d64ed8aeb4ed4e44a8eeb8c803a8402c)
+
+## Yarn Classic에서 Yarn Berry로 마이그레이션할 때 수정해야 할 사항
+
+- Yarn Berry를 활성화합니다. `yarn set version berry` 명령어를 실행하면 프로젝트에 .yarn 폴더와 .yarnrc.yml 파일이 생성됩니다. 이 파일들은 Yarn Berry의 버전 정보와 설정을 담고 있습니다.
+- 설정 파일을 새로운 형식으로 변환합니다. 만약 .npmrc나 .yarnrc 파일을 사용했다면, 이 파일들을 .yarnrc.yml 파일에 병합해야 합니다. 예를 들어, `registry "https://registry.yarnpkg.com"` 라는 설정은 `npmRegistryServer: "https://registry.yarnpkg.com"` 로 바꿔야 합니다.
+- 의존성을 설치합니다. `yarn install` 명령어를 실행하면 의존성들이 zip 파일로 압축되어 .yarn/cache 폴더에 저장됩니다. 또한 PnP 모드가 기본적으로 활성화되므로 node_modules 폴더가 생성되지 않습니다.
+- 호환성 문제를 해결합니다. 일부 툴이나 라이브러리가 Yarn Berry와 호환되지 않는 경우가 있습니다. 이런 경우에는 PnP 패치나 플러그인을 사용하거나, loose 모드나 nodeLinker 옵션을 사용하여 문제를 해결할 수 있습니다.
+
+따라서 Yarn Classic에서 Yarn Berry로 마이그레이션할 때 체크리스트는 다음과 같이 작성할 수 있습니다:
+
+```TODO
+- [ ] yarn set version berry 명령어 실행
+- [ ] 설정 파일 변환
+- [ ] yarn install 명령어 실행
+- [ ] 호환성 문제 해결
+```
+
+### References
+
+(1) [Migration | Yarn - Package Manager](https://yarnpkg.com/getting-started/migration/)
+(2) [Feedback on Yarn 3 migration from Yarn classic · Discussion #3448 · yarnpkg/berry ...](https://github.com/yarnpkg/berry/discussions/3448)
+(3) [yarnpkg/yarn: The 1.x line is frozen - GitHub](https://github.com/yarnpkg/yarn)
+
+## 사용 방법이나 플래그가 변경(deprecated)된 일부 명령어들
+
+Yarn Berry에서 모든 명령어들이 바뀐 것은 아니지만, 일부 명령어들은 사용 방법이나 플래그가 변경되었습니다. 예를 들어:
+
+- `yarn install` 명령어는 이제 `--frozen-lockfile` 플래그가 기본값입니다. 만약 의존성을 업데이트하고 싶다면 `--check-cache` 플래그를 사용해야 합니다.
+- `yarn start`, `yarn run`, `yarn add` 등의 명령어는 이제 Node 환경 변수를 주입하기 위해 `yarn node`를 사용해야 합니다. 예를 들어, `yarn node index.js` 또는 `yarn node -p "process.versions.pnp"`와 같이 사용할 수 있습니다.
+- `yarn global` 명령어는 이제 존재하지 않습니다. 대신에 Yarn Berry에서 제공하는 코어 패키지나 플러그인 패키지를 설치하고 싶다면 `yarn dlx` 명령어를 사용할 수 있습니다.
+
+따라서 바뀌기 전의 명령어 -> 바뀐 명령어 형식의 리스트는 다음과 같이 작성할 수 있습니다:
+
+```changeLog
+- yarn install -> yarn install --check-cache
+- yarn start/run/add ... -> yarn node start/run/add ...
+- yarn global ... -> yarn dlx ...
+```
+
+새롭게 생긴 명령어 리스트는 다음과 같이 작성할 수 있습니다:
+
+```changeLog
+- yarn set version: Yarn 버전을 설정하거나 업데이트합니다.
+- yarn up: 의존성을 업데이트합니다.
+- yarn patch: 의존성에 패치를 적용합니다.
+- yarn plugin: Yarn 플러그인을 관리합니다.
+- yarn workspaces: 워크스페이스에 관한 정보를 출력합니다.
+```
+
+사라지거나 더 이상 권장하지 않는 명령어 리스트는 다음과 같이 작성할 수 있습니다:
+
+```changeLog
+- yarn global: 글로벌 패키지 설치 기능이 제거되었습니다.
+- yarn upgrade: 대신에 yarn up을 사용하세요.
+- yarn upgrade-interactive: 대신에 \--interactive 옵션을 추가하세요.
+```
+
+### References
+
+(1) [GitHub - yarnpkg/berry: 📦🐈 Active development trunk for Yarn ⚒](https://github.com/yarnpkg/berry)
+(2) [CLI Introduction | Yarn](https://classic.yarnpkg.com/lang/en/docs/cli/)
+(3) [Migration | Yarn - Package Manager](https://yarnpkg.com/getting-started/migration/)
+
+## Migration from Yarn Classic to Yarn Berry (Example)
+
+리액트 네이티브 라이브러리의 package.json 내용을 Yarn Berry로 마이그레이션하기 위해서는 다음과 같은 절차를 따라야 합니다:
+
+- `yarn set version berry` 명령어를 실행하여 Yarn 버전을 2로 설정합니다. 이 명령어는 `.yarnrc.yml` 파일과 `.yarn/releases/yarn-berry.cjs` 파일을 생성합니다.
+- 만약 `.npmrc` 또는 `.yarnrc` 파일을 사용하고 있다면, 새로운 형식으로 변환해야 합니다. 예를 들어, `registry "https://registry.yarnpkg.com"` 는 `npmRegistryServer: "https://registry.yarnpkg.com"` 로 바뀌어야 합니다.
+- `.yarnrc.yml` 파일에 `nodeLinker: node-modules` 를 추가합니다. 이 옵션은 기존의 node_modules 폴더를 사용하도록 설정합니다. 만약 PnP 기능을 사용하고 싶다면 이 옵션을 생략할 수 있습니다.
+- `yarn install` 명령어를 실행하여 의존성을 설치하고 lock 파일을 업데이트합니다.
+
+따라서 수정된 package.json 내용은 다음과 같습니다:
+
+```jsonc
+{
+  "name": "@dongminyu/react-native-step-counter",
+  "version": "0.1.11",
+  "private": false,
+  "summary": "It is a multi-platform library that combines CoreMotionSensor from iOS with SensorEventListener from Android.",
+  "description": "This library provides an interface for tracking the number of steps taken by the user in a React Native app.",
+  "main": "lib/commonjs/index",
+  "module": "lib/module/index",
+  "types": "lib/typescript/index.d.ts",
+  "react-native": "src/index",
+  "source": "src/index", // files 필드에 .yarn 폴더와 .pnp.js 파일을 추가합니다 // 만약 PnP 기능을 사용하지 않는다면 .pnp.js 파일은 제외할 수 있습니다 // .gitignore 파일에도 동일한 내용을 추가해야 합니다 // https://github.com/yarnpkg/berry/blob/master/.gitignore#L8-L9 // https://github.com/yarnpkg/berry/blob/master/package.json#L16-L17 // https://github.com/yarnpkg/berry/blob/master/.npmignore#L1-L2 // 참고하세요
+  "files": [".yarn/**/*", ".pnp.js"],
+  "scripts": {
+    // yarn install 명령어에 \--check-cache 플래그를 추가합니다
+    // https://yarnpkg.com/getting-started/migration/#update-your-install-script-if-needed
+    // 참고하세요
+    "bootstrap": "yarn install --check-cache && yarn example install && yarn example pods && yarn example gradle"
+  }
+}
+```
+
+### References
+
+(1) [Migration | Yarn - Package Manager](https://yarnpkg.com/getting-started/migration/)
+(2) [GitHub - yarnpkg/berry: 📦🐈 Active development trunk for Yarn ⚒](https://github.com/yarnpkg/berry)
+(3) [Yarn: How to upgrade yarn version using terminal?](https://stackoverflow.com/questions/49689174/yarn-how-to-upgrade-yarn-version-using-terminal)
+
+## Make Alias to Make Easy to Use Yarn Berry
+
+Yarn Berry에서는 기본적으로 명령어에 대한 별칭(alias) 기능을 제공하지 않습니다. 이는 Yarn의 핵심 철학 중 하나인 단순성을 지키기 위한 결정입니다. 그러나 만약 사용자가 별칭 기능을 원한다면, 다음과 같은 방법들이 있습니다:
+
+- 쉘(shell)에서 별칭을 설정하는 방법. 예를 들어, `alias y= "yarn"` 과 같이 쉘 설정 파일에 별칭을 추가할 수 있습니다. 이 방법은 간단하고 편리하지만, 쉘마다 다른 방식으로 설정해야 하고, 모든 팀원이 동일한 별칭을 사용하기 어렵다는 단점이 있습니다.
+- Yarn 플러그인(plugin)을 사용하는 방법. Yarn Berry에서는 플러그인 시스템을 도입하여 사용자가 커스텀 명령어를 만들 수 있도록 지원합니다. 예를 들어, `yarn plugin import https://github.com/yarnpkg/berry/raw/master/packages/plugin-aliases/sources/index.ts` 와 같이 플러그인을 설치하면 `yarn add` 대신 `yarn a` 를 사용할 수 있습니다. 이 방법은 프로젝트별로 일관된 별칭을 사용할 수 있고, Yarn의 기능을 확장할 수 있다는 장점이 있습니다.
+
+### References
+
+(1) [Adding Command Line Aliases for Yarn | Yarn Blog](https://classic.yarnpkg.com/blog/2017/06/19/adding-command-line-aliases-for-yarn/)
+(2) [Useful aliases for Yarn · GitHub](https://gist.github.com/DanyloMoraes/ebcf380f3c5264162786197ec1c82cf4)
+(3) [[Feature] Command aliases · Issue #3077 · yarnpkg/berry](https://github.com/yarnpkg/berry/issues/3077)
+(4) [CLI Introduction | Yarn](https://classic.yarnpkg.com/lang/en/docs/cli/)
+
+## How to Set Default Option to Yarn Install
+
+리포지토리 내의 yarn 설정파일을 작성해 yarn install의 기본 option을 "--check-cache" 와같은 것으로 디폴트하고 이 외 옵션을 사용하면 그 옵션이 적용되도록 부트스트랩할 수 있나?
+
+Yarn Berry에서는 `.yarnrc.yml` 파일을 사용하여 Yarn의 내부 설정을 관리할 수 있습니다. 이 파일은 프로젝트의 루트 디렉토리에 위치해야 하며, 다음과 같은 형식으로 옵션을 지정할 수 있습니다:
+
+```yaml
+yarnPath: ".yarn/releases/yarn-berry.cjs"
+nodeLinker: "pnp"
+initFields:
+  license: "MIT"
+  version: "1.0.0"
+npmRegistryServer: "https://registry.yarnpkg.com"
+npmPublishRegistry: "https://registry.npmjs.org"
+```
+
+이 예시에서는 `yarn install` 의 기본 옵션을 `--check-cache` 로 설정하고 싶다면, 다음과 같이 `installConfig.checkCache` 항목을 추가하면 됩니다:
+
+```yaml
+installConfig:
+  checkCache: true
+```
+
+이렇게 하면 `yarn install` 명령어를 실행할 때마다 캐시된 파일들의 무결성을 검사하게 됩니다. 만약 다른 옵션을 사용하고 싶다면 명령어에 직접 추가하면 됩니다. 예를 들어, `--immutable` 옵션을 사용하고 싶다면 `yarn install --immutable` 과 같이 입력하면 됩니다.
+
+### References
+
+(1) [Configuration options | Yarn - Package Manager](https://yarnpkg.com/configuration/yarnrc/)
+(2) [yarn config | Yarn](https://classic.yarnpkg.com/lang/en/docs/cli/config/)
+(3) [Migration | Yarn - Package Manager](https://yarnpkg.com/getting-started/migration/)
+
+## How to Update Dependencies with Yarn Berry
+
+나는 라이브러리 전체 의존성을 업데이트하는 'yarn update --audit --latest'를 자주 사용하는데 같은 방법으로 yarn up에 적용할 수 있나?
+
+Yarn Berry에서는 `yarn up` 명령어를 사용하여 라이브러리의 의존성을 업데이트할 수 있습니다. 이 명령어는 `package.json` 파일에 있는 버전 범위를 기준으로 업데이트를 수행하며, 다음과 같은 옵션을 사용할 수 있습니다:
+
+- `--latest`: 버전 범위와 상관없이 최신 버전으로 업데이트합니다.
+- `--caret`, `--tilde`, `--exact`: 업데이트 후에 `package.json` 파일에 적용할 버전 범위의 접두사를 지정합니다.
+- `--audit`: 의존성을 업데이트하기 전에 보안 취약점을 검사합니다.
+- 따라서, 질문하신 명령어와 동일한 기능을 하려면 다음과 같이 입력하면 됩니다:
+
+```sh
+yarn up --audit --latest
+```
+
+### References
+
+(1) [GitHub - yarnpkg/berry: 📦🐈 Active development trunk for Yarn ⚒](https://github.com/yarnpkg/berry)
+(2) [Yarn: How to upgrade yarn version using terminal?](https://stackoverflow.com/questions/49689174/yarn-how-to-upgrade-yarn-version-using-terminal)
+(3) [yarn upgrade | Yarn](https://classic.yarnpkg.com/lang/en/docs/cli/upgrade/)
+
+## How to Reset Yarn and Node.js Cache
+
+Yarn의 로컬 캐시를 리셋하는 방법은 다음과 같습니다:
+
+- `yarn cache clean` 명령어를 사용하여 현재 프로젝트의 로컬 캐시를 삭제합니다.
+- `yarn cache clean --mirror` 명령어를 사용하여 전역 캐시를 삭제합니다.
+- `yarn cache clean <module_name>` 명령어를 사용하여 특정 모듈의 캐시만 삭제합니다.
+
+Node.js의 로컬 캐시를 리셋하는 방법은 다음과 같습니다:
+
+- `npm cache clean --force` 명령어를 사용하여 전역 캐시를 삭제합니다.
+- `npm cache verify` 명령어를 사용하여 캐시의 무결성을 검사하고 오래된 데이터를 제거합니다.
+
+Yarn Berry의 캐시를 삭제하는 방법은 다음과 같습니다:
+
+- `.yarn/cache` 폴더를 삭제하면 로컬 캐시를 삭제할 수 있습니다. 이 폴더는 프로젝트의 루트 디렉토리에 위치하며, `yarn install` 명령어를 실행할 때마다 다시 생성됩니다.
+- `.yarn/berry/cache` 폴더를 삭제하면 전역 캐시를 삭제할 수 있습니다. 이 폴더는 Yarn Berry의 설치 경로에 위치하며, PnP 기능을 사용할 때 패키지 파일을 읽어오는 역할을 합니다. 이 폴더도 `yarn install` 명령어를 실행할 때마다 다시 생성됩니다.
+
+### References
+
+(1) [`yarn cache clean` | Yarn - Package Manager](https://yarnpkg.com/cli/cache/clean/)
+(2) [yarn cache | Yarn](https://classic.yarnpkg.com/lang/en/docs/cli/cache/)
+(3) [yarnpkg - How to clear cache in Yarn? - Stack Overflow](https://stackoverflow.com/questions/39991508/how-to-clear-cache-in-yarn)
+(4) [yarn cache | Yarn](https://classic.yarnpkg.com/lang/en/docs/cli/cache/)
+(5) [What is the .yarn/berry/cache folder for when using Yarn 3?](https://stackoverflow.com/questions/70699473/what-is-the-yarn-berry-cache-folder-for-when-using-yarn-3)
+(6) [Offline Cache | Yarn - Package Manager](https://yarnpkg.com/features/offline-cache/)
+
+## What is PnP Feature in Yarn Berry?
+
+Yarn Berry의 PnP 기능은 node_modules 디렉토리를 사용하지 않고 패키지 의존성을 관리하는 방식입니다. PnP는 package.json 파일을 기반으로 의존성 트리를 생성하고,.yarn/cache 폴더에 의존성 정보를 저장하고.pnp.cjs 파일에 의존성을 찾을 수 있는 정보가 기록됩니다. 이렇게 하면 패키지 설치 시간과 디스크 공간을 절약할 수 있습니다. 또한 PnP는 zero install이라는 기능을 지원하여 프로젝트를 복제할 때 별도의 설치 과정 없이 바로 실행할 수 있습니다.
+
+### References
+
+(1) [Yarn Berry 도입 (feat. pnp)](https://velog.io/@thkim/Yarn-Berry)
+(2) [[Yarn berry] pnp (Plug And Play), Zero Install을 위한 Dependency 문제 ...](https://helloinyong.tistory.com/341)
+(3) [[Yarn berry] pnp(Plug And Play), Zero Install을 위한 Dependency 문제 해결하기](https://helloinyong.tistory.com/m/341)
+(4) [Yarn Berry의 PnP(Plug'n'Play) 살펴보기](https://velog.io/@dami/Yarn-berry-PnP)
+
+## Is there Some Issue can happen If I don't migrate to Yarn Berry?
+
+Yarn Classic 버전을 계속해서 대규모 상업적 서비스에 이용할 때 발생할 수 있는 관련 이슈에는 다음과 같은 것들이 있습니다.
+
+- nodejs 대신 node 이름을 사용하는 일부 배포판에서 yarn이 node가 설치되지 않았다고 불평할 수 있습니다.
+- node_modules 디렉토리가 프로젝트마다 중복되어 디스크 공간을 낭비하고 설치 시간을 늘릴 수 있습니다.
+- 프로젝트가 내 컴퓨터에서 작동하지 않는다는 문제를 일으킬 수 있는 의존성 해결 방식의 한계가 있습니다.
+- Yarn 2와 비교하여 새로운 기능이나 개선사항이 제공되지 않을 수 있습니다.
+
+### References
+
+(1) [Installation | Yarn](https://classic.yarnpkg.com/lang/en/docs/install/)
+(2) [Migration | Yarn - Package Manager](https://yarnpkg.com/getting-started/migration/)
+(3) [Issues · yarnpkg/yarn · GitHub](https://github.com/yarnpkg/yarn/issues)
+
+## Yarn Berry is not compatible with Yarn Classic?
+
+Yarn 2가 기존의 프로젝트 구조나 설정과 충돌할까봐 걱정 하시는군요. Yarn 2가 기존의 프로젝트 구조나 설정과 충돌할 수 있는 이유 중 하나는 Yarn 2가 새로운 Plug'n'Play (PnP) 아키텍처를 사용하기 때문입니다. PnP는 패키지를 설치하는 node_modules/ 폴더를 없애고 대신 .pnp.js 파일을 생성하여 의존성을 관리합니다. 이 방식은 디스크 공간과 설치 시간을 절약하고 의존성 해결 방식을 개선하지만, node_modules/ 폴더에 의존하는 일부 IDE나 툴과 호환되지 않을 수 있습니다. 하지만 걱정하지 마세요. Yarn 2는 nodeLinker: node-modules 옵션을 통해 기존의 node_modules/ 폴더를 유지할 수 있도록 지원합니다. 또한 Yarn 2는 PnP와 호환되도록 만들어진 다양한 IDE나 툴의 플러그인들을 제공합니다. 따라서 Yarn 2로 마이그레이션하더라도 기존의 프로젝트 구조나 설정과 크게 충돌할 가능성은 낮습니다.
+
+### References
+
+(1) [It’s 2021, and You Should Switch to Yarn 2 - Atomic Spin](https://spin.atomicobject.com/2021/02/17/switch-yarn-2/)
+(2) [Introducing Yarn 2 ! 🧶🌟](https://yarnpkg.dev/releases/2-0/)
+(3) [What's the problem with Yarn 2? - Medium](https://njbmartin.medium.com/whats-the-problem-with-yarn-2-ca59e3fabc9f)
+
+## Difference between Yarn version 2.\_ and Yarn version 3.\_
+
+Yarn version 2.*와 Yarn version 3.*에는 몇 가지 차이점이 있습니다.
+
+- Yarn 3는 Yarn 2보다 성능이 향상되었습니다. 예를 들어, yarn install 명령어의 실행 시간이 약 30% 단축되었습니다.
+- Yarn 3는 esbuild를 사용하여 TypeScript 파일을 컴파일할 수 있습니다. 이 기능은 yarn plugin import typescript 명령어로 설치할 수 있으며, yarn tsc 명령어로 실행할 수 있습니다.
+- Yarn 3는 패키지의 버전 범위를 더 유연하게 지정할 수 있도록 해줍니다. 예를 들어, ^1.0.0 || ^2.0.0 과 같은 복합 버전 범위를 사용할 수 있습니다.
+- Yarn 3는 패키지의 의존성을 더 쉽게 수정할 수 있는 patch 프로토콜을 개선했습니다. 예를 들어, patch:foo@npm:1.0.0#./my-changes.patch 과 같은 형식으로 패치 파일을 지정할 수 있습니다.
+
+### References
+
+(1) [MDH 前端周刊第 13 期：Yarn 3、React Re-rendering、Just JavaScript](http://geekdaxue.co/read/chencheng@mdh-weekly/ak0ta5)
+(2) [javascript - Why is "yarn 2" yarn 3.0.1? - Stack Overflow](https://stackoverflow.com/questions/69019854/why-is-yarn-2-yarn-3-0-1)
+(3) [Getting Started with Yarn 3 and TypeScript - Medium](https://plainenglish.io/blog/getting-started-with-yarn-3-and-typescript-125e7b537e6c)
+(4) [It’s 2021, and You Should Switch to Yarn 2 - Atomic Spin](https://spin.atomicobject.com/2021/02/17/switch-yarn-2/)
