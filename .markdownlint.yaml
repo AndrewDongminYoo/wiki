@@ -1,19 +1,29 @@
 # 린터/포맷터 친화적인 마크다운린트 구성(모든 서식 지정 규칙 비활성화)
 default: true
+# blank_lines - MD012, MD022, MD031, MD032, MD047
 blank_lines: false
+# bullet - MD004, MD005, MD006, MD007, MD032
 bullet: false
-html: false
+# indentation - MD005, MD006, MD007, MD027
 indentation: false
-line_length: false
+# spaces - MD018, MD019, MD020, MD021, MD023
 spaces: false
-url: false
+# whitespace - MD009, MD010, MD012, MD027, MD028, MD030, MD037, MD038, MD039
 whitespace: false
 
-# MD024/no-duplicate-heading: 동일한 콘텐츠를 가진 여러 개의 헤더
+# MD013/line-length - 각 라인의 길이 제한 (기본값 = 80)
+line_length: false
+# MD034/no-bare-urls - 무효한 URL 사용
+url: true
+# MD033/no-inline-html - 인라인 HTML 사용
+# docusaurus의 파서가 모든 브래킷을 HTML로 간주하기 때문에 미리 체크하는 용도.
+MD033:
+  allowed_elements: [Highlight]
+# MD024/no-duplicate-heading: 동일한 콘텐츠를 가진 여러 개의 헤더 허용
 MD024: false
-# MD025/single-title: 동일한 문서에 여러 개의 최상위 제목
+# MD025/single-title: 동일한 문서에 여러 개의 최상위 제목 허용
 MD025: false
-# MD026/no-trailing-punctuation: 헤더 끝에 문장부호를 사용하지 않기
+# MD026/no-trailing-punctuation: 헤더 끝에 문장부호 허용
 MD026: false
 # MD046/code-block-style: 코드 블록 스타일 [fenced or indented 통일]
 MD046: false
