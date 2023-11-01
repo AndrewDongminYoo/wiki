@@ -18,7 +18,11 @@ url: true
 # MD033/no-inline-html - 인라인 HTML 사용
 # docusaurus의 파서가 모든 브래킷을 HTML로 간주하기 때문에 미리 체크하는 용도.
 MD033:
-  allowed_elements: [Highlight]
+  allowed_elements:
+    - p
+    - img
+    - span
+    - iframe
 # MD024/no-duplicate-heading: 동일한 콘텐츠를 가진 여러 개의 헤더 허용
 MD024: false
 # MD025/single-title: 동일한 문서에 여러 개의 최상위 제목 허용
