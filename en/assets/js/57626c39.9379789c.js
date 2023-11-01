@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_wiki=self.webpackChunkmy_wiki||[]).push([[1195],{1203:e=>{e.exports=JSON.parse('{"label":"Swagger","permalink":"/wiki/en/blog/tags/swagger","allTagsPath":"/wiki/en/blog/tags","count":1,"unlisted":false}')}}]);

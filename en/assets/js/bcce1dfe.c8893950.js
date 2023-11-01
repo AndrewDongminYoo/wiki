@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_wiki=self.webpackChunkmy_wiki||[]).push([[812],{6983:e=>{e.exports=JSON.parse('{"label":"version control","permalink":"/wiki/en/blog/tags/version-control","allTagsPath":"/wiki/en/blog/tags","count":1,"unlisted":false}')}}]);

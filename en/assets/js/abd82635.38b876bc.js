@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_wiki=self.webpackChunkmy_wiki||[]).push([[6958],{8069:e=>{e.exports=JSON.parse('{"permalink":"/wiki/en/blog","page":1,"postsPerPage":10,"totalPages":5,"totalCount":45,"nextPage":"/wiki/en/blog/page/2","blogDescription":"Blog","blogTitle":"Blog"}')}}]);

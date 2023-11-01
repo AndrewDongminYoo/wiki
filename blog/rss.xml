@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>My Site Blog</title>
-        <link>https://your-docusaurus-test-site.com/wiki/blog</link>
+        <link>https://andrewdongminyoo.github.io/wiki/blog</link>
         <description>My Site Blog</description>
         <lastBuildDate>Tue, 20 Jun 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>ko</language>
         <item>
             <title><![CDATA[프론트+백엔드 개발자 로드맵]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/front-backend-developer-roadmap</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/front-backend-developer-roadmap</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/front-backend-developer-roadmap</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/front-backend-developer-roadmap</guid>
             <pubDate>Tue, 20 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[개발자로 한국에서 취직을 하려면 로드맵을 어떻게 정하는게 좋을지 궁금하신 것 같습니다. 웹 개발자는 크게 프론트엔드와 백엔드로 나뉘는데요, 프론트엔드는 웹사이트나 웹앱의 사용자 인터페이스를 담당하는 파트이고, 백엔드는 서버와 데이터베이스를 다루는 파트입니다.]]></description>
             <content:encoded><![CDATA[<p>개발자로 한국에서 취직을 하려면 로드맵을 어떻게 정하는게 좋을지 궁금하신 것 같습니다. 웹 개발자는 크게 프론트엔드와 백엔드로 나뉘는데요, 프론트엔드는 웹사이트나 웹앱의 사용자 인터페이스를 담당하는 파트이고, 백엔드는 서버와 데이터베이스를 다루는 파트입니다.
@@ -57,8 +57,8 @@
         </item>
         <item>
             <title><![CDATA[Static Property in Java Class]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/static-property-in-java-class</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/static-property-in-java-class</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/static-property-in-java-class</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/static-property-in-java-class</guid>
             <pubDate>Sat, 10 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[자바 파일은 크게 필드 \+ 생성자\+ 메서드로 구성되어 있고 그중 필드 부분에서 선언한 전역변수 와 정적 멤버변수 이 두가지는 static 영역에 데이터를 저장하고 사용한다. 이 영역에서 데이터는 프로그램의 시작부터 종료될 때까지 메모리에 남아 있다.]]></description>
             <content:encoded><![CDATA[<p>자바 파일은 크게 필드 + 생성자+ 메서드로 구성되어 있고 그중 필드 부분에서 선언한 전역변수 와 정적 멤버변수 이 두가지는 static 영역에 데이터를 저장하고 사용한다. 이 영역에서 데이터는 프로그램의 시작부터 종료될 때까지 메모리에 남아 있다.</p>
@@ -98,8 +98,8 @@
         </item>
         <item>
             <title><![CDATA[가장 많이 사용되는 주류 DB 4가지와 특징]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/four-mainstream-d-bs-and-features</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/four-mainstream-d-bs-and-features</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/four-mainstream-d-bs-and-features</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/four-mainstream-d-bs-and-features</guid>
             <pubDate>Thu, 25 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Summary]]></description>
             <content:encoded><![CDATA[<h2 id="summary">Summary</h2>
@@ -130,8 +130,8 @@ MySQL서버는 클라이언트 / 서버 또는 임베디드 시스템에서 작�
         </item>
         <item>
             <title><![CDATA[Generate Unicode emoji regular expression]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/generate-unicode-emoji-regular-expression</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/generate-unicode-emoji-regular-expression</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/generate-unicode-emoji-regular-expression</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/generate-unicode-emoji-regular-expression</guid>
             <pubDate>Fri, 19 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Question]]></description>
             <content:encoded><![CDATA[<h2 id="question">Question</h2>
@@ -174,8 +174,8 @@ Unicode mode in JavaScript, which allows the matching of Unicode characters beyo
         </item>
         <item>
             <title><![CDATA[웹사이트의 리다이렉팅 방식]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/redirection-of-the-website</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/redirection-of-the-website</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/redirection-of-the-website</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/redirection-of-the-website</guid>
             <pubDate>Tue, 16 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[일반적으로 스마트폰을 이용해 웹사이트에 접속하면 모바일용 사이트로 리다이렉팅하는 경우가 많습니다. 이러한 리다이렉팅은 서버 측 리다이렉트 방식을 사용하여 구현할 수 있습니다. 서버 측 리다이렉트 방식은 HTTP 상태 코드 301 또는 302를 사용하여 클라이언트에게 새로운 URL로 이동하도록 지시합니다. 이 방식은 빠르게 작동하며, 검색엔진 최적화(SEO)에도 유리합니다.]]></description>
             <content:encoded><![CDATA[<p>일반적으로 스마트폰을 이용해 웹사이트에 접속하면 모바일용 사이트로 리다이렉팅하는 경우가 많습니다. 이러한 리다이렉팅은 서버 측 리다이렉트 방식을 사용하여 구현할 수 있습니다. 서버 측 리다이렉트 방식은 HTTP 상태 코드 301 또는 302를 사용하여 클라이언트에게 새로운 URL로 이동하도록 지시합니다. 이 방식은 빠르게 작동하며, 검색엔진 최적화(SEO)에도 유리합니다.
@@ -199,8 +199,8 @@ Unicode mode in JavaScript, which allows the matching of Unicode characters beyo
         </item>
         <item>
             <title><![CDATA[NativeBatteryProvider - React Context Provider Pattern]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/native-battery-provider-react-context-provider-pattern</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/native-battery-provider-react-context-provider-pattern</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/native-battery-provider-react-context-provider-pattern</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/native-battery-provider-react-context-provider-pattern</guid>
             <pubDate>Thu, 11 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[다음은 NativeBatteryProvider라는 이름의 컴포넌트를 만드는 예시 코드입니다. 이 컴포넌트는 기기의 배터리 잔량을 정기적으로 쿼리하여 State 형태로 하위 컴포넌트들에게 전달합니다.]]></description>
             <content:encoded><![CDATA[<p>다음은 <code>NativeBatteryProvider</code>라는 이름의 컴포넌트를 만드는 예시 코드입니다. 이 컴포넌트는 기기의 배터리 잔량을 정기적으로 쿼리하여 <code>State&lt;number&gt;</code> 형태로 하위 컴포넌트들에게 전달합니다.</p>
@@ -428,8 +428,8 @@ const Child = forwardRef((props, ref) =&gt; {
         </item>
         <item>
             <title><![CDATA[Monad Pattern]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/monad-pattern</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/monad-pattern</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/monad-pattern</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/monad-pattern</guid>
             <pubDate>Fri, 05 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[What is MONAD and How Can we Implement it]]></description>
             <content:encoded><![CDATA[<h2 id="what-is-monad-and-how-can-we-implement-it">What is MONAD and How Can we Implement it</h2>
@@ -752,8 +752,8 @@ console.log(result); // [{ user: 'fred', age: 40, active: false }]
         </item>
         <item>
             <title><![CDATA[노코딩 프로토타입 와이어프레임 툴 비교]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/comparison-of-the-no-coding-prototype-wireframe-tool</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/comparison-of-the-no-coding-prototype-wireframe-tool</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/comparison-of-the-no-coding-prototype-wireframe-tool</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/comparison-of-the-no-coding-prototype-wireframe-tool</guid>
             <pubDate>Mon, 01 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[노코드/로우코드 프로토타이핑/와이어프레이밍 예시]]></description>
             <content:encoded><![CDATA[<h2 id="노코드로우코드-프로토타이핑와이어프레이밍-예시">노코드/로우코드 프로토타이핑/와이어프레이밍 예시</h2>
@@ -805,8 +805,8 @@ console.log(result); // [{ user: 'fred', age: 40, active: false }]
         </item>
         <item>
             <title><![CDATA[General Commands Manual BUILTIN]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/general-commands-manual-builtin</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/general-commands-manual-builtin</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/general-commands-manual-builtin</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/general-commands-manual-builtin</guid>
             <pubDate>Mon, 01 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[[] (c) 2003 The FreeBSD Documentation Project.]]></description>
             <content:encoded><![CDATA[<p>[] (c) 2003 The FreeBSD Documentation Project.</p>
@@ -841,14 +841,14 @@ time(1), true(1), which(1), zsh(1)</p>
 <h2 id="history">HISTORY</h2>
 <p>The builtin manual page first appeared in FreeBSD 3.4.</p>
 <h2 id="authors">AUTHORS</h2>
-<p>This manual page was written by <a href="https://your-docusaurus-test-site.com/wiki/blog/sheldonh@FreeBSD.org">Sheldon Hearn</a>.</p>
+<p>This manual page was written by <a href="https://andrewdongminyoo.github.io/wiki/blog/sheldonh@FreeBSD.org">Sheldon Hearn</a>.</p>
 <pre><code class="language-spec"> macOS 13.3 December 21, 2010 m
 </code></pre>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[How to SignIn Git Credential]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/how-to-signin-git-credential</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/how-to-signin-git-credential</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/how-to-signin-git-credential</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/how-to-signin-git-credential</guid>
             <pubDate>Mon, 01 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Git 자격 증명에 로그인하려면 다음 단계를 따르세요:]]></description>
             <content:encoded><![CDATA[<p>Git 자격 증명에 로그인하려면 다음 단계를 따르세요:</p>
@@ -864,8 +864,8 @@ time(1), true(1), which(1), zsh(1)</p>
         </item>
         <item>
             <title><![CDATA[리눅스에서 사용하는 기호들의 사용방법]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/how-to-use-symbols-used-in-linux</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/how-to-use-symbols-used-in-linux</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/how-to-use-symbols-used-in-linux</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/how-to-use-symbols-used-in-linux</guid>
             <pubDate>Mon, 01 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[- > : 출력 결과를 덮어쓰고 저장합니다. 예) ls > list.txt]]></description>
             <content:encoded><![CDATA[<ul>
@@ -881,8 +881,8 @@ time(1), true(1), which(1), zsh(1)</p>
         </item>
         <item>
             <title><![CDATA[what-command-create-multiple-files-in-cli]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/what-command-create-multiple-files-in-cli</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/what-command-create-multiple-files-in-cli</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/what-command-create-multiple-files-in-cli</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/what-command-create-multiple-files-in-cli</guid>
             <pubDate>Mon, 01 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[To create files A1.md through A10.md in one folder using the command-line interface (CLI), you can use a command called "touch" along with brace expansion. Here's an example of the command you can use:]]></description>
             <content:encoded><![CDATA[<pre><code class="language-sh">ygka "What command can you use to tell the CLI to create files A1.md through A10.md in one folder?"
@@ -894,8 +894,8 @@ time(1), true(1), which(1), zsh(1)</p>
         </item>
         <item>
             <title><![CDATA[MacOS Notes 애플리케이션 익스포트]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/mac-os-application-notes-export</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/mac-os-application-notes-export</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/mac-os-application-notes-export</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/mac-os-application-notes-export</guid>
             <pubDate>Sat, 29 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[iOS와 MacOS에서 사용하는 Notes 애플리케이션의 노트를 txt 파일이나 md 파일로 익스포트할 수 있습니다. 아래는 각각의 방법입니다.]]></description>
             <content:encoded><![CDATA[<p>iOS와 MacOS에서 사용하는 Notes 애플리케이션의 노트를 txt 파일이나 md 파일로 익스포트할 수 있습니다. 아래는 각각의 방법입니다.</p>
@@ -925,8 +925,8 @@ time(1), true(1), which(1), zsh(1)</p>
         </item>
         <item>
             <title><![CDATA[GIT CHEAT SHEET]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/git-cheat-sheet</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/git-cheat-sheet</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/git-cheat-sheet</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/git-cheat-sheet</guid>
             <pubDate>Tue, 25 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[VERSION CONTROL TIPS]]></description>
             <content:encoded><![CDATA[<h2 id="version-control-tips">VERSION CONTROL TIPS</h2>
@@ -1083,8 +1083,8 @@ git rm &lt;resolved-file&gt;
         </item>
         <item>
             <title><![CDATA[CHATGPT-3.5의 API 엔진을 활용한 페르소나 GUI 소스]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/persona-gui-source-using-the-api-engine-of-chatgpt-3-5</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/persona-gui-source-using-the-api-engine-of-chatgpt-3-5</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/persona-gui-source-using-the-api-engine-of-chatgpt-3-5</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/persona-gui-source-using-the-api-engine-of-chatgpt-3-5</guid>
             <pubDate>Tue, 25 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[CHATGPT-3.5-TURBO-0301 모델의 API 엔진을 활용한 페르소나 GUI 소스입니다.]]></description>
             <content:encoded><![CDATA[<p>CHATGPT-3.5-TURBO-0301 모델의 API 엔진을 활용한 페르소나 GUI 소스입니다.
@@ -1206,8 +1206,8 @@ config # 본인이 만든 config.py 파일</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Bluetooth Packet trail]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/bluetooth-packet-trail</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/bluetooth-packet-trail</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/bluetooth-packet-trail</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/bluetooth-packet-trail</guid>
             <pubDate>Sat, 22 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Summary]]></description>
             <content:encoded><![CDATA[<h2 id="summary">Summary</h2>
@@ -1231,8 +1231,8 @@ sock.close()
         </item>
         <item>
             <title><![CDATA[구글 플레이스토어 안드로이드 버전 상향에 대한 최소 레벨 가이드]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/android-minimun-sdk</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/android-minimun-sdk</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/android-minimun-sdk</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/android-minimun-sdk</guid>
             <pubDate>Thu, 20 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[구글 플레이스토어로부터 안드로이드 버전 상향에 대한 최소 레벨 가이드를 보내왔습니다ㅠ]]></description>
             <content:encoded><![CDATA[<p>구글 플레이스토어로부터 안드로이드 버전 상향에 대한 최소 레벨 가이드를 보내왔습니다ㅠ</p>
@@ -1341,8 +1341,8 @@ sock.close()
         </item>
         <item>
             <title><![CDATA[Define Assignment Assertion in TypeScript]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/define-assignment-assertion-in-typescript</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/define-assignment-assertion-in-typescript</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/define-assignment-assertion-in-typescript</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/define-assignment-assertion-in-typescript</guid>
             <pubDate>Thu, 20 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[타입스크립트에서 클래스 프로퍼티에 느낌표를 사용하는 문법은 TypeScript 2.7 버전에서 도입되었습니다. 이것은 "definite assignment assertions(확실한 할당 어설션)"라는 개념으로, 해당 프로퍼티가 생성자에서 반드시 할당될 것이라는 것을 컴파일러에게 명시하는 것입니다.]]></description>
             <content:encoded><![CDATA[<p>타입스크립트에서 클래스 프로퍼티에 느낌표를 사용하는 문법은 TypeScript 2.7 버전에서 도입되었습니다. 이것은 "definite assignment assertions(확실한 할당 어설션)"라는 개념으로, 해당 프로퍼티가 생성자에서 반드시 할당될 것이라는 것을 컴파일러에게 명시하는 것입니다.
@@ -1363,8 +1363,8 @@ console.log(person.name.toUpperCase()); // 오류 발생!
         </item>
         <item>
             <title><![CDATA[SDG 7 and AI Solution for MacDonald's]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/sdg-7-and-ai-solution-for-mac-donald-s</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/sdg-7-and-ai-solution-for-mac-donald-s</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/sdg-7-and-ai-solution-for-mac-donald-s</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/sdg-7-and-ai-solution-for-mac-donald-s</guid>
             <pubDate>Thu, 20 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[1. Forecasting Demand and Optimizing Production]]></description>
             <content:encoded><![CDATA[<h2 id="1-forecasting-demand-and-optimizing-production">1. Forecasting Demand and Optimizing Production</h2>
@@ -1392,8 +1392,8 @@ console.log(person.name.toUpperCase()); // 오류 발생!
         </item>
         <item>
             <title><![CDATA[AWS EC2 인스턴스 Nginx의 DNS 캐싱 이슈]]></title>
-            <link>https://your-docusaurus-test-site.com/wiki/blog/aws-ec2-instance-nginx-s-dns-caching-issue</link>
-            <guid>https://your-docusaurus-test-site.com/wiki/blog/aws-ec2-instance-nginx-s-dns-caching-issue</guid>
+            <link>https://andrewdongminyoo.github.io/wiki/blog/aws-ec2-instance-nginx-s-dns-caching-issue</link>
+            <guid>https://andrewdongminyoo.github.io/wiki/blog/aws-ec2-instance-nginx-s-dns-caching-issue</guid>
             <pubDate>Mon, 17 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[AWS EC2 인스턴스에서 Nginx가 이전 위치로 사용자를 라우팅하는 문제는 Nginx의 DNS 캐싱과 관련이 있을 수 있습니다. Nginx는 DNS 조회 결과를 캐시하고 이를 재사용하여 성능을 향상시킵니다. 그러나 이로 인해 DNS 레코드가 변경된 경우에도 Nginx가 이전 DNS 레코드를 계속 사용할 수 있습니다.]]></description>
             <content:encoded><![CDATA[<p>AWS EC2 인스턴스에서 Nginx가 이전 위치로 사용자를 라우팅하는 문제는 Nginx의 DNS 캐싱과 관련이 있을 수 있습니다. Nginx는 DNS 조회 결과를 캐시하고 이를 재사용하여 성능을 향상시킵니다. 그러나 이로 인해 DNS 레코드가 변경된 경우에도 Nginx가 이전 DNS 레코드를 계속 사용할 수 있습니다.

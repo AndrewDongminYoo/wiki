@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_wiki=self.webpackChunkmy_wiki||[]).push([[3701],{6075:e=>{e.exports=JSON.parse('{"label":"PlayStore","permalink":"/wiki/en/blog/tags/play-store","allTagsPath":"/wiki/en/blog/tags","count":1,"unlisted":false}')}}]);
